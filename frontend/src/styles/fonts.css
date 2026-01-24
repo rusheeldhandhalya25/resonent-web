@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/instrument_sans/static/InstrumentSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/instrument_sans/static/InstrumentSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/instrument_sans/static/InstrumentSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/instrument_sans/static/InstrumentSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/instrument_sans/static/InstrumentSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/instrument_sans/static/InstrumentSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/instrument_sans/static/InstrumentSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/instrument_sans/static/InstrumentSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/instrument_sans/static/InstrumentSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+/* Montserrat Alternates */
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
