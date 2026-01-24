@@ -1,41 +1,55 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/header_logo.svg";
+import AppButton from "../../components/buttons/AppButtons";
 
 const Header = () => {
-  const navLinkClass = ({ isActive }) =>
-    `font-body text-19 font-medium transition
-     ${isActive ? "text-primaryDefaultClr font-7" : " hover:text-primaryDefaultClr font-5"}`;
+
+  const navClass = ({ isActive }) =>
+    `
+      font-body
+      text-19
+      transition-colors duration-200
+      ${isActive
+        ? "text-primaryDefaultClr font-7"
+        : " font-5 hover:text-primaryDefaultClr"}
+    `;
 
   return (
-    <header className="w-full h-[80px] bg-textDefaultClr flex items-center">
-      <div className=" px-8 flex items-center justify-between">
+    <header className="w-full py-4 lg:px-[130px]
+          mx-auto
+          h-[5rem]
+          px-4 sm:px-6 justify-between
+          flex items-center bg-textDefaultClr shadow-md">
+      
 
-        {/* LOGO */}
-        <div className="flex items-center px-6 py-2.5">
+        {/* 1️⃣ LOGO (LEFT) */}
+        <div className="flex items-center ">
           <img
             src={logo}
             alt="Resonent"
-            className="h-7 w-auto"
+            className="h-[2.5rem] w-auto"
           />
         </div>
 
-        {/* NAV */}
-        <nav className=" lg:flex items-center gap-8">
-          <NavLink to="/" className={navLinkClass}>Home</NavLink>
-          <NavLink to="/about" className={navLinkClass}>About Us</NavLink>
-          <NavLink to="/services" className={navLinkClass}>Services</NavLink>
-          <NavLink to="/projects" className={navLinkClass}>Client’s Projects</NavLink>
-          <NavLink to="/products" className={navLinkClass}>Our Products</NavLink>
-          <NavLink to="/career" className={navLinkClass}>Careers</NavLink>
-          <NavLink to="/blogs" className={navLinkClass}>Blogs</NavLink>
-        </nav>
+        {/* 2️⃣ NAVBAR (CENTER) */}
+        <div className="flex justify-center">
+          <nav className="lg:flex items-center gap-[1rem]">
+            <NavLink to="/" className={navClass}>Home</NavLink>
+            <NavLink to="/about" className={navClass}>About Us</NavLink>
+            <NavLink to="/services" className={navClass}>Services</NavLink>
+            <NavLink to="/projects" className={navClass}>Client’s Projects</NavLink>
+            <NavLink to="/products" className={navClass}>Our Products</NavLink>
+            <NavLink to="/career" className={navClass}>Careers</NavLink>
+            <NavLink to="/blogs" className={navClass}>Blogs</NavLink>
+          </nav>
+        </div>
 
-        {/* CTA BUTTON */}
-        <button className="hidden lg:inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primaryDefaultClr text-white font-body text-16 font-medium">
-          Start Your Project
-        </button>
+        {/* 3️⃣ BUTTON (RIGHT — REAL BUTTON) */}
+        <AppButton variant="primary" size="md" rounded="full" className="margin-right:4rem">
+            Start Your Project
+        </AppButton>
 
-      </div>
+ 
     </header>
   );
 };

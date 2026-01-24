@@ -2,7 +2,9 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className="bg-backgroundClr text-textDefaultClr">home page</div>
+    <div className="bg-backgroundClr text-textDefaultClr min-h-full">home page
+   
+    </div>
   )
 }
 

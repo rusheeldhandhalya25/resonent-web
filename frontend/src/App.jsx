@@ -24,6 +24,8 @@ function App() {
         <Route path="/projects" element={<ClientProject />} />
         <Route path="/blogs" element={<Blogs />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   );
 }
