@@ -33,7 +33,7 @@ const Header = () => {
 
         {/* 2️⃣ NAVBAR (CENTER) */}
         <div className="flex justify-center">
-          <nav className="lg:flex items-center gap-[1rem]">
+          <nav className="lg:flex items-center gap-[1.3rem]">
             <NavLink to="/" className={navClass}>Home</NavLink>
             <NavLink to="/about" className={navClass}>About Us</NavLink>
             <NavLink to="/services" className={navClass}>Services</NavLink>
