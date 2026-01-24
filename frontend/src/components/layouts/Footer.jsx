@@ -1,5 +1,6 @@
 import logo from "../../assets/images/footer_logo.png";
 import instagramicon from "../../assets/images/instagram_svg.svg";
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -43,14 +44,42 @@ const Footer = () => {
       <div className="flex flex-col gap-2 ">
         <span className="text-22 font-6 gap-2 mb-2">Contact Us</span>
 
-         <div className="flex flex-row gap-3">
-           <div className="h-[3rem] w-[3rem] border-2 border-lightOutlineClr rounded-2xl flex items-center justify-center">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src={instagramicon} alt="Instagram" className="w-[1.5rem] h-[1.5rem]" />
-              </a>
-           </div>
+         <a
+  href="https://instagram.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    h-[3rem] w-[3rem]
+    bg-lightOutlineClr
+    border-[3px] border-tagClr
+    rounded-2xl
+    flex items-center justify-center
+  "
+>
+  <img
+    src={instagramicon}
+    alt="Instagram"
+    className="w-[1.5rem] h-[1.5rem]"
+  />
+</a>
 
-         </div>
+{/* Twitter / X */}
+  <a
+    href="https://twitter.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      h-[3rem] w-[3rem]
+      bg-tagClr
+      border-[3px] border-lightOutlineClr
+      rounded-2xl
+      flex items-center justify-center
+    "
+  >
+    <img src={twittericon} alt="Twitter" className="w-[1.5rem] h-[1.5rem]" />
+  </a>
+
+
       </div>
 
    
