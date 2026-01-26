@@ -15,14 +15,14 @@ const Header = () => {
     `;
 
   return (
-    <header className="w-full py-4 lg:px-[130px]
+    <header className="w-full py-4  
           mx-auto
           h-[5rem]
-          px-4 sm:px-6 justify-between
-          flex items-center bg-textDefaultClr shadow-md">
+          px-4 sm:px-6
+          flex items-center justify-center bg-textDefaultClr shadow-md">
       
-
-        {/* 1️⃣ LOGO (LEFT) */}
+      <div className="w-full lg:w-[1200px] flex items-center justify-between">
+        {/*  LOGO (LEFT) */}
         <div className="flex items-center ">
           <img
             src={logo}
@@ -31,9 +31,8 @@ const Header = () => {
           />
         </div>
 
-        {/* 2️⃣ NAVBAR (CENTER) */}
-        <div className="flex justify-center">
-          <nav className="lg:flex items-center gap-[1.3rem]">
+        {/*  NAVBAR (CENTER) */}
+        <nav className=" lg:flex items-center gap-4">
             <NavLink to="/" className={navClass}>Home</NavLink>
             <NavLink to="/about" className={navClass}>About Us</NavLink>
             <NavLink to="/services" className={navClass}>Services</NavLink>
@@ -41,14 +40,14 @@ const Header = () => {
             <NavLink to="/products" className={navClass}>Our Products</NavLink>
             <NavLink to="/career" className={navClass}>Careers</NavLink>
             <NavLink to="/blogs" className={navClass}>Blogs</NavLink>
-          </nav>
-        </div>
+        </nav>
+        
 
-        {/* 3️⃣ BUTTON (RIGHT — REAL BUTTON) */}
-        <AppButton variant="primary" size="md" rounded="full" className="margin-right:4rem">
+        {/* BUTTON (RIGHT — REAL BUTTON) */}
+        <AppButton variant="primary" size="md" rounded="full">
             Start Your Project
         </AppButton>
-
+      </div>
  
     </header>
   );
