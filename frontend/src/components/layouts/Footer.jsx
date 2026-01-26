@@ -1,9 +1,9 @@
 import logo from "../../assets/images/footer_logo.png";
-import instagramicon from "../../assets/images/instagram_svg.svg";
-import twittericon from "../../assets/images/twitter.svg";
-import behanceicon from "../../assets/images/be_logo.svg";
-import dribbbleicon from "../../assets/images/int_logo.svg";
-import callicon from "../../assets/images/call_logo.svg";
+import instagramicon from "../../assets/images/instagram_icon.svg";
+import twittericon from "../../assets/images/twitter_icon.svg";
+import behanceicon from "../../assets/images/behance_icon.svg";
+import dribbbleicon from "../../assets/images/dribble_icon.svg";
+import callicon from "../../assets/images/call_icon.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

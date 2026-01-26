@@ -1,54 +1,146 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/header_logo.svg";
-import AppButton from "../../components/buttons/AppButtons";
+import AppButton from "../buttons/AppButtons";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navClass = ({ isActive }) =>
-    `
-      font-body
-      text-19
-      transition-colors duration-200
-      ${isActive
+    `font-body text-17 transition-colors duration-200 ${
+      isActive
         ? "text-primaryDefaultClr font-7"
-        : " font-5 hover:text-primaryDefaultClr"}
-    `;
+        : "font-5 hover:text-primaryDefaultClr"
+    }`;
+
+  const mobileNavClass = ({ isActive }) =>
+    `block py-3 text-center font-body text-lg w-full ${
+      isActive
+        ? "text-primaryDefaultClr font-7"
+        : "font-5 hover:text-primaryDefaultClr"
+    }`;
+
+  const HamburgerIcon = () => (
+    <svg
+      className="w-8 h-8 text-backgroundClr"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 20 20"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M4 6h16M4 12h16m-7 6h7"
+      />
+    </svg>
+  );
+
+  const CloseIcon = () => (
+    <svg
+      className="w-8 h-8 text-backgroundClr"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  );
+
+  const NavLinks = ({ onLinkClick, className, linkClassName }) => (
+    <nav className={className}>
+      <NavLink to="/" className={linkClassName} onClick={onLinkClick}>Home</NavLink>
+      <NavLink to="/about" className={linkClassName} onClick={onLinkClick}>About Us</NavLink>
+      <NavLink to="/services" className={linkClassName} onClick={onLinkClick}>Services</NavLink>
+      <NavLink to="/projects" className={linkClassName} onClick={onLinkClick}>Client’s Projects</NavLink>
+      <NavLink to="/products" className={linkClassName} onClick={onLinkClick}>Our Products</NavLink>
+      <NavLink to="/career" className={linkClassName} onClick={onLinkClick}>Careers</NavLink>
+      <NavLink to="/blogs" className={linkClassName} onClick={onLinkClick}>Blogs</NavLink>
+    </nav>
+  );
 
   return (
-    <header className="w-full py-4  
-          mx-auto
-          h-[5rem]
-          px-4 sm:px-6
-          flex items-center justify-center bg-textDefaultClr shadow-md">
-      
-      <div className="w-full lg:w-[1200px] flex items-center justify-between">
-        {/*  LOGO (LEFT) */}
-        <div className="flex items-center ">
-          <img
-            src={logo}
-            alt="Resonent"
-            className="h-[2.5rem] w-auto"
+    <header className="w-full h-[4rem] bg-textDefaultClr shadow-md sticky top-0 z-50">
+      <div className="w-full max-w-[1200px] mx-auto h-full px-4 sm:px-6 flex items-center justify-between">
+
+        {/* LEFT SIDE (Mobile + Desktop) */}
+        <div className="flex items-center gap-3">
+          {/* Hamburger - mobile/tablet */}
+          <button
+            className="lg:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
+          </button>
+
+          {/* Logo */}
+          <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
+            <img
+              src={logo}
+              alt="Resonent"
+              className="h-[1.9rem]
+                        sm:h-[2.1rem]
+                        lg:h-[2.4rem]
+                        w-auto"
+            />
+          </NavLink>
+        </div>
+
+        {/* DESKTOP NAV */}
+        <div className="hidden lg:flex">
+          <NavLinks
+            className="flex items-center gap-4"
+            linkClassName={navClass}
           />
         </div>
 
-        {/*  NAVBAR (CENTER) */}
-        <nav className=" lg:flex items-center gap-4">
-            <NavLink to="/" className={navClass}>Home</NavLink>
-            <NavLink to="/about" className={navClass}>About Us</NavLink>
-            <NavLink to="/services" className={navClass}>Services</NavLink>
-            <NavLink to="/projects" className={navClass}>Client’s Projects</NavLink>
-            <NavLink to="/products" className={navClass}>Our Products</NavLink>
-            <NavLink to="/career" className={navClass}>Careers</NavLink>
-            <NavLink to="/blogs" className={navClass}>Blogs</NavLink>
-        </nav>
-        
+        {/* RIGHT SIDE BUTTON */}
+        <div className="flex items-center  sm:pr-2">
+          <AppButton
+                  variant="primary"
+                   size="xs"
+                  rounded="full"
+                  className="sm:hidden whitespace-nowrap px-2 py-1 text-[1rem] text-white"
+                  >
+                    Start your Project
+          </AppButton>
 
-        {/* BUTTON (RIGHT — REAL BUTTON) */}
-        <AppButton variant="primary" size="md" rounded="full">
-            Start Your Project
-        </AppButton>
+<AppButton
+  variant="primary"
+  size="sm"
+  rounded="full"
+  className="hidden sm:inline-flex lg:hidden whitespace-nowrap"
+>
+  Start your Project
+</AppButton>
+
+<AppButton
+  variant="primary"
+  size="md"
+  rounded="full"
+  className="hidden lg:inline-flex"
+>
+  Start Your Project
+</AppButton>
+
+        </div>
       </div>
- 
+
+      {/* MOBILE MENU */}
+      {isMenuOpen && (
+        <div className="lg:hidden absolute top-[5rem] left-0 w-full bg-textDefaultClr shadow-lg">
+          <NavLinks
+            className="flex flex-col items-center pt-2 pb-4"
+            linkClassName={mobileNavClass}
+            onLinkClick={() => setIsMenuOpen(false)}
+          />
+        </div>
+      )}
     </header>
   );
 };

@@ -14,15 +14,15 @@ export default {
       },
 
       colors: {
-        backgroundClr: "#002556",
-        primaryDefaultClr: "#1B86F8",
-        textDefaultClr: "#EDF6FF",
-        lightOutlineClr: "#1C4B84",
-        cardClr: "#053876",
-        primaryDisableClr: "#DEEFFC",
-        textDisableClr: "#9AADC4",
-        darkOutlineClr: "#708FB5",
-        tagClr: "#28558B",
+        background: "#002556",
+        primary: "#1B86F8",
+        'text-default': "#EDF6FF",
+        'outline-light': "#1C4B84",
+        card: "#053876",
+        'primary-disable': "#DEEFFC",
+        'text-disable': "#9AADC4",
+        'outline-dark': "#708FB5",
+        tag: "#28558B",
       },
 
       fontWeight: {

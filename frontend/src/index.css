@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates/MontserratAlternates-Bold.ttf");
+  font-weight: 700;
+}

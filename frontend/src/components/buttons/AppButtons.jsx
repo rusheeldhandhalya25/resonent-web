@@ -17,6 +17,8 @@ const variantStyles = {
   primary: "bg-primaryDefaultClr text-white",
   outline: "border border-primaryDefaultClr text-primaryDefaultClr",
   light: "bg-textDefaultClr text-primaryDefaultClr",
+  secondary: "bg-textDisableClr text-textDefaultClr hover:bg-primaryDisableClr/80"
+
 };
 
 const radiusVariants = {
