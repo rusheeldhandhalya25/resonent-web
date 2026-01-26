@@ -11,19 +11,37 @@ const Footer = () => {
     <footer
       className="
         w-full
-        h-auto
         bg-backgroundClr
-        grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4
-        gap-8
-        font-body text-20 font-6 text-textDefaultClr
-        py-12 px-4 sm:px-6 lg:px-24
+        font-body text-textDefaultClr
+        grid
+        grid-cols-1
+        md:grid-cols-2
+        lg:grid-cols-4
+        gap-10
+        py-12
+        px-4
+        sm:px-6
+        lg:px-24
+        text-center
+        md:text-left
       "
     >
-      <div className="h-full flex flex-col items-center justify-center space-y-4">
-        <img src={logo} alt="resonent logo" className="w-[190px] h-[140px]" />
+      {/* LOGO */}
+      <div className="flex justify-center md:justify-start">
+        <img
+          src={logo}
+          alt="resonent logo"
+          className="
+            w-[140px]
+            sm:w-[160px]
+            lg:w-[190px]
+            h-auto
+          "
+        />
       </div>
 
-      <div className="flex flex-col gap-2 items-center md:items-start">
+      {/* LINKS 1 */}
+      <div className="flex flex-col gap-2 items-center md:items-start text-18">
         <Link to="/">Home</Link>
         <Link to="/about">About Us</Link>
         <Link to="/blogs">Blog</Link>
@@ -31,7 +49,8 @@ const Footer = () => {
         <Link to="/consulting">Consulting</Link>
       </div>
 
-      <div className="flex flex-col gap-2 items-center md:items-start">
+      {/* LINKS 2 */}
+      <div className="flex flex-col gap-2 items-center md:items-start text-18">
         <Link to="/">Home</Link>
         <Link to="/about">About Us</Link>
         <Link to="/blogs">Blog</Link>
@@ -39,107 +58,45 @@ const Footer = () => {
         <Link to="/consulting">Consulting</Link>
       </div>
 
-      {/* COLUMN 4 */}
+      {/* CONTACT */}
+      <div className="flex flex-col gap-4 items-center md:items-start">
+        <span className="text-20 font-6">Contact Us</span>
 
-      <div className="flex flex-col gap-2 ">
-        <span className="text-22 font-6 gap-2 mb-2">Contact Us</span>
-
-        <div className="flex flex-row gap-4">
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-    h-[3rem] w-[3rem]
-    bg-lightOutlineClr
-    border-[3px] border-tagClr
-    rounded-2xl
-    flex items-center justify-center
-  "
-          >
-            <img
-              src={instagramicon}
-              alt="Instagram"
-              className="w-[1.5rem] h-[1.5rem]"
-            />
-          </a>
-
-          {/* Twitter / X */}
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-      h-[3rem] w-[3rem]
-      bg-tagClr
-      border-[3px] border-lightOutlineClr
-      rounded-2xl
-      flex items-center justify-center
-    "
-          >
-            <img
-              src={twittericon}
-              alt="Twitter"
-              className="w-[1.5rem] h-[1.5rem]"
-            />
-          </a>
-
-          {/* behance */}
-
-          <a
-            href="https://www.behance.net"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-    h-[3rem] w-[3rem]
-    bg-tagClr
-    border-[3px] border-lightOutlineClr
-    rounded-2xl
-    flex items-center justify-center
-  "
-          >
-            <img
-              src={behanceicon}
-              alt="Behance"
-              className="w-[1.5rem] h-[1.5rem]"
-            />
-          </a>
-
-          {/* dribble */}
-
-          <a
-            href="https://dribbble.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-    h-[3rem] w-[3rem]
-    bg-tagClr
-    border-[3px] border-lightOutlineClr
-    rounded-2xl
-    flex items-center justify-center
-  "
-          >
-            <img
-              src={dribbbleicon}
-              alt="Dribbble"
-              className="w-[1.5rem] h-[1.5rem]"
-            />
-          </a>
-
-          {/*  call   */}
-
-          <a
-            href="tel:+919876543210"
-            className="
-    h-[3rem] w-[3rem]
-    bg-tagClr
-    border-[3px] border-lightOutlineClr
-    rounded-2xl
-    flex items-center justify-center
-  "
-          >
-            <img src={callicon} alt="Call" className="w-[1.5rem] h-[1.5rem]" />
-          </a>
+        <div className="flex gap-4 flex-nowrap justify-center md:justify-start">
+          {[
+            { href: "https://instagram.com", icon: instagramicon, alt: "Instagram" },
+            { href: "https://twitter.com", icon: twittericon, alt: "Twitter" },
+            { href: "https://www.behance.net", icon: behanceicon, alt: "Behance" },
+            { href: "https://dribbble.com", icon: dribbbleicon, alt: "Dribbble" },
+            { href: "tel:+919876543210", icon: callicon, alt: "Call" },
+          ].map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              target={item.href.startsWith("http") ? "_blank" : undefined}
+              rel="noopener noreferrer"
+              className="
+                h-[2.8rem]
+                w-[2.8rem]
+                sm:h-[3rem]
+                sm:w-[3rem]
+                bg-tagClr
+                border-[3px]
+                border-lightOutlineClr
+                rounded-2xl
+                flex
+                items-center
+                justify-center
+                flex-shrink-0
+              "
+            >
+              <img
+                src={item.icon}
+                alt={item.alt}
+                className="w-[1.4rem] h-[1.4rem]"
+              />
+            </a>
+          ))}
         </div>
       </div>
     </footer>
