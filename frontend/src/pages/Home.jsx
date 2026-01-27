@@ -2,6 +2,7 @@ import React from "react";
 import AppButton from "../components/buttons/AppButtons";
 import Homefirst from "../assets/images/homefirst.png";
 import Homesecond from "../assets/images/homesecond.png";
+import HardwareDesign from "../assets/images/icons/hardware_design_icon.Svg"
 
 /* ---------------- HERO SECTION ---------------- */
 
@@ -168,6 +169,42 @@ const Aboutus = () => {
   );
 };
 
+
+const Ourexpertise = () => {
+  return (
+    <div className="flex flex-col gap-4">
+       <div>
+          <h1 className="font-heading text-[45px] text-textDefaultClr font-6 flex items-center justify-center">
+              Our Expertise
+          </h1>
+
+          <p className="font-body text-16 text-textDisableClr font-1 flex items-center justify-center">
+            Building powerful embedded solutions with smart hardware, intelligent software, and cloud integration.
+          </p>
+       </div>
+
+      <div className="font-body grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-10">
+
+        <div className="bg-cardClr rounded-xl flex items-center justify-center mx-2 my-3 px-3 py-3">
+            <img src={HardwareDesign} alt="Hardware design logo" className="w-[40px] h-[40px]" />
+        </div>
+
+        <div className="bg-cardClr rounded-xl flex items-center justify-center mx-2 my-3 px-3 py-3">
+            grid-2 
+        </div>
+
+        <div className="bg-cardClr rounded-xl flex items-center justify-center mx-2 my-3 px-3 py-3">
+            grid-3 
+        </div>
+
+        <div className="bg-cardClr rounded-xl flex items-center justify-center mx-2 my-3 px-3 py-3">
+            grid-4 
+        </div>
+
+      </div>
+    </div>
+  )
+};
 /* ---------------- HOME ---------------- */
 
 const Home = () => {
@@ -176,6 +213,7 @@ const Home = () => {
       <Herosection />
       <ABC />
       <Aboutus />
+      <Ourexpertise />
     </div>
   );
 };
