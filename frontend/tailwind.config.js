@@ -24,6 +24,16 @@ export default {
         darkOutlineClr: "#708FB5",
         tagClr: "#28558B",
       },
+     
+      backgroundImage: {
+        expertiseGradient:
+          "linear-gradient(250.91deg, #002556ED -7.76%, #1B86F8ED 16.68%, #1B86F8ED 74.53%, #002556ED 106.73%), linear-gradient(0deg, #00000033, #00000033)",
+      },
+
+      
+      boxShadow: {
+        expertisePill: "0px 25px 46.6px 0px #0000000D",
+      },
 
       fontWeight: {
         1: "100",

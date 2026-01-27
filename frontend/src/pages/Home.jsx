@@ -2,7 +2,17 @@ import React from "react";
 import AppButton from "../components/buttons/AppButtons";
 import Homefirst from "../assets/images/homefirst.png";
 import Homesecond from "../assets/images/homesecond.png";
-import HardwareDesign from "../assets/images/icons/hardware_design_icon.Svg"
+import HardwareDesign from "../assets/images/icons/hardware_design_icon.Svg";
+import FirmwareDevelopment from "../assets/images/icons/firmware_development_icon.svg"
+import CloudWeb from "../assets/images/icons/cloud_web_icon.svg";
+import MobileApp from "../assets/images/icons/mobile_app_icon.svg";
+import ExpertisePillBackground from "../assets/images/expertisepillsbackground.jpg";
+import PowerIcon from "../assets/images/icons/power_expertise_pills.svg";
+import SafetyIcon from "../assets/images/icons/code_expertise_pills.svg";
+import FpgaIcon from "../assets/images/icons/graph_expertise_pills.svg";
+import { useState , useEffect  } from "react";
+import ProductCard from "../components/card/ProfileCard";
+import OurProcess from "../components/ourprocess/OurProcess";
 
 /* ---------------- HERO SECTION ---------------- */
 
@@ -44,7 +54,7 @@ const Herosection = () => {
               Start your project
             </AppButton>
 
-            <AppButton variant="secondary" size="sm" rounded="full">
+            <AppButton variant="secondary" size="sm" rounded="full" className="px-8">
               See our work
             </AppButton>
           </div>
@@ -56,7 +66,7 @@ const Herosection = () => {
             <img
               src={Homefirst}
               alt="Connected Product"
-              className="w-full rounded-[24px]"
+              className="w-full "
             />
           </div>
         </div>
@@ -65,7 +75,13 @@ const Herosection = () => {
   );
 };
 
+
+
+
 /* ---------------- STATS BAR (ABC) ---------------- */
+
+
+
 
 const Stat = ({ title, desc }) => (
   <div className="flex flex-col leading-tight">
@@ -170,41 +186,229 @@ const Aboutus = () => {
 };
 
 
+/* Our expertise */
+
 const Ourexpertise = () => {
   return (
-    <div className="flex flex-col gap-4">
-       <div>
-          <h1 className="font-heading text-[45px] text-textDefaultClr font-6 flex items-center justify-center">
-              Our Expertise
-          </h1>
+    <section className="w-full px-4 sm:px-6 lg:px-20 py-16 mb-8">
+      {/* Heading */}
+      <div className="max-w-4xl mx-auto text-center space-y-4">
+        <h1 className="font-heading font-6 text-textDefaultClr text-3xl sm:text-4xl lg:text-[45px]">
+          Our Expertise
+        </h1>
 
-          <p className="font-body text-16 text-textDisableClr font-1 flex items-center justify-center">
-            Building powerful embedded solutions with smart hardware, intelligent software, and cloud integration.
+        <p className="font-body font-1 text-textDisableClr text-sm sm:text-base leading-relaxed">
+          Building powerful embedded solutions with smart hardware, intelligent
+          software, and cloud integration.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+        {/* Card 1 */}
+        <div className="bg-cardClr rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:bg-primaryDefaultClr group">
+          <img
+            src={HardwareDesign}
+            alt="Hardware design logo"
+            className="w-8 h-8 mb-4"
+          />
+          <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
+            Hardware Design
           </p>
-       </div>
-
-      <div className="font-body grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-10">
-
-        <div className="bg-cardClr rounded-xl flex items-center justify-center mx-2 my-3 px-3 py-3">
-            <img src={HardwareDesign} alt="Hardware design logo" className="w-[40px] h-[40px]" />
+          <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
+            PCB, schematic, MCU/SoC/FPGA, ATEX-safe circuits
+          </p>
         </div>
 
-        <div className="bg-cardClr rounded-xl flex items-center justify-center mx-2 my-3 px-3 py-3">
-            grid-2 
+        {/* Card 2 */}
+        <div className="bg-cardClr rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:bg-primaryDefaultClr group">
+          <img
+            src={FirmwareDevelopment}
+            alt="Firmware development logo"
+            className="w-8 h-8 mb-4"
+          />
+          <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
+            Firmware Development
+          </p>
+          <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
+            RTOS, OTA, low-power, communication stacks
+          </p>
         </div>
 
-        <div className="bg-cardClr rounded-xl flex items-center justify-center mx-2 my-3 px-3 py-3">
-            grid-3 
+        {/* Card 3 */}
+        <div className="bg-cardClr rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:bg-primaryDefaultClr group">
+          <img
+            src={CloudWeb}
+            alt="Cloud and web logo"
+            className="w-8 h-8 mb-4"
+          />
+          <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
+            Cloud & Web
+          </p>
+          <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
+            MQTT, REST APIs, multi-tenant dashboards, analytics
+          </p>
         </div>
 
-        <div className="bg-cardClr rounded-xl flex items-center justify-center mx-2 my-3 px-3 py-3">
-            grid-4 
+        {/* Card 4 */}
+        <div className="bg-cardClr rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:bg-primaryDefaultClr group">
+          <img
+            src={MobileApp}
+            alt="Mobile app logo"
+            className="w-8 h-8 mb-4"
+          />
+          <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
+            Mobile Apps
+          </p>
+          <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
+            Flutter & native apps with BLE/NFC integrations
+          </p>
         </div>
+      </div>
+    </section>
+  );
+};
 
+
+
+
+/* expertise pills */
+const ExpertisePills = () => {
+  const expertiseData = [
+    {
+      title: "Hardware Design",
+      subtitle: "We build smart and reliable hardware for real-world use.",
+      pills: [
+        { icon: PowerIcon, text: "Power Electronics & Control Systems" },
+        { icon: SafetyIcon, text: "Intrinsic Safety (ATEX, IEC 60079)" },
+        { icon: FpgaIcon, text: "FPGA & AI Edge Devices" },
+      ],
+    },
+    {
+      title: "Firmware Development",
+      subtitle: "Building reliable firmware for smarter connected devices.",
+      pills: [
+        { icon: FirmwareDevelopment, text: "RTOS & embedded OS" },
+        { icon: SafetyIcon, text: "OTA updates & device lifecycle management" },
+        { icon: FpgaIcon, text: "Edge AI and sensor integration" },
+      ],
+    },
+    {
+      title: "Cloud & Web",
+      subtitle: "Delivering fast, secure, and reliable web experiences.",
+      pills: [
+        { icon: CloudWeb, text: "MQTT and REST APIs" },
+        { icon: SafetyIcon, text: "Multi-tenant dashboards" },
+        { icon: FpgaIcon, text: "Predictive analytics & data visualization" },
+      ],
+    },
+    {
+      title: "Mobile Apps",
+      subtitle: "Crafting intutive mobile experience for everyday users.",
+      pills: [
+        { icon: MobileApp, text: "Flutter,Android & iOS apps" },
+        { icon: SafetyIcon, text: "BLE/NFC based device pairing" },
+        { icon: FpgaIcon, text: "Real-time control and data insights" },
+      ],
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % expertiseData.length);
+    }, 2000); // Rotate every 3 seconds
+
+    return () => clearTimeout(timer);
+  }, [currentIndex]);
+
+  const backgroundStyle = {
+    backgroundImage: `
+      linear-gradient(
+        250.91deg,
+        #002556ED -7.76%,
+        #1B86F8ED 16.68%,
+        #1B86F8ED 74.53%,
+        #002556ED 106.73%
+      ),
+      linear-gradient(0deg, #00000033, #00000033),
+      url(${ExpertisePillBackground})
+    `,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+
+  return (
+    <div className="my-20">
+      <div className="relative w-full max-w-[1200px] mx-auto h-[350px] sm:h-[300px]">
+        {expertiseData.map((expertise, index) => (
+          <div
+            key={index}
+            style={{
+              ...backgroundStyle,
+              opacity: currentIndex === index ? 1 : 0,
+              transition: "opacity 1000ms ease-in-out",
+            }}
+                          className="
+                          absolute inset-0
+                          shadow-expertisePill
+                          rounded-3xl sm:rounded-full
+                          px-4 sm:px-8 md:px-16 lg:px-20
+                          py-8 sm:py-12
+                          flex
+                          flex-col
+                          items-center
+                          justify-center
+                          text-textDefaultClr
+                        "          >
+            {/* Title */}
+            <div className="text-xl sm:text-2xl lg:text-3xl font-heading font-5 text-center mb-1.5">
+              {expertise.title}
+            </div>
+
+            {/* Subtitle */}
+            <div className="text-xs sm:text-sm lg:text-base font-body font-1 text-center text-textDisableClr mb-4 sm:mb-8">
+              {expertise.subtitle}
+            </div>
+
+            {/* Bottom Pills */}
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+              {expertise.pills.map((pill, pillIndex) => (
+                <div
+                  key={pillIndex}
+                  className="flex items-center gap-2 px-3 sm:px-5 py-2 rounded-full bg-[#EDF6FF33]"
+                >
+                  <img src={pill.icon} alt="icon" className="w-4 h-4" />
+                  <span className="text-[8px] sm:text-[13px] font-body">
+                    {pill.text}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="text-center mt-8">
+        {expertiseData.map((_, idx) => (
+          <div
+            key={idx}
+            className={`inline-block h-2 w-2 rounded-md cursor-pointer mx-1 ${
+              currentIndex === idx ? "bg-primaryDefaultClr" : "bg-gray-400"
+            }`}
+            onClick={() => setCurrentIndex(idx)}
+          ></div>
+        ))}
       </div>
     </div>
-  )
+  );
 };
+
+
+
+
+
 /* ---------------- HOME ---------------- */
 
 const Home = () => {
@@ -214,6 +418,31 @@ const Home = () => {
       <ABC />
       <Aboutus />
       <Ourexpertise />
+      <ExpertisePills />
+
+      <OurProcess />
+      <div className="flex flex-row gap-3 items-center justify-center">
+        <ProductCard
+        logo={Homefirst}
+        title="Synworks"
+        description="Synworks is a smart platform that connects machines, sensors, and software to improve industrial operations."
+      />
+      <ProductCard
+        logo={Homefirst}
+        title="Synworks"
+        description="Synworks is a smart platform that connects machines, sensors, and software to improve industrial operations."
+      /><ProductCard
+        logo={Homefirst}
+        title="Synworks"
+        description="Synworks is a smart platform that connects machines, sensors, and software to improve industrial operations."
+      />
+      <ProductCard
+        logo={Homefirst}
+        title="Synworks"
+        description="Synworks is a smart platform that connects machines, sensors, and software to improve industrial operations."
+      />
+
+      </div>
     </div>
   );
 };
