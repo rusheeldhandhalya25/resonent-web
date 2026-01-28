@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-import lineClamp from "@tailwindcss/line-clamp";
+// import lineClamp from "@tailwindcss/line-clamp";
 
 
 export default {
@@ -27,10 +27,10 @@ export default {
         textDisableClr: "#9AADC4",
         darkOutlineClr: "#708FB5",
         tagClr: "#28558B",
-        cardGradient: "linear-gradient(0deg, #002556, #002556), linear-gradient(240.05deg, rgba(4, 47, 105, 0.3) 0.05%, rgba(53, 144, 242, 0.3) 21.74%, rgba(53, 144, 242, 0.3) 73.07%, rgba(4, 47, 105, 0.3) 101.64%)"
       },
      
       backgroundImage: {
+        cardGradient: "linear-gradient(0deg, #002556, #002556), linear-gradient(240.05deg, rgba(4, 47, 105, 0.3) 0.05%, rgba(53, 144, 242, 0.3) 21.74%, rgba(53, 144, 242, 0.3) 73.07%, rgba(4, 47, 105, 0.3) 101.64%)",
         expertiseGradient:
           "linear-gradient(250.91deg, #002556ED -7.76%, #1B86F8ED 16.68%, #1B86F8ED 74.53%, #002556ED 106.73%), linear-gradient(0deg, #00000033, #00000033)",
        

@@ -21,6 +21,12 @@ import labImg from "../assets/images/project_img_3.png"
 import Mediverse from "../assets/images/mediverse_1.png";
 import Syncworks from "../assets/images/syncworks_1.png";
 import Storeedge from "../assets/images/storeedge_1.png";
+import user1Img  from "../assets/images/user_1.png";
+import user2Img  from "../assets/images/user_2.png";
+import TestimonialCard from "../components/card/Testimonialscard";
+import ContactForm from "../components/ContactForm";
+import ContactImg from "../assets/images/contactus_image.png"
+import ExpertiseCard from "../components/ExpertiseCard";
 
 /* ---------------- HERO SECTION ---------------- */
 
@@ -32,7 +38,6 @@ const Herosection = () => {
           max-w-[1200px]
           mx-auto
           px-4
-          py-14
           lg:py-20
           grid
           grid-cols-1
@@ -103,8 +108,20 @@ const Stat = ({ title, desc }) => (
 );
 
 const ABC = () => {
+  const style = {
+  backgroundColor: "#002556",
+  backgroundImage: `
+    linear-gradient(
+      240.05deg,
+      rgba(4, 47, 105, 0.35) 0.05%,
+      rgba(53, 144, 242, 0.35) 21.74%,
+      rgba(53, 144, 242, 0.35) 73.07%,
+      rgba(4, 47, 105, 0.35) 101.64%
+    )
+  `,
+};
   return (
-    <div
+    <div style={style}
       className="
         max-w-[1200px]
         mx-2
@@ -113,7 +130,7 @@ const ABC = () => {
         lg:mx-auto
         mt-12
         mb-8
-        bg-cardClr
+       
         rounded-full
         grid
         grid-cols-4
@@ -142,6 +159,7 @@ const ABC = () => {
 /* ---------------- ABOUT US ---------------- */
 
 const Aboutus = () => {
+  
   return (
     <section className="bg-backgroundClr py-14 lg:py-20">
       <div
@@ -196,35 +214,6 @@ const Aboutus = () => {
 
 /* Our expertise */
 
-const ExpertiseCard = ({ icon, title, description }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const cardStyle = {
-    backgroundImage: isHovered
-      ? "none"
-      : "linear-gradient(0deg, #002556, #002556), linear-gradient(240.05deg, rgba(4, 47, 105, 0.3) 0.05%, rgba(53, 144, 242, 0.3) 21.74%, rgba(53, 144, 242, 0.3) 73.07%, rgba(4, 47, 105, 0.3) 101.64%)",
-    backgroundColor: isHovered ? "#1B86F8" : "transparent",
-    transition: "background-color 0.3s ease-in-out",
-  };
-
-  return (
-    <div
-      className="rounded-2xl p-6 flex flex-col items-center text-center group"
-      style={cardStyle}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <img src={icon} alt={`${title} logo`} className="w-8 h-8 mb-4" />
-      <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
-        {title}
-      </p>
-      <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
-        {description}
-      </p>
-    </div>
-  );
-};
-
 const Ourexpertise = () => {
   const expertiseData = [
     {
@@ -250,12 +239,13 @@ const Ourexpertise = () => {
   ];
 
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-20 py-16 mb-8">
+    <section className="w-full px-4 sm:px-6 lg:px-20 py-16">
       {/* Heading */}
       <div className="max-w-4xl mx-auto text-center space-y-4">
         <h1 className="font-heading font-6 text-textDefaultClr text-3xl sm:text-4xl lg:text-[45px]">
           Our Expertise
         </h1>
+
         <p className="font-body font-1 text-textDisableClr text-sm sm:text-base leading-relaxed">
           Building powerful embedded solutions with smart hardware, intelligent
           software, and cloud integration.
@@ -264,18 +254,19 @@ const Ourexpertise = () => {
 
       {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
-        {expertiseData.map((expertise) => (
+        {expertiseData.map((item) => (
           <ExpertiseCard
-            key={expertise.title}
-            icon={expertise.icon}
-            title={expertise.title}
-            description={expertise.description}
+            key={item.title}
+            icon={item.icon}
+            title={item.title}
+            description={item.description}
           />
         ))}
       </div>
     </section>
   );
 };
+
 
 
 
@@ -472,12 +463,12 @@ const FeatureProject = () => {
 
 const OurProduct = () => {
   return(
-    <div>
-      <div className="font-heading font-6 text-40 flex items-center justify-center mb-10 my-7 ">
+    <div className="px-4 py-16">
+      <div className="font-heading font-6 text-3xl md:text-4xl flex items-center justify-center mb-10 text-center">
             Our Products
       </div>
 
-      <div className="flex flex-row gap-5 items-center justify-center  ">
+      <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
         <ProfileCard logo={Mediverse} 
                      title="Mediverse"
                      description="MediVerse is a digital product that connects healthcare devices, doctors, and patients in one smart platform. It helps track health data, supports faster decisions, improves remote monitoring, and keeps information secure for better, reliable, and overall smarter medical care every day."
@@ -500,11 +491,128 @@ const OurProduct = () => {
   )
 }
 
+
+const Testimonials = () => {
+  return (
+    <section className="w-full bg-backgroundClr py-16 sm:py-20">
+      {/* Heading */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+        <h2 className="font-heading font-6 text-3xl sm:text-4xl text-center mb-12">
+          Testimonials
+        </h2>
+
+        {/* Cards */}
+        <div
+          className="
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-4
+            gap-6
+            place-items-center
+          "
+        >
+          <TestimonialCard
+            rating={4}
+            title="The Marketing Strategy They Created For My Startup Boosted Our Online Visibility And Brought In More Qualified Leads Than I Expected."
+            name="Noah Davis"
+            role="Software Engineer"
+            image={user1Img}
+          />
+
+          <TestimonialCard
+            rating={4}
+            title="The Branding Service Gave My Clothing Line A Fresh And Modern Look, Making It More Appealing To Customers."
+            name="Ethan Hernandez"
+            role="Financial Analyst"
+            image={user2Img}
+          />
+
+          <TestimonialCard
+            rating={4}
+            title="The Team’s Development Skills Helped Create A Campaign Dashboard That Streamlined My Work And Boosted Results."
+            name="Lucas Green"
+            role="Digital Marketer"
+            image={user1Img}
+          />
+
+          <TestimonialCard
+            rating={4}
+            title="Their Website Design Exceeded My Expectations. It’s Clean, Professional, And Perfectly Tailored To My Services."
+            name="Mia Moore"
+            role="Event Planner"
+            image={user2Img}
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/* Blog page  */
+
+const Blog = () =>{
+  return(
+    <div className="flex grid grid-cols-1 lg:grid-cols-[60%_40%] ">
+
+      <div>
+
+      </div>
+
+      <div>
+        
+      </div>
+
+    </div>
+  )
+}
+
+
+
+
+/* contact us  */
+
+const ContactUs = () => {
+
+  const style = {
+  backgroundColor: "#002556",
+  backgroundImage: `
+    linear-gradient(
+      240.05deg,
+      rgba(4, 47, 105, 0.35) 0.05%,
+      rgba(53, 144, 242, 0.35) 21.74%,
+      rgba(53, 144, 242, 0.35) 73.07%,
+      rgba(4, 47, 105, 0.35) 101.64%
+    )
+  `,
+};
+
+  return (
+    <section style={style} className="px-4 sm:px-6 py-8 md:py-12 lg:py-16 mx-4 sm:mx-8 md:mx-12 lg:mx-20 rounded-xl mt-20 mb-20">
+      
+      <div className="font-heading font-6 text-3xl md:text-4xl flex items-center justify-center mt-7 mb-10">
+          Contact Us
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className=" lg:block">
+            <img src={ContactImg} alt="contact image" className="rounded-2xl h-full w-full"/>
+          </div>
+
+          <div >
+            <ContactForm />
+          </div>
+      </div>
+    </section>
+  );
+};
+
+
 /* ---------------- HOME ---------------- */
 
 const Home = () => {
   return (
-    <div className="bg-backgroundClr text-textDefaultClr min-h-full">
+    <div className="bg-backgroundClr text-textDefaultClr min-h-full flex flex-col gap-10  ">
       <Herosection />
       <ABC />
       <Aboutus />
@@ -514,6 +622,8 @@ const Home = () => {
       <OurProcess />
       <FeatureProject />
       <OurProduct />
+      <Testimonials />
+      <ContactUs />
     </div>
   );
 };

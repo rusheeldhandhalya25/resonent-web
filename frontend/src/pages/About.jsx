@@ -1,8 +1,26 @@
 import React from 'react'
 
-function About() {
+const First = () => {
+  return(
+      <div className='bg-backgroundClr flex flex-col items-center justify-center'>
+        <div className='text-60 font-heading font-6 text-textDefaultClr '>
+              Engineering the
+              <br />
+              Connected Future
+        </div>
+
+        <div>
+
+        </div>
+      </div>
+  )
+}
+
+const About = () => {
   return (
-    <div>About page</div>
+    <div className='bg-backgroundClr flex flex-col '>
+      <First />
+    </div>
   )
 }
 
