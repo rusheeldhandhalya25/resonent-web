@@ -26,7 +26,7 @@ const ProductCard = ({
       style={style}
       className="
         w-full
-        max-w-[320px]
+        max-w-[370px]
         rounded-2xl
         p-6
         text-center
@@ -38,11 +38,11 @@ const ProductCard = ({
       "
     >
       {/* Logo */}
-      <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center mb-4">
+      <div className="w-[7rem] h-[7rem] rounded-full bg-textDefaultClr flex items-center justify-center mb-4">
         <img
           src={logo}
           alt={title}
-          className="w-12 h-12 object-contain"
+          className="w-[5rem] h-[5rem] object-contain"
         />
       </div>
 
@@ -52,7 +52,7 @@ const ProductCard = ({
       </h3>
 
       {/* Description */}
-      <p className="font-body text-sm text-textDisableClr mb-6 leading-relaxed">
+      <p className="font-body text-sm text-textDisableClr mb-6 leading-relaxed line-clamp-5">
         {description}
       </p>
 

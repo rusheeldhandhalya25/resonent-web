@@ -11,9 +11,16 @@ import PowerIcon from "../assets/images/icons/power_expertise_pills.svg";
 import SafetyIcon from "../assets/images/icons/code_expertise_pills.svg";
 import FpgaIcon from "../assets/images/icons/graph_expertise_pills.svg";
 import { useState , useEffect  } from "react";
-import ProductCard from "../components/card/ProfileCard";
+import ProfileCard from "../components/card/ProfileCard"
 import OurProcess from "../components/ourprocess/OurProcess";
 import ProjectCard from "../components/card/ProjectCard";
+import factoryImg from "../assets/images/project_img_1.png"
+import compImg from "../assets/images/project_img_2.png"
+import graphImg from "../assets/images/project_img_4.png"
+import labImg from "../assets/images/project_img_3.png"
+import Mediverse from "../assets/images/mediverse_1.png";
+import Syncworks from "../assets/images/syncworks_1.png";
+import Storeedge from "../assets/images/storeedge_1.png";
 
 /* ---------------- HERO SECTION ---------------- */
 
@@ -154,7 +161,7 @@ const Aboutus = () => {
           <img
             src={Homesecond}
             alt="group"
-            className="w-full max-w-[420px] rounded-2xl"
+            className="w-[700px] h-[450px] rounded-2xl"
           />
         </div>
 
@@ -189,7 +196,59 @@ const Aboutus = () => {
 
 /* Our expertise */
 
+const ExpertiseCard = ({ icon, title, description }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const cardStyle = {
+    backgroundImage: isHovered
+      ? "none"
+      : "linear-gradient(0deg, #002556, #002556), linear-gradient(240.05deg, rgba(4, 47, 105, 0.3) 0.05%, rgba(53, 144, 242, 0.3) 21.74%, rgba(53, 144, 242, 0.3) 73.07%, rgba(4, 47, 105, 0.3) 101.64%)",
+    backgroundColor: isHovered ? "#1B86F8" : "transparent",
+    transition: "background-color 0.3s ease-in-out",
+  };
+
+  return (
+    <div
+      className="rounded-2xl p-6 flex flex-col items-center text-center group"
+      style={cardStyle}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <img src={icon} alt={`${title} logo`} className="w-8 h-8 mb-4" />
+      <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
+        {title}
+      </p>
+      <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
+        {description}
+      </p>
+    </div>
+  );
+};
+
 const Ourexpertise = () => {
+  const expertiseData = [
+    {
+      icon: HardwareDesign,
+      title: "Hardware Design",
+      description: "PCB, schematic, MCU/SoC/FPGA, ATEX-safe circuits",
+    },
+    {
+      icon: FirmwareDevelopment,
+      title: "Firmware Development",
+      description: "RTOS, OTA, low-power, communication stacks",
+    },
+    {
+      icon: CloudWeb,
+      title: "Cloud & Web",
+      description: "MQTT, REST APIs, multi-tenant dashboards, analytics",
+    },
+    {
+      icon: MobileApp,
+      title: "Mobile Apps",
+      description: "Flutter & native apps with BLE/NFC integrations",
+    },
+  ];
+
   return (
     <section className="w-full px-4 sm:px-6 lg:px-20 py-16 mb-8">
       {/* Heading */}
@@ -197,7 +256,6 @@ const Ourexpertise = () => {
         <h1 className="font-heading font-6 text-textDefaultClr text-3xl sm:text-4xl lg:text-[45px]">
           Our Expertise
         </h1>
-
         <p className="font-body font-1 text-textDisableClr text-sm sm:text-base leading-relaxed">
           Building powerful embedded solutions with smart hardware, intelligent
           software, and cloud integration.
@@ -206,65 +264,14 @@ const Ourexpertise = () => {
 
       {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
-        {/* Card 1 */}
-        <div className="bg-cardClr rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:bg-primaryDefaultClr group">
-          <img
-            src={HardwareDesign}
-            alt="Hardware design logo"
-            className="w-8 h-8 mb-4"
+        {expertiseData.map((expertise) => (
+          <ExpertiseCard
+            key={expertise.title}
+            icon={expertise.icon}
+            title={expertise.title}
+            description={expertise.description}
           />
-          <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
-            Hardware Design
-          </p>
-          <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
-            PCB, schematic, MCU/SoC/FPGA, ATEX-safe circuits
-          </p>
-        </div>
-
-        {/* Card 2 */}
-        <div className="bg-cardClr rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:bg-primaryDefaultClr group">
-          <img
-            src={FirmwareDevelopment}
-            alt="Firmware development logo"
-            className="w-8 h-8 mb-4"
-          />
-          <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
-            Firmware Development
-          </p>
-          <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
-            RTOS, OTA, low-power, communication stacks
-          </p>
-        </div>
-
-        {/* Card 3 */}
-        <div className="bg-cardClr rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:bg-primaryDefaultClr group">
-          <img
-            src={CloudWeb}
-            alt="Cloud and web logo"
-            className="w-8 h-8 mb-4"
-          />
-          <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
-            Cloud & Web
-          </p>
-          <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
-            MQTT, REST APIs, multi-tenant dashboards, analytics
-          </p>
-        </div>
-
-        {/* Card 4 */}
-        <div className="bg-cardClr rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:bg-primaryDefaultClr group">
-          <img
-            src={MobileApp}
-            alt="Mobile app logo"
-            className="w-8 h-8 mb-4"
-          />
-          <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
-            Mobile Apps
-          </p>
-          <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
-            Flutter & native apps with BLE/NFC integrations
-          </p>
-        </div>
+        ))}
       </div>
     </section>
   );
@@ -342,7 +349,7 @@ const ExpertisePills = () => {
   };
 
   return (
-    <div className="my-20">
+    <div className="my-2">
       <div className="relative w-full max-w-[1200px] mx-auto h-[350px] sm:h-[300px]">
         {expertiseData.map((expertise, index) => (
           <div
@@ -407,12 +414,91 @@ const ExpertisePills = () => {
 };
 
 
+
+{/* feature project */}
+
 const FeatureProject = () => {
   return (
-    
+    <section className="w-full px-4 sm:px-6 lg:px-20 py-12">
+      <div className="font-heading font-6 text-40 flex items-center justify-center mb-20">
+        featured products
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+       <div className="flex flex-col gap-5">
+         <ProjectCard
+          tag="Product Design"
+          year="2021"
+          title="Smart Factory Gateway"
+          description="A smart device that connects factory machines to the internet and software systems. It collects machine data in real time, sends alerts, and helps improve productivity."
+          image={factoryImg}
+        />
+
+
+         <ProjectCard
+          tag="Product Design"
+          year="2021"
+          title="ATEX Gas Sensor Node"
+          description="A safe and certified device that detects dangerous gases in industrial areas. It is designed for hazardous zones and sends real-time alerts to protect workers and equipment. It helps prevent accidents and keeps the environment safe."
+          image={compImg}
+        />
+
+       </div>
+      <div className="flex flex-col mt-1 md:mt-20 gap-5">
+          <ProjectCard
+          tag="Product Design"
+          year="2021"
+          title="AI-Edge Vending Controller"
+          description="A smart controller that uses AI to run vending machines smoothly. It works on the edge, so it makes decisions quickly without depending on the internet. It helps manage stock, payments, and machine health in real time for better customer service and lower maintenance costs."
+          image={labImg}
+        />
+
+        <ProjectCard
+          tag="Product Design"
+          year="2021"
+          title="Smart Energy Meter"
+          description="A device that measures electricity use in real time. It helps track power consumption, reduce waste, and save money. It can send data automatically for billing and monitoring, making energy management easier and smarter."
+          image={graphImg}
+        />
+      </div>
+
+      </div>
+    </section>
+  );
+};
+
+
+{/* Our Products */}
+
+const OurProduct = () => {
+  return(
+    <div>
+      <div className="font-heading font-6 text-40 flex items-center justify-center mb-10 my-7 ">
+            Our Products
+      </div>
+
+      <div className="flex flex-row gap-5 items-center justify-center  ">
+        <ProfileCard logo={Mediverse} 
+                     title="Mediverse"
+                     description="MediVerse is a digital product that connects healthcare devices, doctors, and patients in one smart platform. It helps track health data, supports faster decisions, improves remote monitoring, and keeps information secure for better, reliable, and overall smarter medical care every day."
+                     buttonText="view product"/>
+
+        <ProfileCard logo={Syncworks} 
+                     title="SyncWorks"
+                     description="Syncworks is a smart platform that connects machines, sensors, and software to improve industrial operations. It collects real-time data, reduces downtime, and increases productivity. With secure cloud integration and easy control, businesses can manage equipment smarter and make faster decisions anywhere, anytime."
+                     buttonText="view product"/>
+
+        <ProfileCard logo={Storeedge} 
+                     title="Storeedge"
+                     description="StoreEdge is a smart warehouse management solution that tracks inventory in real time, reduces human errors, and speeds up operations. It supports seamless order processing, quick product locating, and secure data handling to help businesses improve efficiency, save time, and grow smoothly."
+                     buttonText="view product"/>
+
+        
+
+      </div>
+    </div>
   )
 }
-
 
 /* ---------------- HOME ---------------- */
 
@@ -426,7 +512,8 @@ const Home = () => {
       <ExpertisePills />
 
       <OurProcess />
-      <ProjectCard Year={2021}/>
+      <FeatureProject />
+      <OurProduct />
     </div>
   );
 };
