@@ -1,10 +1,6 @@
-import StarRating from "../../components/starrating";
+import StarRating from "../StarRating";
 
-const TestimonialCard = ({rating,
-                          title,
-                          name,
-                          role,
-                          image,}) => {
+const TestimonialCard = ({ rating, title, name, role, image }) => {
   return (
     <div
       className="
@@ -21,9 +17,7 @@ const TestimonialCard = ({rating,
       <StarRating rating={rating} />
 
       {/* Text */}
-      <p className="text-textDefaultClr text-sm font-5 mb-6">
-        {title}
-      </p>
+      <p className="text-textDefaultClr text-sm font-5 mb-6">{title}</p>
 
       {/* User */}
       <div className="flex items-center gap-3 bg-tagClr rounded-full p-2">
@@ -34,12 +28,8 @@ const TestimonialCard = ({rating,
         />
 
         <div>
-          <p className="text-textDefaultClr text-sm font-6">
-            {name}
-          </p>
-          <p className="text-textDisableClr text-xs">
-            {role}
-          </p>
+          <p className="text-textDefaultClr text-sm font-6">{name}</p>
+          <p className="text-textDisableClr text-xs">{role}</p>
         </div>
       </div>
     </div>

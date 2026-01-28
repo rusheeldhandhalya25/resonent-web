@@ -1,12 +1,6 @@
 import AppButton from "../buttons/AppButtons";
 
-const ProjectCard = ({
-  tag,
-  year,
-  title,
-  description,
-  image,
-}) => {
+const ProjectCard = ({ tag, year, title, description, image }) => {
   return (
     <div
       className="
@@ -48,9 +42,7 @@ const ProjectCard = ({
         </div>
 
         {/* Title */}
-        <h3 className="text-textDefaultClr font-6 text-24 mb-2">
-          {title}
-        </h3>
+        <h3 className="text-textDefaultClr font-6 text-24 mb-2">{title}</h3>
 
         {/* Description */}
         <p className="text-textDisableClr text-sm mb-4 line-clamp-2">

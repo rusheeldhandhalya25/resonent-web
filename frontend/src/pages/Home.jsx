@@ -3,29 +3,29 @@ import AppButton from "../components/buttons/AppButtons";
 import Homefirst from "../assets/images/homefirst.png";
 import Homesecond from "../assets/images/homesecond.png";
 import HardwareDesign from "../assets/images/icons/hardware_design_icon.Svg";
-import FirmwareDevelopment from "../assets/images/icons/firmware_development_icon.svg"
+import FirmwareDevelopment from "../assets/images/icons/firmware_development_icon.svg";
 import CloudWeb from "../assets/images/icons/cloud_web_icon.svg";
 import MobileApp from "../assets/images/icons/mobile_app_icon.svg";
 import ExpertisePillBackground from "../assets/images/expertisepillsbackground.jpg";
 import PowerIcon from "../assets/images/icons/power_expertise_pills.svg";
 import SafetyIcon from "../assets/images/icons/code_expertise_pills.svg";
 import FpgaIcon from "../assets/images/icons/graph_expertise_pills.svg";
-import { useState , useEffect  } from "react";
-import ProfileCard from "../components/card/ProfileCard"
-import OurProcess from "../components/ourprocess/OurProcess";
-import ProjectCard from "../components/card/ProjectCard";
-import factoryImg from "../assets/images/project_img_1.png"
-import compImg from "../assets/images/project_img_2.png"
-import graphImg from "../assets/images/project_img_4.png"
-import labImg from "../assets/images/project_img_3.png"
+import { useState, useEffect } from "react";
+import ProfileCard from "../components/cards/ProfileCard";
+import OurProcess from "../components/our-process/OurProcess";
+import ProjectCard from "../components/cards/ProjectCard";
+import factoryImg from "../assets/images/project_img_1.png";
+import compImg from "../assets/images/project_img_2.png";
+import graphImg from "../assets/images/project_img_4.png";
+import labImg from "../assets/images/project_img_3.png";
 import Mediverse from "../assets/images/mediverse_1.png";
 import Syncworks from "../assets/images/syncworks_1.png";
 import Storeedge from "../assets/images/storeedge_1.png";
-import user1Img  from "../assets/images/user_1.png";
-import user2Img  from "../assets/images/user_2.png";
-import TestimonialCard from "../components/card/Testimonialscard";
+import user1Img from "../assets/images/user_1.png";
+import user2Img from "../assets/images/user_2.png";
+import TestimonialCard from "../components/cards/Testimonialscard";
 import ContactForm from "../components/ContactForm";
-import ContactImg from "../assets/images/contactus_image.png"
+import ContactImg from "../assets/images/contactus_image.png";
 import ExpertiseCard from "../components/ExpertiseCard";
 
 /* ---------------- HERO SECTION ---------------- */
@@ -67,7 +67,12 @@ const Herosection = () => {
               Start your project
             </AppButton>
 
-            <AppButton variant="secondary" size="sm" rounded="full" className="px-8">
+            <AppButton
+              variant="secondary"
+              size="sm"
+              rounded="full"
+              className="px-8"
+            >
               See our work
             </AppButton>
           </div>
@@ -76,11 +81,7 @@ const Herosection = () => {
         {/* IMAGE */}
         <div className="flex justify-center lg:justify-end">
           <div className="w-[240px] sm:w-[300px] lg:w-[400px] p-3 bg-cardClr border border-lightOutlineClr rounded-[32px]">
-            <img
-              src={Homefirst}
-              alt="Connected Product"
-              className="w-full "
-            />
+            <img src={Homefirst} alt="Connected Product" className="w-full " />
           </div>
         </div>
       </div>
@@ -88,13 +89,7 @@ const Herosection = () => {
   );
 };
 
-
-
-
 /* ---------------- STATS BAR (ABC) ---------------- */
-
-
-
 
 const Stat = ({ title, desc }) => (
   <div className="flex flex-col leading-tight">
@@ -109,8 +104,8 @@ const Stat = ({ title, desc }) => (
 
 const ABC = () => {
   const style = {
-  backgroundColor: "#002556",
-  backgroundImage: `
+    backgroundColor: "#002556",
+    backgroundImage: `
     linear-gradient(
       240.05deg,
       rgba(4, 47, 105, 0.35) 0.05%,
@@ -119,9 +114,10 @@ const ABC = () => {
       rgba(4, 47, 105, 0.35) 101.64%
     )
   `,
-};
+  };
   return (
-    <div style={style}
+    <div
+      style={style}
       className="
         max-w-[1200px]
         mx-2
@@ -159,7 +155,6 @@ const ABC = () => {
 /* ---------------- ABOUT US ---------------- */
 
 const Aboutus = () => {
-  
   return (
     <section className="bg-backgroundClr py-14 lg:py-20">
       <div
@@ -210,7 +205,6 @@ const Aboutus = () => {
     </section>
   );
 };
-
 
 /* Our expertise */
 
@@ -266,10 +260,6 @@ const Ourexpertise = () => {
     </section>
   );
 };
-
-
-
-
 
 /* expertise pills */
 const ExpertisePills = () => {
@@ -350,7 +340,7 @@ const ExpertisePills = () => {
               opacity: currentIndex === index ? 1 : 0,
               transition: "opacity 1000ms ease-in-out",
             }}
-                          className="
+            className="
                           absolute inset-0
                           shadow-expertisePill
                           rounded-3xl sm:rounded-full
@@ -361,7 +351,8 @@ const ExpertisePills = () => {
                           items-center
                           justify-center
                           text-textDefaultClr
-                        "          >
+                        "
+          >
             {/* Title */}
             <div className="text-xl sm:text-2xl lg:text-3xl font-heading font-5 text-center mb-1.5">
               {expertise.title}
@@ -404,9 +395,9 @@ const ExpertisePills = () => {
   );
 };
 
-
-
-{/* feature project */}
+{
+  /* feature project */
+}
 
 const FeatureProject = () => {
   return (
@@ -415,82 +406,81 @@ const FeatureProject = () => {
         featured products
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        
-       <div className="flex flex-col gap-5">
-         <ProjectCard
-          tag="Product Design"
-          year="2021"
-          title="Smart Factory Gateway"
-          description="A smart device that connects factory machines to the internet and software systems. It collects machine data in real time, sends alerts, and helps improve productivity."
-          image={factoryImg}
-        />
-
-
-         <ProjectCard
-          tag="Product Design"
-          year="2021"
-          title="ATEX Gas Sensor Node"
-          description="A safe and certified device that detects dangerous gases in industrial areas. It is designed for hazardous zones and sends real-time alerts to protect workers and equipment. It helps prevent accidents and keeps the environment safe."
-          image={compImg}
-        />
-
-       </div>
-      <div className="flex flex-col mt-1 md:mt-20 gap-5">
+        <div className="flex flex-col gap-5">
           <ProjectCard
-          tag="Product Design"
-          year="2021"
-          title="AI-Edge Vending Controller"
-          description="A smart controller that uses AI to run vending machines smoothly. It works on the edge, so it makes decisions quickly without depending on the internet. It helps manage stock, payments, and machine health in real time for better customer service and lower maintenance costs."
-          image={labImg}
-        />
+            tag="Product Design"
+            year="2021"
+            title="Smart Factory Gateway"
+            description="A smart device that connects factory machines to the internet and software systems. It collects machine data in real time, sends alerts, and helps improve productivity."
+            image={factoryImg}
+          />
 
-        <ProjectCard
-          tag="Product Design"
-          year="2021"
-          title="Smart Energy Meter"
-          description="A device that measures electricity use in real time. It helps track power consumption, reduce waste, and save money. It can send data automatically for billing and monitoring, making energy management easier and smarter."
-          image={graphImg}
-        />
-      </div>
+          <ProjectCard
+            tag="Product Design"
+            year="2021"
+            title="ATEX Gas Sensor Node"
+            description="A safe and certified device that detects dangerous gases in industrial areas. It is designed for hazardous zones and sends real-time alerts to protect workers and equipment. It helps prevent accidents and keeps the environment safe."
+            image={compImg}
+          />
+        </div>
+        <div className="flex flex-col mt-1 md:mt-20 gap-5">
+          <ProjectCard
+            tag="Product Design"
+            year="2021"
+            title="AI-Edge Vending Controller"
+            description="A smart controller that uses AI to run vending machines smoothly. It works on the edge, so it makes decisions quickly without depending on the internet. It helps manage stock, payments, and machine health in real time for better customer service and lower maintenance costs."
+            image={labImg}
+          />
 
+          <ProjectCard
+            tag="Product Design"
+            year="2021"
+            title="Smart Energy Meter"
+            description="A device that measures electricity use in real time. It helps track power consumption, reduce waste, and save money. It can send data automatically for billing and monitoring, making energy management easier and smarter."
+            image={graphImg}
+          />
+        </div>
       </div>
     </section>
   );
 };
 
-
-{/* Our Products */}
+{
+  /* Our Products */
+}
 
 const OurProduct = () => {
-  return(
+  return (
     <div className="px-4 py-16">
       <div className="font-heading font-6 text-3xl md:text-4xl flex items-center justify-center mb-10 text-center">
-            Our Products
+        Our Products
       </div>
 
       <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
-        <ProfileCard logo={Mediverse} 
-                     title="Mediverse"
-                     description="MediVerse is a digital product that connects healthcare devices, doctors, and patients in one smart platform. It helps track health data, supports faster decisions, improves remote monitoring, and keeps information secure for better, reliable, and overall smarter medical care every day."
-                     buttonText="view product"/>
+        <ProfileCard
+          logo={Mediverse}
+          title="Mediverse"
+          description="MediVerse is a digital product that connects healthcare devices, doctors, and patients in one smart platform. It helps track health data, supports faster decisions, improves remote monitoring, and keeps information secure for better, reliable, and overall smarter medical care every day."
+          buttonText="view product"
+        />
 
-        <ProfileCard logo={Syncworks} 
-                     title="SyncWorks"
-                     description="Syncworks is a smart platform that connects machines, sensors, and software to improve industrial operations. It collects real-time data, reduces downtime, and increases productivity. With secure cloud integration and easy control, businesses can manage equipment smarter and make faster decisions anywhere, anytime."
-                     buttonText="view product"/>
+        <ProfileCard
+          logo={Syncworks}
+          title="SyncWorks"
+          description="Syncworks is a smart platform that connects machines, sensors, and software to improve industrial operations. It collects real-time data, reduces downtime, and increases productivity. With secure cloud integration and easy control, businesses can manage equipment smarter and make faster decisions anywhere, anytime."
+          buttonText="view product"
+        />
 
-        <ProfileCard logo={Storeedge} 
-                     title="Storeedge"
-                     description="StoreEdge is a smart warehouse management solution that tracks inventory in real time, reduces human errors, and speeds up operations. It supports seamless order processing, quick product locating, and secure data handling to help businesses improve efficiency, save time, and grow smoothly."
-                     buttonText="view product"/>
-
-        
-
+        <ProfileCard
+          logo={Storeedge}
+          title="Storeedge"
+          description="StoreEdge is a smart warehouse management solution that tracks inventory in real time, reduces human errors, and speeds up operations. It supports seamless order processing, quick product locating, and secure data handling to help businesses improve efficiency, save time, and grow smoothly."
+          buttonText="view product"
+        />
       </div>
     </div>
-  )
-}
-
+  );
+};
 
 const Testimonials = () => {
   return (
@@ -551,32 +541,24 @@ const Testimonials = () => {
 
 /* Blog page  */
 
-const Blog = () =>{
-  return(
+const Blog = () => {
+  return (
     <div className="flex grid grid-cols-1 lg:grid-cols-[60%_40%] ">
-
       <div>
-
+        <img src={factoryImg} alt="" />
       </div>
 
-      <div>
-        
-      </div>
-
+      <div className="flex flex-col"></div>
     </div>
-  )
-}
-
-
-
+  );
+};
 
 /* contact us  */
 
 const ContactUs = () => {
-
   const style = {
-  backgroundColor: "#002556",
-  backgroundImage: `
+    backgroundColor: "#002556",
+    backgroundImage: `
     linear-gradient(
       240.05deg,
       rgba(4, 47, 105, 0.35) 0.05%,
@@ -585,28 +567,33 @@ const ContactUs = () => {
       rgba(4, 47, 105, 0.35) 101.64%
     )
   `,
-};
+  };
 
   return (
-    <section style={style} className="px-4 sm:px-6 py-8 md:py-12 lg:py-16 mx-4 sm:mx-8 md:mx-12 lg:mx-20 rounded-xl mt-20 mb-20">
-      
+    <section
+      style={style}
+      className="px-4 sm:px-6 py-8 md:py-12 lg:py-16 mx-4 sm:mx-8 md:mx-12 lg:mx-20 rounded-xl mt-20 mb-20"
+    >
       <div className="font-heading font-6 text-3xl md:text-4xl flex items-center justify-center mt-7 mb-10">
-          Contact Us
+        Contact Us
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className=" lg:block">
-            <img src={ContactImg} alt="contact image" className="rounded-2xl h-full w-full"/>
-          </div>
+        <div className=" lg:block">
+          <img
+            src={ContactImg}
+            alt="contact image"
+            className="rounded-2xl h-full w-full"
+          />
+        </div>
 
-          <div >
-            <ContactForm />
-          </div>
+        <div>
+          <ContactForm />
+        </div>
       </div>
     </section>
   );
 };
-
 
 /* ---------------- HOME ---------------- */
 

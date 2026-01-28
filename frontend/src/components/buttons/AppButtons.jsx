@@ -17,8 +17,8 @@ const variantStyles = {
   primary: "bg-primaryDefaultClr text-white",
   outline: "border border-primaryDefaultClr text-primaryDefaultClr",
   light: "bg-textDefaultClr text-primaryDefaultClr",
-  secondary: "bg-textDisableClr text-textDefaultClr hover:bg-primaryDisableClr/80"
-
+  secondary:
+    "bg-textDisableClr text-textDefaultClr hover:bg-primaryDisableClr/80",
 };
 
 const radiusVariants = {
@@ -32,7 +32,7 @@ const AppButton = ({
   type = "button",
   onClick,
   size = "md",
-  variant = "primary",          // ✅ DEFAULT FIX
+  variant = "primary", // ✅ DEFAULT FIX
   rounded = "full",
   className = "",
   fontClass = "font-body text-19 font-5", // ✅ DEFAULT FIX
@@ -41,15 +41,13 @@ const AppButton = ({
 }) => {
   const finalClasses = twMerge(
     baseStyles,
-    fontClass,                    // 👈 font pehle
+    fontClass, // 👈 font pehle
     sizeVariants[size],
-    variantStyles[variant],       // 👈 color baad ma (important)
+    variantStyles[variant], // 👈 color baad ma (important)
     radiusVariants[rounded],
     fullWidth && "w-full",
-    disabled
-      ? "opacity-50 cursor-not-allowed"
-      : "cursor-pointer",
-    className                     // 👈 last so user override kare to kare
+    disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer",
+    className, // 👈 last so user override kare to kare
   );
 
   return (

@@ -8,8 +8,8 @@ const ProductCard = ({
   onClick,
 }) => {
   const style = {
-  backgroundColor: "#002556",
-  backgroundImage: `
+    backgroundColor: "#002556",
+    backgroundImage: `
     linear-gradient(
       240.05deg,
       rgba(4, 47, 105, 0.35) 0.05%,
@@ -18,8 +18,7 @@ const ProductCard = ({
       rgba(4, 47, 105, 0.35) 101.64%
     )
   `,
-};
-
+  };
 
   return (
     <div
@@ -47,9 +46,7 @@ const ProductCard = ({
       </div>
 
       {/* Title */}
-      <h3 className="font-heading text-lg font-6 mb-2">
-        {title}
-      </h3>
+      <h3 className="font-heading text-lg font-6 mb-2">{title}</h3>
 
       {/* Description */}
       <p className="font-body text-sm text-textDisableClr mb-6 leading-relaxed line-clamp-5">

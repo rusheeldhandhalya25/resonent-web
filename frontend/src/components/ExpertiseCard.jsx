@@ -1,8 +1,7 @@
 const ExpertiseCard = ({ icon, title, description }) => {
-
-    const style = {
-  backgroundColor: "#002556",
-  backgroundImage: `
+  const style = {
+    backgroundColor: "#002556",
+    backgroundImage: `
     linear-gradient(
       240.05deg,
       rgba(4, 47, 105, 0.35) 0.05%,
@@ -11,9 +10,10 @@ const ExpertiseCard = ({ icon, title, description }) => {
       rgba(4, 47, 105, 0.35) 101.64%
     )
   `,
-};
+  };
   return (
-    <div style={style}
+    <div
+      style={style}
       className="
         group
         rounded-2xl p-6

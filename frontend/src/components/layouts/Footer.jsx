@@ -64,10 +64,22 @@ const Footer = () => {
 
         <div className="flex gap-4 flex-nowrap justify-center md:justify-start">
           {[
-            { href: "https://instagram.com", icon: instagramicon, alt: "Instagram" },
+            {
+              href: "https://instagram.com",
+              icon: instagramicon,
+              alt: "Instagram",
+            },
             { href: "https://twitter.com", icon: twittericon, alt: "Twitter" },
-            { href: "https://www.behance.net", icon: behanceicon, alt: "Behance" },
-            { href: "https://dribbble.com", icon: dribbbleicon, alt: "Dribbble" },
+            {
+              href: "https://www.behance.net",
+              icon: behanceicon,
+              alt: "Behance",
+            },
+            {
+              href: "https://dribbble.com",
+              icon: dribbbleicon,
+              alt: "Dribbble",
+            },
             { href: "tel:+919876543210", icon: callicon, alt: "Call" },
           ].map((item, index) => (
             <a

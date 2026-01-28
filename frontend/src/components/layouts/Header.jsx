@@ -54,20 +54,33 @@ const Header = () => {
 
   const NavLinks = ({ onLinkClick, className, linkClassName }) => (
     <nav className={className}>
-      <NavLink to="/" className={linkClassName} onClick={onLinkClick}>Home</NavLink>
-      <NavLink to="/about" className={linkClassName} onClick={onLinkClick}>About Us</NavLink>
-      <NavLink to="/services" className={linkClassName} onClick={onLinkClick}>Services</NavLink>
-      <NavLink to="/projects" className={linkClassName} onClick={onLinkClick}>Client’s Projects</NavLink>
-      <NavLink to="/products" className={linkClassName} onClick={onLinkClick}>Our Products</NavLink>
-      <NavLink to="/career" className={linkClassName} onClick={onLinkClick}>Careers</NavLink>
-      <NavLink to="/blogs" className={linkClassName} onClick={onLinkClick}>Blogs</NavLink>
+      <NavLink to="/" className={linkClassName} onClick={onLinkClick}>
+        Home
+      </NavLink>
+      <NavLink to="/about" className={linkClassName} onClick={onLinkClick}>
+        About Us
+      </NavLink>
+      <NavLink to="/services" className={linkClassName} onClick={onLinkClick}>
+        Services
+      </NavLink>
+      <NavLink to="/projects" className={linkClassName} onClick={onLinkClick}>
+        Client’s Projects
+      </NavLink>
+      <NavLink to="/products" className={linkClassName} onClick={onLinkClick}>
+        Our Products
+      </NavLink>
+      <NavLink to="/career" className={linkClassName} onClick={onLinkClick}>
+        Careers
+      </NavLink>
+      <NavLink to="/blogs" className={linkClassName} onClick={onLinkClick}>
+        Blogs
+      </NavLink>
     </nav>
   );
 
   return (
     <header className="w-full h-[4rem] bg-textDefaultClr shadow-md sticky top-0 z-50">
       <div className="w-full max-w-[1200px] mx-auto h-full px-4 sm:px-6 flex items-center justify-between">
-
         {/* LEFT SIDE (Mobile + Desktop) */}
         <div className="flex items-center gap-3">
           {/* Hamburger - mobile/tablet */}
@@ -102,32 +115,31 @@ const Header = () => {
         {/* RIGHT SIDE BUTTON */}
         <div className="flex items-center  sm:pr-2">
           <AppButton
-                  variant="primary"
-                   size="xs"
-                  rounded="full"
-                  className="sm:hidden whitespace-nowrap px-2 py-1 text-[1rem] text-white"
-                  >
-                    Start your Project
+            variant="primary"
+            size="xs"
+            rounded="full"
+            className="sm:hidden whitespace-nowrap px-2 py-1 text-[1rem] text-white"
+          >
+            Start your Project
           </AppButton>
 
-<AppButton
-  variant="primary"
-  size="sm"
-  rounded="full"
-  className="hidden sm:inline-flex lg:hidden whitespace-nowrap"
->
-  Start your Project
-</AppButton>
+          <AppButton
+            variant="primary"
+            size="sm"
+            rounded="full"
+            className="hidden sm:inline-flex lg:hidden whitespace-nowrap"
+          >
+            Start your Project
+          </AppButton>
 
-<AppButton
-  variant="primary"
-  size="md"
-  rounded="full"
-  className="hidden lg:inline-flex"
->
-  Start Your Project
-</AppButton>
-
+          <AppButton
+            variant="primary"
+            size="md"
+            rounded="full"
+            className="hidden lg:inline-flex"
+          >
+            Start Your Project
+          </AppButton>
         </div>
       </div>
 

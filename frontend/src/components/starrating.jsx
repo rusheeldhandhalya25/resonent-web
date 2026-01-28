@@ -7,9 +7,7 @@ const StarRating = ({ rating = 5 }) => {
         <FaStar
           key={star}
           className={
-            star <= rating
-              ? "text-textDefaultClr"   
-              : "text-textDisableClr"   
+            star <= rating ? "text-textDefaultClr" : "text-textDisableClr"
           }
           size={14}
         />

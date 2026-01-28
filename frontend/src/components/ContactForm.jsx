@@ -9,9 +9,7 @@ const validate = (values) => {
 
   if (!values.email) {
     errors.email = "Required";
-  } else if (
-    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-  ) {
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
     errors.email = "Invalid email";
   }
 
@@ -62,13 +60,29 @@ const ContactForm = () => {
       {() => (
         <Form className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
-            <Field name="firstName" placeholder="First Name" className={inputClass} />
-            <ErrorMessage name="firstName" component="p" className={errorClass} />
+            <Field
+              name="firstName"
+              placeholder="First Name"
+              className={inputClass}
+            />
+            <ErrorMessage
+              name="firstName"
+              component="p"
+              className={errorClass}
+            />
           </div>
 
           <div>
-            <Field name="lastName" placeholder="Last Name" className={inputClass} />
-            <ErrorMessage name="lastName" component="p" className={errorClass} />
+            <Field
+              name="lastName"
+              placeholder="Last Name"
+              className={inputClass}
+            />
+            <ErrorMessage
+              name="lastName"
+              component="p"
+              className={errorClass}
+            />
           </div>
 
           <div>
@@ -77,12 +91,20 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <Field name="phone" placeholder="Phone Number" className={inputClass} />
+            <Field
+              name="phone"
+              placeholder="Phone Number"
+              className={inputClass}
+            />
             <ErrorMessage name="phone" component="p" className={errorClass} />
           </div>
 
           <div className="lg:col-span-2">
-            <Field name="subject" placeholder="Subject" className={inputClass} />
+            <Field
+              name="subject"
+              placeholder="Subject"
+              className={inputClass}
+            />
             <ErrorMessage name="subject" component="p" className={errorClass} />
           </div>
 
