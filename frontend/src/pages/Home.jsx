@@ -13,6 +13,7 @@ import FpgaIcon from "../assets/images/icons/graph_expertise_pills.svg";
 import { useState , useEffect  } from "react";
 import ProductCard from "../components/card/ProfileCard";
 import OurProcess from "../components/ourprocess/OurProcess";
+import ProjectCard from "../components/card/ProjectCard";
 
 /* ---------------- HERO SECTION ---------------- */
 
@@ -406,11 +407,6 @@ const ExpertisePills = () => {
 };
 
 
-const FeatureProject = () => {
-  return (
-    
-  )
-}
 
 
 /* ---------------- HOME ---------------- */
@@ -425,28 +421,7 @@ const Home = () => {
       <ExpertisePills />
 
       <OurProcess />
-      <div className="flex flex-row gap-3 items-center justify-center">
-        <ProductCard
-        logo={Homefirst}
-        title="Synworks"
-        description="Synworks is a smart platform that connects machines, sensors, and software to improve industrial operations."
-      />
-      <ProductCard
-        logo={Homefirst}
-        title="Synworks"
-        description="Synworks is a smart platform that connects machines, sensors, and software to improve industrial operations."
-      /><ProductCard
-        logo={Homefirst}
-        title="Synworks"
-        description="Synworks is a smart platform that connects machines, sensors, and software to improve industrial operations."
-      />
-      <ProductCard
-        logo={Homefirst}
-        title="Synworks"
-        description="Synworks is a smart platform that connects machines, sensors, and software to improve industrial operations."
-      />
-
-      </div>
+      <ProjectCard Year={2021}/>
     </div>
   );
 };
