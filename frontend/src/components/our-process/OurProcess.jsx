@@ -1,11 +1,11 @@
-import LineSvg from "../../assets/process/process_line.svg";
-import Step01 from "../../assets/process/step_1.svg";
-import Step02 from "../../assets/process/step_2.svg";
-import Step03 from "../../assets/process/step_3.svg";
-import Step04 from "../../assets/process/step_4.svg";
-import Step05 from "../../assets/process/step_5.svg";
-import Step06 from "../../assets/process/step_6.svg";
-import Step07 from "../../assets/process/step_7.svg";
+import LineSvg from "../../assets/icons/process/process_line.svg";
+import Step01 from "../../assets/icons/process/step_1.svg";
+import Step02 from "../../assets/icons/process/step_2.svg";
+import Step03 from "../../assets/icons/process/step_3.svg";
+import Step04 from "../../assets/icons/process/step_4.svg";
+import Step05 from "../../assets/icons/process/step_5.svg";
+import Step06 from "../../assets/icons/process/step_6.svg";
+import Step07 from "../../assets/icons/process/step_7.svg";
 
 const steps = [
   { icon: Step01, label: "Concept", left: 10, top: 80 },

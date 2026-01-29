@@ -2,14 +2,14 @@ import React from "react";
 import AppButton from "../components/buttons/AppButtons";
 import Homefirst from "../assets/images/homefirst.png";
 import Homesecond from "../assets/images/homesecond.png";
-import HardwareDesign from "../assets/images/icons/hardware_design_icon.Svg";
-import FirmwareDevelopment from "../assets/images/icons/firmware_development_icon.svg";
-import CloudWeb from "../assets/images/icons/cloud_web_icon.svg";
-import MobileApp from "../assets/images/icons/mobile_app_icon.svg";
+import HardwareDesign from "../assets/icons/hardware_design_icon.svg";
+import FirmwareDevelopment from "../assets/icons/firmware_development_icon.svg";
+import CloudWeb from "../assets/icons/cloud_web_icon.svg";
+import MobileApp from "../assets/icons/mobile_app_icon.svg";
 import ExpertisePillBackground from "../assets/images/expertisepillsbackground.jpg";
-import PowerIcon from "../assets/images/icons/power_expertise_pills.svg";
-import SafetyIcon from "../assets/images/icons/code_expertise_pills.svg";
-import FpgaIcon from "../assets/images/icons/graph_expertise_pills.svg";
+import PowerIcon from "../assets/icons/power_expertise_pills.svg";
+import SafetyIcon from "../assets/icons/code_expertise_pills.svg";
+import FpgaIcon from "../assets/icons/graph_expertise_pills.svg";
 import { useState, useEffect } from "react";
 import ProfileCard from "../components/cards/ProfileCard";
 import OurProcess from "../components/our-process/OurProcess";
@@ -27,6 +27,8 @@ import TestimonialCard from "../components/cards/Testimonialscard";
 import ContactForm from "../components/ContactForm";
 import ContactImg from "../assets/images/contactus_image.png";
 import ExpertiseCard from "../components/ExpertiseCard";
+import BlogCard from "../components/cards/BlogCard";
+import Calender  from "../assets/icons/calender.svg";
 
 /* ---------------- HERO SECTION ---------------- */
 
@@ -541,17 +543,91 @@ const Testimonials = () => {
 
 /* Blog page  */
 
+
+/* Blog data */
+const blogs = [
+  {
+    id: 1,
+    title: "The Best Exercises For Fat Burn",
+    excerpt:
+      "Looking to burn fat effectively? This guide explores the best fat-burning exercises...",
+    image: compImg,
+    date: "26 July, 2025",
+  },
+  {
+    id: 2,
+    title: "Healthy And Satisfying Snacks",
+    excerpt:
+      "Are weight loss myths slowing you down? Let’s clear them up so you can focus on what actually works...",
+    image: graphImg,
+    date: "26 July, 2025",
+  },
+
+  {
+    id: 3,
+    title: "The Best Exercises For Fat Burn",
+    excerpt:
+      "Looking to burn fat effectively? This guide explores the best fat-burning exercises...",
+    image: compImg,
+    date: "26 July, 2025",
+  },
+  {
+    id: 4,
+    title: "Healthy And Satisfying Snacks",
+    excerpt:
+      "Are weight loss myths slowing you down? Let’s clear them up so you can focus on what actually works...",
+    image: graphImg,
+    date: "26 July, 2025",
+  },
+];
+
+
 const Blog = () => {
   return (
-    <div className="flex grid grid-cols-1 lg:grid-cols-[60%_40%] ">
-      <div>
-        <img src={factoryImg} alt="" />
-      </div>
+    <section className="w-full bg-backgroundClr px-4 sm:px-6 lg:px-24 py-16">
+      <h2 className="text-center font-heading font-7 text-40 text-textDefaultClr mb-12">
+        Blogs
+      </h2>
 
-      <div className="flex flex-col"></div>
-    </div>
+      <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-5">
+        {/* LEFT BIG BLOG */}
+        <div className="relative rounded-2xl overflow-hidden border border-lightOutlineClr hover:border-primaryDefaultClr transition-all duration-300 group">
+          <img
+            src={factoryImg}
+            alt="blog image"
+            className="w-full h-[30rem] object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-backgroundClr/45 via-backgroundClr/55 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 p-8 max-w-[560px] flex flex-col gap-3">
+            <div className="flex items-center gap-2 text-textDisableClr text-16">
+              <img src={Calender} className="w-4 h-4" />
+              <span className="text-[0.7rem]">{blogs[1].date}</span>
+            </div>
+
+            <h3 className="font-body font-7 text-[0.9rem] leading-tight text-textDefaultClr">
+              {blogs[1].title}
+            </h3>
+
+            <p className="font-body text-[0.8rem] text-textDisableClr  ">
+             Are weight loss myths slowing you down? Let’s clear them up so you can focus on what actually works. Misinformation about weight loss is everywhere. You’ve probably heard advice like “just eat less” or “carbs are bad”, but how much of it is actually true?
+            </p>
+          </div>
+        </div>
+
+        {/* RIGHT BLOG LIST */}
+        <div className="flex flex-col gap-3">
+          {blogs.map((blog) => (
+            <BlogCard key={blog.id} blog={blog} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
+
+
 
 /* contact us  */
 
@@ -610,7 +686,9 @@ const Home = () => {
       <FeatureProject />
       <OurProduct />
       <Testimonials />
+      <Blog />
       <ContactUs />
+      
     </div>
   );
 };
