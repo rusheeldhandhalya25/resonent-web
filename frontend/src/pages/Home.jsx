@@ -30,6 +30,8 @@ import ExpertiseCard from "../components/ExpertiseCard";
 import BlogCard from "../components/cards/BlogCard";
 import Calender  from "../assets/icons/calender.svg";
 
+import Aboutus from "../components/AboutUs.jsx";
+
 /* ---------------- HERO SECTION ---------------- */
 
 const Herosection = () => {
@@ -95,7 +97,7 @@ const Herosection = () => {
 
 const Stat = ({ title, desc }) => (
   <div className="flex flex-col leading-tight">
-    <h4 className="font-6 text-[12px] sm:text-[16px] lg:text-[20px]">
+    <h4 className="font-6 text-textDefaultClr text-[12px] sm:text-[16px] lg:text-[20px]">
       {title}
     </h4>
     <p className="text-textDisableClr text-[9px] sm:text-[12px] lg:text-[16px]">
@@ -104,7 +106,7 @@ const Stat = ({ title, desc }) => (
   </div>
 );
 
-const ABC = () => {
+export const ABC = () => {
   const style = {
     backgroundColor: "#002556",
     backgroundImage: `
@@ -154,59 +156,6 @@ const ABC = () => {
   );
 };
 
-/* ---------------- ABOUT US ---------------- */
-
-const Aboutus = () => {
-  return (
-    <section className="bg-backgroundClr py-14 lg:py-20">
-      <div
-        className="
-          max-w-[1200px]
-          mx-auto
-          px-4
-          grid
-          grid-cols-1
-          lg:grid-cols-[40%_60%]
-          gap-10
-          items-center
-        "
-      >
-        {/* IMAGE */}
-        <div className="flex justify-center lg:justify-start">
-          <img
-            src={Homesecond}
-            alt="group"
-            className="w-[700px] h-[450px] rounded-2xl"
-          />
-        </div>
-
-        {/* TEXT */}
-        <div className="text-center lg:text-left">
-          <h3 className="font-heading text-32 sm:text-36 lg:text-40 font-6">
-            Who we are
-          </h3>
-
-          <p className="mt-4 text-14 sm:text-16 font-body text-textDisableClr leading-relaxed">
-            Resonent Technolabs is a complete IoT innovation partner, seamlessly
-            integrating electronic design, embedded firmware development, and
-            cloud engineering within a single ecosystem. We specialize in
-            turning conceptual ideas into robust, production-ready IoT solutions
-            that meet industry standards and compliance requirements. From
-            prototype to mass manufacturing, our multidisciplinary team ensures
-            every product is intelligent, scalable, and reliable for real-world
-            deployment.
-          </p>
-
-          <div className="mt-8 flex justify-center lg:justify-start">
-            <AppButton variant="primary" size="sm" rounded="full">
-              About us
-            </AppButton>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 /* Our expertise */
 
@@ -678,7 +627,16 @@ const Home = () => {
     <div className="bg-backgroundClr text-textDefaultClr min-h-full flex flex-col gap-10  ">
       <Herosection />
       <ABC />
-      <Aboutus />
+      <Aboutus image={Homesecond}
+                title="Who we are"
+                descriptions={[
+                  "Resonent Technolabs is a complete IoT innovation partner, seamlessly integrating electronic design, embedded firmware development, and cloud engineering within a single ecosystem. We specialize in turning conceptual ideas into robust, production-ready IoT solutions that meet industry standards and compliance requirements. From prototype to mass manufacturing, our multidisciplinary team ensures every product is intelligent, scalable, and reliable for real-world deployment."
+                ]}
+                buttonText="About us"
+                buttonLink="/about"
+                showButton={true}/>
+
+
       <Ourexpertise />
       <ExpertisePills />
 
