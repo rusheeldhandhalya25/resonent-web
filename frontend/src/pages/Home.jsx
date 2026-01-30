@@ -11,7 +11,7 @@ import PowerIcon from "../assets/icons/power_expertise_pills.svg";
 import SafetyIcon from "../assets/icons/code_expertise_pills.svg";
 import FpgaIcon from "../assets/icons/graph_expertise_pills.svg";
 import { useState, useEffect } from "react";
-import ProfileCard from "../components/cards/ProfileCard";
+import ProfileCard from "../components/cards/ProductCard.jsx";
 import OurProcess from "../components/our-process/OurProcess";
 import ProjectCard from "../components/cards/ProjectCard";
 import factoryImg from "../assets/images/project_img_1.png";
