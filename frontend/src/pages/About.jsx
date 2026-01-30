@@ -154,11 +154,10 @@ const OurStory = () => {
 
 // ------ecosystem --------
 
-
 const Ecosystem = () => {
   return (
-    <section className="mt-9">
-      <h2 className="text-40 text-textDefaultClr font-heading font-6 text-center mb-6">
+    <section className="mt-12">
+      <h2 className="text-32 sm:text-36 lg:text-40 text-textDefaultClr font-heading font-6 text-center mb-8">
         Ecosystem
       </h2>
 
@@ -168,35 +167,49 @@ const Ecosystem = () => {
           grid-cols-1
           sm:grid-cols-2
           lg:grid-cols-3
-          gap-5
-          mx-5
-          lg:mx-20
+          gap-6
+          px-4
+          sm:px-6
+          lg:px-20
         "
       >
-        <AboutProductCard logo={PeopleTech}
-                          title="peopleTech"
-                          description="PeopleTech is a smart workforce management solution that tracks attendance, improves communication, and boosts productivity. It helps companies manage employees easily with real-time data, secure access, and simple automation tools."/>
-        <AboutProductCard logo={SmartERP}
-                          title="smartERP"
-                          description="SmartERP is an intelligent business management system that connects finance, sales, inventory, and operations. It automates tasks, improves decision-making, and gives real-time data for efficient and smooth business growth."/>
-        <AboutProductCard logo={WaariWater}
-                          title="Waariwater"
-                          description="Waari Water is a smart water management system that monitors usage, detects leaks, and ensures clean supply. It helps save water, reduce costs, and protect resources using real-time data everywhere."/>
-        </div>
+        <AboutProductCard
+          logo={PeopleTech}
+          title="PeopleTech"
+          description="PeopleTech is a smart workforce management solution that tracks attendance, improves communication, and boosts productivity. It helps companies manage employees easily with real-time data, secure access, and simple automation tools."
+        />
 
-        <div className="flex grid grid-cols-1 lg:grid-cols-2 mx-20 gap-5 mt-5">
-          <AboutProductCard logo={PramitiRecycling}
-                          title="PramitiRecycling"
-                          description="Pramiti Recycling is a smart waste management solution that tracks materials, increases recycling efficiency, and reduces environmental impact. It supports safe disposal and promotes sustainability through real-time monitoring and automated processes."/>
+        <AboutProductCard
+          logo={SmartERP}
+          title="SmartERP"
+          description="SmartERP is an intelligent business management system that connects finance, sales, inventory, and operations. It automates tasks, improves decision-making, and gives real-time data for efficient and smooth business growth."
+        />
 
-          <AboutProductCard logo={Nirvah}
-                          title="Nirvah"
-                          description="Nirvaah is a smart logistics and delivery management solution that tracks shipments in real time, reduces delays, automates workflows, and improves supply chain efficiency for faster, reliable business operations."/>
+        <AboutProductCard
+          logo={WaariWater}
+          title="Waari Water"
+          description="Waari Water is a smart water management system that monitors usage, detects leaks, and ensures clean supply. It helps save water, reduce costs, and protect resources using real-time data everywhere."
+        />
+
+        {/* LAST ROW (2 cards centered automatically) */}
+        <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <AboutProductCard
+            logo={PramitiRecycling}
+            title="Pramiti Recycling"
+            description="Pramiti Recycling is a smart waste management solution that tracks materials, increases recycling efficiency, and reduces environmental impact. It supports safe disposal and promotes sustainability through real-time monitoring and automated processes."
+          />
+
+          <AboutProductCard
+            logo={Nirvah}
+            title="Nirvah"
+            description="Nirvaah is a smart logistics and delivery management solution that tracks shipments in real time, reduces delays, automates workflows, and improves supply chain efficiency for faster, reliable business operations."
+          />
         </div>
+      </div>
     </section>
   );
 };
- 
+
 
 // -------- about CEO card --------
 
@@ -213,71 +226,132 @@ const FounderCard = () => {
       )
     `,
   };
-  return(
-    <div className="w-full flex justify-center px-5 lg:px-20 mt-10">
-        <div style={style}  className="relative w-full max-w-7xl rounded-2xl p-6 lg:p-10 overflow-hidden">
-              <div className="grid grid-cols-1 md:grid-cols-[20%_80%] gap-4 ">
-                    {/* left */}
 
-                    <div className="flex justify-center md:justify-start">
-                          <img src={CEOImage} alt="founder iamge"className="rounded-xl w-[230px] h-[230px] object-cover" />
-                    </div>
+  return (
+    <div className="w-full flex justify-center px-4 sm:px-6 lg:px-20 mt-12">
+      <div
+        style={style}
+        className="relative w-full max-w-7xl rounded-2xl p-6 sm:p-8 lg:p-10 overflow-hidden"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-6 items-start">
+          
+          {/* LEFT IMAGE */}
+          <div className="flex justify-center md:justify-start">
+            <img
+              src={CEOImage}
+              alt="Founder"
+              className="
+                rounded-xl
+                w-[180px]
+                h-[180px]
+                sm:w-[200px]
+                sm:h-[200px]
+                lg:w-[230px]
+                lg:h-[230px]
+                object-cover
+              "
+            />
+          </div>
 
-                    <div className="text-textDefaultClr md:mt-3">
-                        <p className="font-body font-4 text-[1.5rem] lg:text-base leading-relaxed mb-4 text-justify mx-4">
-                          Rushabh Shah guides Resonent with deep technical insight, ensuring innovation, reliability, and smooth execution across every IoT project while supporting clients worldwide with complete product design, engineering excellence, and long-term technology vision.
-                        </p>
+          {/* RIGHT CONTENT */}
+          <div className="text-textDefaultClr flex flex-col justify-between">
+            <p className="
+              font-body
+              font-4
+              text-sm
+              sm:text-base
+              lg:text-lg
+              leading-relaxed
+              mb-6
+              text-justify
+            ">
+              Rushabh Shah guides Resonent with deep technical insight, ensuring innovation, reliability, and smooth execution across every IoT project while supporting clients worldwide with complete product design, engineering excellence, and long-term technology vision.
+            </p>
 
-                        <h4 className="font-heading text-24 font-6 text-start mx-4 mt-20">
-                            - Rushabh Shah
-                        </h4>
-                        <p className="text-20 text-textDisableClr mt-1 mx-4 ">
-                            Founder & Managing Director
-                        </p>
-                    </div>
-              </div>
-
-              <img src={PatternImage} alt="" className="absolute bottom-0 right-0 w-[250px] h-[250px] opacity-100  pointer-events-none"/>
+            <div>
+              <h4 className="font-heading text-lg sm:text-xl font-6">
+                – Rushabh Shah
+              </h4>
+              <p className="text-sm sm:text-base text-textDisableClr mt-1">
+                Founder & Managing Director
+              </p>
+            </div>
+          </div>
         </div>
+
+        {/* BACKGROUND PATTERN */}
+        <img
+          src={PatternImage}
+          alt=""
+          className="
+            absolute
+            bottom-0
+            right-0
+            w-[160px]
+            h-[160px]
+            sm:w-[200px]
+            sm:h-[200px]
+            lg:w-[250px]
+            lg:h-[250px]
+            opacity-30
+            sm:opacity-50
+            lg:opacity-100
+            pointer-events-none
+          "
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
+
+
 
 
 
 // -------------our Partner --------------------------
 
-const logos = [Skoda ,Swiggy, Kia, Nokia ,Intel ,Mahindra ,Oppo ,Fila]
+const logos = [Skoda, Swiggy, Kia, Nokia, Intel, Mahindra, Oppo, Fila];
 
 const OurPartner = () => {
   return (
-    <div className="w-full py-10 px-5 lg:px-20">
+    <section className="w-full py-12 px-4 sm:px-6 lg:px-20">
       
       {/* Heading */}
-      <h2 className="text-40 font-heading font-6 text-textDefaultClr text-center mb-8">
+      <h2 className="text-28 sm:text-32 lg:text-40 font-heading font-6 text-textDefaultClr text-center mb-10">
         Our Partners
       </h2>
 
-      {/* Logos row */}
-      <div className="flex flex-wrap justify-between items-center gap-8">
+      {/* Logos Grid */}
+      <div
+        className="
+          grid
+          grid-cols-2
+          sm:grid-cols-3
+          md:grid-cols-4
+          lg:grid-cols-8
+          gap-y-10
+          gap-x-6
+          items-center
+          justify-items-center
+        "
+      >
         {logos.map((logo, index) => (
           <div
             key={index}
-            className="
-              group
-              flex
-              items-center
-              justify-center
-            "
+            className="group flex items-center justify-center"
           >
             <img
               src={logo}
               alt="partner logo"
               className="
-                h-20
+                h-10
+                sm:h-12
+                md:h-14
+                lg:h-16
                 opacity-60
                 transition
                 duration-300
+                ease-in-out
                 group-hover:opacity-100
                 group-hover:brightness-0
                 group-hover:invert
@@ -286,9 +360,11 @@ const OurPartner = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
+
+
 
 
 

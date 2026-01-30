@@ -1,37 +1,44 @@
 const ExpertiseCard = ({ icon, title, description }) => {
   const style = {
-    backgroundColor: "#002556",
     backgroundImage: `
-    linear-gradient(
-      240.05deg,
-      rgba(4, 47, 105, 0.35) 0.05%,
-      rgba(53, 144, 242, 0.35) 21.74%,
-      rgba(53, 144, 242, 0.35) 73.07%,
-      rgba(4, 47, 105, 0.35) 101.64%
-    )
-  `,
+      linear-gradient(
+        240.05deg,
+        rgba(4,47,105,0.35) 0%,
+        rgba(53,144,242,0.35) 50%,
+        rgba(4,47,105,0.35) 100%
+      )
+    `,
   };
+
   return (
     <div
       style={style}
       className="
-        group
-        rounded-2xl p-6
+        w-full
+        rounded-2xl
+        px-5 py-6
+        sm:px-6 sm:py-7
+        lg:px-7 lg:py-8
         flex flex-col items-center text-center
-        transition-all duration-300
-         hover:bg-primaryDefaultClr
+        min-h-[210px]
       "
     >
-      {/* Icon */}
-      <img src={icon} alt={`${title} icon`} className="w-8 h-8 mb-4" />
+      <img
+        src={icon}
+        alt={title}
+        className="
+          w-9 h-9
+          sm:w-10 sm:h-10
+          lg:w-11 lg:h-11
+          mb-4
+        "
+      />
 
-      {/* Title */}
-      <p className="font-body font-6 text-lg text-textDefaultClr group-hover:text-white">
+      <p className="text-white font-body font-6 text-[15px] sm:text-[16px] lg:text-[18px]">
         {title}
       </p>
 
-      {/* Description */}
-      <p className="font-body font-2 text-sm text-textDisableClr mt-2 group-hover:text-white">
+      <p className="mt-2 text-[#c7d9ee] font-body text-[13px] sm:text-[14px] leading-relaxed">
         {description}
       </p>
     </div>
