@@ -14,11 +14,11 @@ const sizeVariants = {
 };
 
 const variantStyles = {
-  primary: "bg-primaryDefaultClr text-white",
+  primary: "bg-primaryDefaultClr text-white hover:bg-primaryDefaultClr/50",
   outline: "border border-primaryDefaultClr text-primaryDefaultClr",
   light: "bg-textDefaultClr text-primaryDefaultClr",
   secondary:
-    "bg-textDisableClr text-textDefaultClr hover:bg-primaryDisableClr/80",
+    "bg-textDisableClr/40 text-textDefaultClr hover:bg-primaryDisableClr/20",
 };
 
 const radiusVariants = {

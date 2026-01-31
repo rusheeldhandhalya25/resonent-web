@@ -1,0 +1,201 @@
+import React, { useState } from "react";
+import ExpertiseCard from "../../components/ExpertiseCard";
+import ExpertisePillBackground from "../../assets/images/expertisepillsbackground.jpg";
+import factoryImg from "../../assets/images/project_img_1.png";
+import compImg from "../../assets/images/project_img_2.png";
+import graphImg from "../../assets/images/project_img_4.png";
+import labImg from "../../assets/images/project_img_3.png";
+import Mediverse from "../../assets/images/mediverse_1.png";
+import Syncworks from "../../assets/images/syncworks_1.png";
+import Storeedge from "../../assets/images/storeedge_1.png";
+import user1Img from "../../assets/images/user_1.png";
+import user2Img from "../../assets/images/user_2.png";
+import ContactImg from "../../assets/images/contactus_image.png";
+
+import HardwareDesign from "../../assets/icons/hardware_design_icon.svg";
+import FirmwareDevelopment from "../../assets/icons/firmware_development_icon.svg";
+import CloudWeb from "../../assets/icons/cloud_web_icon.svg";
+import MobileApp from "../../assets/icons/mobile_app_icon.svg";
+import PowerIcon from "../../assets/icons/power_expertise_pills.svg";
+import SafetyIcon from "../../assets/icons/code_expertise_pills.svg";
+import FpgaIcon from "../../assets/icons/graph_expertise_pills.svg";
+
+
+
+const OurExpertise = () => {
+  const expertiseData = [
+    {
+      icon: HardwareDesign,
+      title: "Hardware Design",
+      description: "PCB, schematic, MCU/SoC/FPGA, ATEX-safe circuits",
+    },
+    {
+      icon: FirmwareDevelopment,
+      title: "Firmware Development",
+      description: "RTOS, OTA, low-power, communication stacks",
+    },
+    {
+      icon: CloudWeb,
+      title: "Cloud & Web",
+      description: "MQTT, REST APIs, multi-tenant dashboards, analytics",
+    },
+    {
+      icon: MobileApp,
+      title: "Mobile Apps",
+      description: "Flutter & native apps with BLE/NFC integrations",
+    },
+  ];
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  return (
+    <section className="w-full px-4 sm:px-6 lg:px-20 pt-16 pb-6">
+      {/* Heading */}
+      <div className="max-w-4xl mx-auto text-center space-y-4">
+        <h1 className="font-heading font-6 text-textDefaultClr text-3xl sm:text-4xl lg:text-[45px]">
+          Our Expertise
+        </h1>
+
+        <p className="font-body font-1 text-textDisableClr text-sm sm:text-base leading-relaxed">
+          Building powerful embedded solutions with smart hardware, intelligent
+          software, and cloud integration.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+        {expertiseData.map((item, index) => {
+          const isActive = activeIndex === index;
+
+          return (
+            <div
+              key={item.title}
+              onMouseEnter={() => setActiveIndex(index)}
+              className={`
+                cursor-pointer transition-all duration-300
+                ${isActive ? "bg-primaryDefaultClr" : "bg-cardGradient"}
+                rounded-2xl
+              `}
+            >
+              <ExpertiseCard
+                icon={item.icon}
+                title={item.title}
+                description={item.description}
+                className={isActive ? "text-textDefaultClr" : ""}
+              />
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Pills section */}
+      <ExpertisePills activeIndex={activeIndex} />
+    </section>
+  );
+};
+
+
+/* expertise pills */
+const ExpertisePills = ({ activeIndex = 0 }) => {
+  const expertiseData = [
+    {
+      title: "Hardware Design",
+      subtitle: "We design smart and reliable hardware for real-world use.",
+      pills: [
+        { icon: PowerIcon, text: "Power Electronics & Control Systems" },
+        { icon: SafetyIcon, text: "Intrinsic Safety (ATEX, IEC 60079)" },
+        { icon: FpgaIcon, text: "FPGA & AI Edge Devices" },
+      ],
+    },
+    {
+      title: "Firmware Development",
+      subtitle: "Building reliable firmware for smarter connected devices.",
+      pills: [
+        { icon: FirmwareDevelopment, text: "RTOS & embedded OS" },
+        { icon: SafetyIcon, text: "OTA updates & device lifecycle management" },
+        { icon: FpgaIcon, text: "Edge AI and sensor integration" },
+      ],
+    },
+    {
+      title: "Cloud & Web",
+      subtitle: "Delivering fast, secure, and reliable web experiences.",
+      pills: [
+        { icon: CloudWeb, text: "MQTT and REST APIs" },
+        { icon: SafetyIcon, text: "Multi-tenant dashboards" },
+        { icon: FpgaIcon, text: "Predictive analytics & data visualization" },
+      ],
+    },
+    {
+      title: "Mobile Apps",
+      subtitle: "Crafting intuitive mobile experience for everyday users.",
+      pills: [
+        { icon: MobileApp, text: "Flutter, Android & iOS apps" },
+        { icon: SafetyIcon, text: "BLE/NFC based device pairing" },
+        { icon: FpgaIcon, text: "Real-time control and data insights" },
+      ],
+    },
+  ];
+
+  const activeData = expertiseData[activeIndex] || expertiseData[0];
+
+  const backgroundStyle = {
+    backgroundImage: `
+      linear-gradient(
+        250.91deg,
+        #002556ED -7.76%,
+        #1B86F8ED 16.68%,
+        #1B86F8ED 74.53%,
+        #002556ED 106.73%
+      ),
+      linear-gradient(0deg, #00000033, #00000033),
+      url(${ExpertisePillBackground})
+    `,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+
+  return (
+    <div className=" mt-28">
+      <div
+        style={backgroundStyle}
+        className="
+          w-full max-w-[1200px] mx-auto
+          shadow-expertisePill
+          rounded-3xl sm:rounded-full
+          px-4 sm:px-8 md:px-16 lg:px-20
+          py-8 sm:py-12
+          flex flex-col items-center justify-center
+          text-textDefaultClr
+        "
+      >
+        {/* TITLE */}
+        <div className="text-xl sm:text-2xl lg:text-3xl font-heading font-5 text-center mb-1.5">
+          {activeData.title}
+        </div>
+
+        {/* SUBTITLE */}
+        <div className="text-xs sm:text-sm lg:text-base font-body font-1 text-center text-textDisableClr mb-6">
+          {activeData.subtitle}
+        </div>
+
+        {/* PILLS */}
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+          {activeData.pills.map((pill, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-2 px-3 sm:px-5 py-2 rounded-full bg-[#EDF6FF33]"
+            >
+              <img src={pill.icon} alt="" className="w-4 h-4" />
+              <span className="text-[8px] sm:text-[13px] font-body">
+                {pill.text}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default  OurExpertise;

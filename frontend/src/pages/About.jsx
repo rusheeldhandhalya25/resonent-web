@@ -1,8 +1,8 @@
 import React from "react";
 import Homesecond from "../assets/images/homesecond.png";
 import ExpertiseCard from "../components/ExpertiseCard.jsx";
-import Aboutus from "../components/AboutUs.jsx";
-import { ABC } from "./Home";
+import Aboutus from "../components/common/AboutUs.jsx";
+
 import HardwareDesign from "../assets/icons/hardware_design_icon.svg";
 import FirmwareDevelopment from "../assets/icons/firmware_development_icon.svg";
 import CloudWeb from "../assets/icons/cloud_web_icon.svg";
@@ -374,7 +374,6 @@ const About = () => {
   return (
     <div className="bg-backgroundClr flex flex-col gap-10">
       <First />
-      <ABC />
       <Aboutus image={Homesecond}
               title="Who we are"
               descriptions={[

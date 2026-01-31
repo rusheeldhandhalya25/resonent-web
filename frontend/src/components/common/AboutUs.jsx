@@ -1,19 +1,19 @@
 import { useNavigate } from "react-router-dom";
-import AppButton from "./buttons/AppButtons";
+import AppButton from "../buttons/AppButtons";
 
 const Aboutus = ({
   image,
   title,
   descriptions = [],
   buttonText = "About us",
-  buttonLink = "/about",
+  buttonLink = "/About",
   showButton = true,
 }) => {
   const navigate = useNavigate();
 
   return (
     <section className="bg-backgroundClr py-10 sm:py-14 lg:py-20">
-  <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-[40%_60%] gap-8 lg:gap-10 items-center">
+  <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-[40%_60%] gap-8 lg:gap-12 items-center">
     
     {/* Image */}
     <div className="flex justify-center lg:justify-start">
@@ -22,7 +22,7 @@ const Aboutus = ({
         alt={title}
         className="
           w-full
-          max-w-[320px] sm:max-w-[420px] md:max-w-[520px] lg:max-w-[700px]
+          max-w-[350px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[920px]
           h-auto
           rounded-2xl
           object-cover
