@@ -1,5 +1,5 @@
 import AppButton from "../../components/buttons/AppButtons";
-import Homefirst from "../../assets/images/homefirst.png";
+import imageAssets from "../../assets";
 
 const handleScrollToProjects = () => {
   const section = document.getElementById("our-project");
@@ -61,7 +61,7 @@ const HeroSection = () => {
         {/* IMAGE */}
         <div className="flex justify-center lg:justify-end">
           <div className="w-[240px] sm:w-[300px] lg:w-[400px] p-3 bg-cardClr border border-lightOutlineClr rounded-[32px]">
-            <img src={Homefirst} alt="Connected Product" className="w-full " />
+            <img src={imageAssets.Homefirst} alt="Connected Product" className="w-full " />
           </div>
         </div>
       </div>

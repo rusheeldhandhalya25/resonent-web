@@ -1,9 +1,4 @@
-import logo from "../../assets/images/footer_logo.png";
-import instagramicon from "../../assets/images/instagram_icon.svg";
-import twittericon from "../../assets/images/twitter_icon.svg";
-import behanceicon from "../../assets/images/behance_icon.svg";
-import dribbbleicon from "../../assets/images/dribble_icon.svg";
-import callicon from "../../assets/images/call_icon.svg";
+import imageAssets from "../../assets";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -29,7 +24,7 @@ const Footer = () => {
       {/* LOGO */}
       <div className="flex justify-center md:justify-start">
         <img
-          src={logo}
+          src={imageAssets.logo}
           alt="resonent logo"
           className="
             w-[140px]
@@ -66,21 +61,21 @@ const Footer = () => {
           {[
             {
               href: "https://instagram.com",
-              icon: instagramicon,
+              icon: imageAssets.instagramicon,
               alt: "Instagram",
             },
-            { href: "https://twitter.com", icon: twittericon, alt: "Twitter" },
+            { href: "https://twitter.com", icon: imageAssets.twittericon, alt: "Twitter" },
             {
               href: "https://www.behance.net",
-              icon: behanceicon,
+              icon: imageAssets.behanceicon,
               alt: "Behance",
             },
             {
               href: "https://dribbble.com",
-              icon: dribbbleicon,
+              icon: imageAssets.dribbbleicon,
               alt: "Dribbble",
             },
-            { href: "tel:+919876543210", icon: callicon, alt: "Call" },
+            { href: "tel:+919876543210", icon: imageAssets.callicon, alt: "Call" },
           ].map((item, index) => (
             <a
               key={index}

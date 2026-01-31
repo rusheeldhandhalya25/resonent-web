@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import calendarIcon from "../../assets/icons/calender.svg"; // aa tu je svg hoy e path mukje
+import imageAssets from "../../assets/index.js";
 
 const BlogCard = ({ blog }) => {
   return (
@@ -40,7 +40,7 @@ const BlogCard = ({ blog }) => {
 
         {/* Date */}
         <div className="flex items-center gap-2 mt-2">
-          <img src={calendarIcon} alt="date" className="w-4 h-4" />
+          <img src={imageAssets.calendarIcon} alt="date" className="w-4 h-4" />
           <span className="font-body text-[0.7rem] text-textDisableClr">
             {blog.date}
           </span>

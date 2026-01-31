@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/images/header_logo.svg";
+import imageAssets from "../../assets";
 import AppButton from "../buttons/AppButtons";
 
 const Header = () => {
@@ -94,7 +94,7 @@ const Header = () => {
           {/* Logo */}
           <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
             <img
-              src={logo}
+              src={imageAssets.logo_header}
               alt="Resonent"
               className="h-[1.9rem]
                         sm:h-[2.1rem]
@@ -145,7 +145,7 @@ const Header = () => {
 
       {/* MOBILE MENU */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-[5rem] left-0 w-full bg-textDefaultClr shadow-lg">
+        <div className="lg:hidden absolute top-[4rem] left-0 w-full bg-textDefaultClr shadow-lg">
           <NavLinks
             className="flex flex-col items-center pt-2 pb-4"
             linkClassName={mobileNavClass}

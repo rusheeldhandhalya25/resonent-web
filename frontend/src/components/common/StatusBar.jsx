@@ -1,4 +1,4 @@
-import Statebar_Divider from "../../assets/svg/Statebar_Divider.svg";
+import imageAssets from "../../assets";
 
 const StateData = [
   { value: "15+", label: "Year Of Experience" },
@@ -53,7 +53,7 @@ const StatusBar = () => {
             {/* DIVIDER */}
             {index !== StateData.length - 1 && (
               <img
-                src={Statebar_Divider}
+                src={imageAssets.Statebar_Divider}
                 alt="divider"
                 /* લાઈન મોટી કરવા માટે h-8 થી h-12 સુધી વધાર્યું */
                 className="h-[30px] sm:h-[45px] md:h-[55px] opacity-40 ml-1 sm:ml-2"

@@ -1,6 +1,5 @@
 import TestimonialCard from "../../components/cards/Testimonialscard";
-import user1Img from "../../assets/images/user_1.png";
-import user2Img from "../../assets/images/user_2.png";
+import imageAssets from "../../assets";
 
 const Testimonials = () => {
   return (
@@ -27,7 +26,7 @@ const Testimonials = () => {
             title="The Marketing Strategy They Created For My Startup Boosted Our Online Visibility And Brought In More Qualified Leads Than I Expected."
             name="Noah Davis"
             role="Software Engineer"
-            image={user1Img}
+            image={imageAssets.user1Img}
           />
 
           <TestimonialCard
@@ -35,7 +34,7 @@ const Testimonials = () => {
             title="The Branding Service Gave My Clothing Line A Fresh And Modern Look, Making It More Appealing To Customers."
             name="Ethan Hernandez"
             role="Financial Analyst"
-            image={user2Img}
+            image={imageAssets.user2Img}
           />
 
           <TestimonialCard
@@ -43,7 +42,7 @@ const Testimonials = () => {
             title="The Team’s Development Skills Helped Create A Campaign Dashboard That Streamlined My Work And Boosted Results."
             name="Lucas Green"
             role="Digital Marketer"
-            image={user1Img}
+            image={imageAssets.user1Img}
           />
 
           <TestimonialCard
@@ -51,7 +50,7 @@ const Testimonials = () => {
             title="Their Website Design Exceeded My Expectations. It’s Clean, Professional, And Perfectly Tailored To My Services."
             name="Mia Moore"
             role="Event Planner"
-            image={user2Img}
+            image={imageAssets.user2Img}
           />
         </div>
       </div>

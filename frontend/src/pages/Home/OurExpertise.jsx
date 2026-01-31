@@ -1,46 +1,26 @@
 import React, { useState } from "react";
 import ExpertiseCard from "../../components/ExpertiseCard";
-import ExpertisePillBackground from "../../assets/images/expertisepillsbackground.jpg";
-import factoryImg from "../../assets/images/project_img_1.png";
-import compImg from "../../assets/images/project_img_2.png";
-import graphImg from "../../assets/images/project_img_4.png";
-import labImg from "../../assets/images/project_img_3.png";
-import Mediverse from "../../assets/images/mediverse_1.png";
-import Syncworks from "../../assets/images/syncworks_1.png";
-import Storeedge from "../../assets/images/storeedge_1.png";
-import user1Img from "../../assets/images/user_1.png";
-import user2Img from "../../assets/images/user_2.png";
-import ContactImg from "../../assets/images/contactus_image.png";
-
-import HardwareDesign from "../../assets/icons/hardware_design_icon.svg";
-import FirmwareDevelopment from "../../assets/icons/firmware_development_icon.svg";
-import CloudWeb from "../../assets/icons/cloud_web_icon.svg";
-import MobileApp from "../../assets/icons/mobile_app_icon.svg";
-import PowerIcon from "../../assets/icons/power_expertise_pills.svg";
-import SafetyIcon from "../../assets/icons/code_expertise_pills.svg";
-import FpgaIcon from "../../assets/icons/graph_expertise_pills.svg";
-
-
+import imageAssets from "../../assets/index.js";
 
 const OurExpertise = () => {
   const expertiseData = [
     {
-      icon: HardwareDesign,
+      icon: imageAssets.HardwareDesign,
       title: "Hardware Design",
       description: "PCB, schematic, MCU/SoC/FPGA, ATEX-safe circuits",
     },
     {
-      icon: FirmwareDevelopment,
+      icon: imageAssets.FirmwareDevelopment,
       title: "Firmware Development",
       description: "RTOS, OTA, low-power, communication stacks",
     },
     {
-      icon: CloudWeb,
+      icon: imageAssets.CloudWeb,
       title: "Cloud & Web",
       description: "MQTT, REST APIs, multi-tenant dashboards, analytics",
     },
     {
-      icon: MobileApp,
+      icon: imageAssets.MobileApp,
       title: "Mobile Apps",
       description: "Flutter & native apps with BLE/NFC integrations",
     },
@@ -102,36 +82,36 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
       title: "Hardware Design",
       subtitle: "We design smart and reliable hardware for real-world use.",
       pills: [
-        { icon: PowerIcon, text: "Power Electronics & Control Systems" },
-        { icon: SafetyIcon, text: "Intrinsic Safety (ATEX, IEC 60079)" },
-        { icon: FpgaIcon, text: "FPGA & AI Edge Devices" },
+        { icon: imageAssets.PowerIcon, text: "Power Electronics & Control Systems" },
+        { icon: imageAssets.SafetyIcon, text: "Intrinsic Safety (ATEX, IEC 60079)" },
+        { icon: imageAssets.FpgaIcon, text: "FPGA & AI Edge Devices" },
       ],
     },
     {
       title: "Firmware Development",
       subtitle: "Building reliable firmware for smarter connected devices.",
       pills: [
-        { icon: FirmwareDevelopment, text: "RTOS & embedded OS" },
-        { icon: SafetyIcon, text: "OTA updates & device lifecycle management" },
-        { icon: FpgaIcon, text: "Edge AI and sensor integration" },
+        { icon: imageAssets.FirmwareDevelopment, text: "RTOS & embedded OS" },
+        { icon: imageAssets.SafetyIcon, text: "OTA updates & device lifecycle management" },
+        { icon: imageAssets.FpgaIcon, text: "Edge AI and sensor integration" },
       ],
     },
     {
       title: "Cloud & Web",
       subtitle: "Delivering fast, secure, and reliable web experiences.",
       pills: [
-        { icon: CloudWeb, text: "MQTT and REST APIs" },
-        { icon: SafetyIcon, text: "Multi-tenant dashboards" },
-        { icon: FpgaIcon, text: "Predictive analytics & data visualization" },
+        { icon: imageAssets.CloudWeb, text: "MQTT and REST APIs" },
+        { icon: imageAssets.SafetyIcon, text: "Multi-tenant dashboards" },
+        { icon: imageAssets.FpgaIcon, text: "Predictive analytics & data visualization" },
       ],
     },
     {
       title: "Mobile Apps",
       subtitle: "Crafting intuitive mobile experience for everyday users.",
       pills: [
-        { icon: MobileApp, text: "Flutter, Android & iOS apps" },
-        { icon: SafetyIcon, text: "BLE/NFC based device pairing" },
-        { icon: FpgaIcon, text: "Real-time control and data insights" },
+        { icon: imageAssets.MobileApp, text: "Flutter, Android & iOS apps" },
+        { icon: imageAssets.SafetyIcon, text: "BLE/NFC based device pairing" },
+        { icon: imageAssets.FpgaIcon, text: "Real-time control and data insights" },
       ],
     },
   ];
@@ -148,7 +128,7 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
         #002556ED 106.73%
       ),
       linear-gradient(0deg, #00000033, #00000033),
-      url(${ExpertisePillBackground})
+      url(${imageAssets.ExpertisePillBackground})
     `,
     backgroundSize: "cover",
     backgroundPosition: "center",

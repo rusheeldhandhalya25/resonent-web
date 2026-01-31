@@ -1,29 +1,10 @@
 import React from "react";
-import Homesecond from "../assets/images/homesecond.png";
 import ExpertiseCard from "../components/ExpertiseCard.jsx";
 import Aboutus from "../components/common/AboutUs.jsx";
-
-import HardwareDesign from "../assets/icons/hardware_design_icon.svg";
-import FirmwareDevelopment from "../assets/icons/firmware_development_icon.svg";
-import CloudWeb from "../assets/icons/cloud_web_icon.svg";
-import MobileApp from "../assets/icons/mobile_app_icon.svg";
 import TimelineItem from "../components/TimelineItem.jsx";
 import AboutProductCard from "../components/cards/AboutProductCard.jsx";
-import PeopleTech from "../assets/images/peopletech_ecosystem.png"
-import SmartERP from "../assets/images/smarterp.png"
-import WaariWater from "../assets/images/waariwater.png"
-import PramitiRecycling from "../assets/images/pramitirecycling.png"
-import Nirvah from "../assets/images/nirvah.png";
-import CEOImage from "../assets/images/ceoimg.png";
-import PatternImage from "../assets/images/pattern.png"
-import Skoda from "../assets/svg/partners/skoda.svg";
-import Kia from "../assets/svg/partners/kia.svg";
-import Swiggy from "../assets/svg/partners/swiggy.svg"
-import Nokia from "../assets/svg/partners/nokia.svg";
-import Intel from "../assets/svg/partners/intel.svg";
-import Mahindra from "../assets/svg/partners/mahindra.svg";
-import Oppo from "../assets/svg/partners/oppo.svg";
-import Fila from "../assets/svg/partners/fila.svg";
+import imageAssets from "../assets/index.js";
+
 
 
 
@@ -174,19 +155,19 @@ const Ecosystem = () => {
         "
       >
         <AboutProductCard
-          logo={PeopleTech}
+          logo={imageAssets.PeopleTech}
           title="PeopleTech"
           description="PeopleTech is a smart workforce management solution that tracks attendance, improves communication, and boosts productivity. It helps companies manage employees easily with real-time data, secure access, and simple automation tools."
         />
 
         <AboutProductCard
-          logo={SmartERP}
+          logo={imageAssets.SmartERP}
           title="SmartERP"
           description="SmartERP is an intelligent business management system that connects finance, sales, inventory, and operations. It automates tasks, improves decision-making, and gives real-time data for efficient and smooth business growth."
         />
 
         <AboutProductCard
-          logo={WaariWater}
+          logo={imageAssets.WaariWater}
           title="Waari Water"
           description="Waari Water is a smart water management system that monitors usage, detects leaks, and ensures clean supply. It helps save water, reduce costs, and protect resources using real-time data everywhere."
         />
@@ -194,13 +175,13 @@ const Ecosystem = () => {
         {/* LAST ROW (2 cards centered automatically) */}
         <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
           <AboutProductCard
-            logo={PramitiRecycling}
+            logo={imageAssets.PramitiRecycling}
             title="Pramiti Recycling"
             description="Pramiti Recycling is a smart waste management solution that tracks materials, increases recycling efficiency, and reduces environmental impact. It supports safe disposal and promotes sustainability through real-time monitoring and automated processes."
           />
 
           <AboutProductCard
-            logo={Nirvah}
+            logo={imageAssets.Nirvah}
             title="Nirvah"
             description="Nirvaah is a smart logistics and delivery management solution that tracks shipments in real time, reduces delays, automates workflows, and improves supply chain efficiency for faster, reliable business operations."
           />
@@ -238,7 +219,7 @@ const FounderCard = () => {
           {/* LEFT IMAGE */}
           <div className="flex justify-center md:justify-start">
             <img
-              src={CEOImage}
+              src={imageAssets.CEOImage}
               alt="Founder"
               className="
                 rounded-xl
@@ -281,7 +262,7 @@ const FounderCard = () => {
 
         {/* BACKGROUND PATTERN */}
         <img
-          src={PatternImage}
+          src={imageAssets.PatternImage}
           alt=""
           className="
             absolute
@@ -310,7 +291,16 @@ const FounderCard = () => {
 
 // -------------our Partner --------------------------
 
-const logos = [Skoda, Swiggy, Kia, Nokia, Intel, Mahindra, Oppo, Fila];
+const logos = [
+  imageAssets.Skoda,
+  imageAssets.Swiggy,
+  imageAssets.Kia,
+  imageAssets.Nokia,
+  imageAssets.Intel,
+  imageAssets.Mahindra,
+  imageAssets.Oppo,
+  imageAssets.Fila
+];
 
 const OurPartner = () => {
   return (
@@ -374,7 +364,7 @@ const About = () => {
   return (
     <div className="bg-backgroundClr flex flex-col gap-10">
       <First />
-      <Aboutus image={Homesecond}
+      <Aboutus image={  imageAssets.Homesecond}
               title="Who we are"
               descriptions={[
                 "Resonent Technolabs is a complete IoT innovation partner, seamlessly integrating electronic design, embedded firmware development, and cloud engineering within a single ecosystem. We specialize in turning conceptual ideas into robust, production-ready IoT solutions that meet industry standards and compliance requirements. From prototype to mass manufacturing, our multidisciplinary team ensures every product is intelligent, scalable, and reliable for real-world deployment.",
@@ -400,19 +390,19 @@ const About = () => {
               </h3>
               <div className="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-20 ">
 
-                <ExpertiseCard icon={HardwareDesign}
+                <ExpertiseCard icon={imageAssets.HardwareDesign}
                                 title="Integrity"
                                 description="We create fresh ideas that turn technology challenges into solutions"/>
                 
-                <ExpertiseCard icon={FirmwareDevelopment}
+                <ExpertiseCard icon={imageAssets.FirmwareDevelopment}
                                 title="Innovation"
                                 description="We create fresh ideas that turn technology challenges into solutions"/>
                 
-                <ExpertiseCard icon={CloudWeb}
+                <ExpertiseCard icon={imageAssets.CloudWeb}
                                 title="Collaboration"
                                 description="Working together to achieve smarter solutions and shared success always"/>
                 
-                <ExpertiseCard icon={MobileApp}
+                <ExpertiseCard icon={imageAssets.MobileApp}
                                 title="Sustainability"
                                 description="Smart engineering for a cleaner planet with lasting positive impact"/>
 

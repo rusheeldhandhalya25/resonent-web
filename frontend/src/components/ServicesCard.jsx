@@ -1,6 +1,6 @@
-import Power from "../assets/icons/power_expertise_pills.svg";
-import Code from "../assets/icons/code_expertise_pills.svg";
-import Graph from "../assets/icons/graph_expertise_pills.svg";
+import imageAssets from "../assets";
+
+
 
 const ServicesCard = ({
   step,
@@ -69,9 +69,9 @@ const ServicesCard = ({
 
         {/* PILLS */}
         <div className="flex flex-wrap gap-3 mt-6">
-          <Pill icon={Power} text={Round1} />
-          <Pill icon={Code} text={Round2} />
-          <Pill icon={Graph} text={Round3} />
+          <Pill icon={imageAssets.Power} text={Round1} />
+          <Pill icon={imageAssets.Code} text={Round2} />
+          <Pill icon={imageAssets.Graph} text={Round3} />
         </div>
       </div>
     </div>

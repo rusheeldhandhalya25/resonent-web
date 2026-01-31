@@ -1,20 +1,13 @@
-import LineSvg from "../../assets/icons/process/process_line.svg";
-import Step01 from "../../assets/icons/process/step_1.svg";
-import Step02 from "../../assets/icons/process/step_2.svg";
-import Step03 from "../../assets/icons/process/step_3.svg";
-import Step04 from "../../assets/icons/process/step_4.svg";
-import Step05 from "../../assets/icons/process/step_5.svg";
-import Step06 from "../../assets/icons/process/step_6.svg";
-import Step07 from "../../assets/icons/process/step_7.svg";
+import imageAssets from "../../assets";
 
 const steps = [
-  { icon: Step01, label: "Concept", left: 10, top: 80 },
-  { icon: Step02, label: "Documentation", left: 25, top: 50 },
-  { icon: Step03, label: "Prototype", left: 38, top: 65 },
-  { icon: Step04, label: "Certification", left: 50, top: 100 },
-  { icon: Step05, label: "Production", left: 63, top: 35 },
-  { icon: Step06, label: "Quality Check", left: 76, top: 25 },
-  { icon: Step07, label: "Delivery", left: 90, top: 100 },
+  { icon: imageAssets.Step01, label: "Concept", left: 10, top: 80 },
+  { icon: imageAssets.Step02, label: "Documentation", left: 25, top: 50 },
+  { icon: imageAssets.Step03, label: "Prototype", left: 38, top: 65 },
+  { icon: imageAssets.Step04, label: "Certification", left: 50, top: 100 },
+  { icon: imageAssets.Step05, label: "Production", left: 63, top: 35 },
+  { icon: imageAssets.Step06, label: "Quality Check", left: 76, top: 25 },
+  { icon: imageAssets.Step07, label: "Delivery", left: 90, top: 100 },
 ];
 
 const ProcessStep = ({ icon, label, left, top }) => {
@@ -51,7 +44,7 @@ const OurProcess = () => {
            {/* Aspect ratio container for the SVG line. Padding-top is based on SVG's aspect ratio (169 / 1920) */}
           <div style={{ paddingTop: '8.8%' }} />
           <img
-            src={LineSvg}
+            src={imageAssets.LineSvg}
             alt="process line"
             className="absolute top-0 left-0 w-full h-full"
           />

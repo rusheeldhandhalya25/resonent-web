@@ -1,4 +1,4 @@
-import ContactImg from "../../assets/images/contactus_image.png";
+import imageAssets from "../../assets";
 import ContactForm from "../../components/ContactForm";
 
 
@@ -28,7 +28,7 @@ const ContactUs = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className=" lg:block">
           <img
-            src={ContactImg}
+            src={imageAssets.ContactImg}
             alt="contact image"
             className="rounded-2xl h-full w-full"
           />
