@@ -55,6 +55,7 @@ import Intel from "./svg/partners/intel.svg";
 import Mahindra from "./svg/partners/mahindra.svg";
 import Oppo from "./svg/partners/oppo.svg";
 import Fila from "./svg/partners/fila.svg";
+import hill from "./svg/hill.svg"
 
 
 
@@ -118,6 +119,7 @@ const imageAssets = {
   Mahindra,
   Oppo,
   Fila,
+  hill
 };
 
 export default imageAssets;

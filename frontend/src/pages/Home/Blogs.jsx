@@ -1,53 +1,97 @@
-import BlogCard from "../../components/cards/BlogCard";
-import AppButton from "../../components/buttons/AppButtons";
 import imageAssets from "../../assets";
+import BlogCard from "../../components/cards/BlogCard";
+
 const blogs = [
   {
     id: 1,
-    title: "The Future of IoT: Trends to Watch in 2024",
-    excerpt: "The Internet of Things (IoT) is rapidly evolving, with new trends and innovations emerging every day. In this blog post, we'll explore the key trends that will shape the future of IoT in 2024 and beyond.",
-    image: imageAssets.factoryImg,
-    date: "January 31, 2024",
+    title: "The Best Exercises For Fat Burn",
+    excerpt:
+      "Looking to burn fat effectively? This guide explores the best fat-burning exercises from HIIT to walking.",
+    image: imageAssets.compImg,
+    date: "26 July, 2025",
   },
   {
     id: 2,
-    title: "How to Build a Successful IoT Product: A Step-by-Step Guide",
-    excerpt: "Building a successful IoT product requires a combination of hardware, software, and business expertise. In this guide, we'll walk you through the entire process, from idea to launch.",
-    image: imageAssets.compImg,
-    date: "January 15, 2024",
+    title: "Healthy And Satisfying Snacks",
+    excerpt:
+      "Are weight loss myths slowing you down? Let’s clear them up so you can focus on what actually works.",
+    image: imageAssets.graphImg,
+    date: "26 July, 2025",
   },
   {
     id: 3,
-    title: "The Importance of Data Analytics in IoT",
-    excerpt: "Data is the lifeblood of IoT. In this post, we'll discuss the importance of data analytics in IoT and how it can be used to unlock valuable insights and drive business growth.",
-    image:  imageAssets.graphImg,
-    date: "January 1, 2024",
+    title: "The Best Exercises For Fat Burn",
+    excerpt:
+      "Looking to burn fat effectively? This guide explores the best fat-burning exercises from HIIT to walking.",
+    image: imageAssets.compImg,
+    date: "26 July, 2025",
+  },
+  {
+    id: 4,
+    title: "Healthy And Satisfying Snacks",
+    excerpt:
+      "Are weight loss myths slowing you down? Let’s clear them up so you can focus on what actually works.",
+    image: imageAssets.graphImg,
+    date: "26 July, 2025",
   },
 ];
 
-const Blogs = () => {
+const BlogSection = () => {
   return (
-    <section className="w-full bg-backgroundClr py-16 sm:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-        <div className="flex justify-between items-center mb-12">
-          <h2 className="font-heading font-6 text-3xl sm:text-4xl">
-            From our Blog
-          </h2>
-          <AppButton
-            text="View All"
-            type="button"
-            variant="secondary"
-            linkTo="/blogs"
-          />
+    <>
+      {/* ---------- TOP BLOG (BIG + LIST) ---------- */}
+      <section className="w-full bg-backgroundClr px-4 sm:px-6 lg:px-24 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-6">
+          {/* LEFT BIG BLOG */}
+          <div className="relative rounded-2xl overflow-hidden border border-lightOutlineClr">
+            <img
+              src={imageAssets.factoryImg}
+              alt="blog"
+              className="w-full h-[480px] object-cover"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-backgroundClr/70 via-backgroundClr/40 to-transparent" />
+
+            <div className="absolute bottom-0 left-0 p-8 max-w-[560px]">
+              <div className="flex items-center gap-2 text-textDisableClr text-sm mb-2">
+                <img src={imageAssets.calendarIcon} className="w-4 h-4" />
+                <span>26 July, 2025</span>
+              </div>
+
+              <h3 className="font-heading font-6 text-xl text-textDefaultClr mb-2">
+                Healthy And Satisfying Snacks To Keep You On Track
+              </h3>
+
+              <p className="font-body text-sm text-textDisableClr">
+                Are weight loss myths slowing you down? Let’s clear them up so
+                you can focus on what actually works.
+              </p>
+            </div>
+          </div>
+
+          {/* RIGHT BLOG LIST */}
+          <div className="flex flex-col gap-4">
+            {blogs.map((blog) => (
+              <BlogCard key={blog.id} blog={blog} />
+            ))}
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogs.map((blog) => (
+      </section>
+
+      {/* ---------- FROM OUR BLOG ---------- */}
+      <section className="w-full bg-backgroundClr px-4 sm:px-6 lg:px-24 pb-20">
+        <h2 className="font-heading font-6 text-3xl text-textDefaultClr mb-10">
+          From our Blog
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogs.slice(0, 3).map((blog) => (
             <BlogCard key={blog.id} blog={blog} />
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
-export default Blogs;
+export default BlogSection;

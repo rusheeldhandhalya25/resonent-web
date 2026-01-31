@@ -2,12 +2,10 @@ import React from "react";
 import imageAssets from "../../assets";
 import ProjectCard from "../../components/cards/ProjectCard";
 
-const FeatureProject = () => {
+const Project = () => {
   return (
     <section id="our-project"  className="w-full px-4 sm:px-6 lg:px-20 py-12">
-      <div className="font-heading font-6 text-[45px] flex items-center justify-center mb-20">
-        featured Projects
-      </div>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="flex flex-col gap-5">
           <ProjectCard
@@ -47,4 +45,4 @@ const FeatureProject = () => {
     </section>
   );
 };
-export  default FeatureProject;
+export  default Project;

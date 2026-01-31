@@ -23,13 +23,13 @@ const ServicesCard = ({
           absolute
           top-1/2
           -translate-y-1/2
-          text-[6rem]
+          text-[4rem]
           font-heading
-          font-6
-          text-white/10
+          font-7
+          text-textDisableClr/30
           hidden
           lg:block
-          ${isEven ? "right-[-50px]" : "left-[-50px]"}
+          ${isEven ? "right-9" : "left-9"}
         `}
       >
         {step}
@@ -52,8 +52,8 @@ const ServicesCard = ({
       >
         {/* TOP */}
         <div className="flex gap-4 items-start">
-          <div className="bg-tagClr border border-lightOutlineClr rounded-xl p-3 shrink-0">
-            <img src={HeadIcon} alt="" className="w-5 h-5" />
+          <div className="bg-tagClr border border-lightOutlineClr rounded-xl p-4 shrink-0">
+            <img src={HeadIcon} alt="" className="w-6 h-6" />
           </div>
 
           <div className="flex flex-col gap-2">
@@ -61,7 +61,7 @@ const ServicesCard = ({
               {Heading}
             </h2>
 
-            <p className="font-body font-5 text-sm text-textDisableClr leading-relaxed">
+            <p className="font-body font-5 text-sm text-textDisableClr leading-relaxed line-clamp-3">
               {Description}
             </p>
           </div>

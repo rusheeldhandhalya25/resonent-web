@@ -1,8 +1,11 @@
 import React from 'react'
+import FirstParagraph from './Career/FirstParagraph.jsx'
 
 function Career() {
   return (
-    <div>Career page</div>
+    <div>
+      <FirstParagraph />
+    </div>
   )
 }
 

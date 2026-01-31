@@ -1,4 +1,4 @@
-const ExpertiseCard = ({ icon, title, description }) => {
+const ExpertiseCard = ({ icon, title, description, className = "" }) => {
   const style = {
     backgroundImage: `
       linear-gradient(
@@ -13,7 +13,8 @@ const ExpertiseCard = ({ icon, title, description }) => {
   return (
     <div
       style={style}
-      className="
+      className={`
+        group
         w-full
         rounded-2xl
         px-5 py-6
@@ -21,8 +22,14 @@ const ExpertiseCard = ({ icon, title, description }) => {
         lg:px-7 lg:py-8
         flex flex-col items-center text-center
         min-h-[210px]
-      "
+        transition-all duration-300 ease-in-out
+        hover:bg-primaryDefaultClr
+        hover:shadow-lg
+        hover:-translate-y-1
+        ${className}
+      `}
     >
+      {/* ICON */}
       <img
         src={icon}
         alt={title}
@@ -31,14 +38,38 @@ const ExpertiseCard = ({ icon, title, description }) => {
           sm:w-10 sm:h-10
           lg:w-11 lg:h-11
           mb-4
+          transition-all duration-300
+          group-hover:scale-110
+          group-hover:brightness-0
+          group-hover:invert
         "
       />
 
-      <p className="text-white font-body font-6 text-[15px] sm:text-[16px] lg:text-[18px]">
+      {/* TITLE */}
+      <p
+        className="
+          font-body font-6
+          text-[15px] sm:text-[16px] lg:text-[18px]
+          text-white
+          transition-colors duration-300
+          group-hover:text-white
+        "
+      >
         {title}
       </p>
 
-      <p className="mt-2 text-[#c7d9ee] font-body text-[13px] sm:text-[14px] leading-relaxed">
+      {/* DESCRIPTION */}
+      <p
+        className="
+          mt-2
+          font-body
+          text-[13px] sm:text-[14px]
+          leading-relaxed
+          text-[#c7d9ee]
+          transition-colors duration-300
+          group-hover:text-white
+        "
+      >
         {description}
       </p>
     </div>

@@ -7,7 +7,7 @@ import OurExpertise from "./Home/OurExpertise.jsx";
 import FeatureProject from "./Home/FeatureProject.jsx";
 import OurProduct from "./Home/OurProduct.jsx";
 import Testimonials from "./Home/Testimonials.jsx";
-import Blogs from "./Home/Blogs.jsx";
+import BlogSection from "./Home/Blogs.jsx";
 import ContactUs from "./Home/ContactUs.jsx";
 
 
@@ -34,7 +34,7 @@ const Home = () => {
       <FeatureProject />
       <OurProduct />
       <Testimonials />
-      <Blogs />
+      <BlogSection />
       <ContactUs />
       
     </div>

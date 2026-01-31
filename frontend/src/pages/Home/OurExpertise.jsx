@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ExpertiseCard from "../../components/ExpertiseCard";
+import ExpertiseCard from "../../components/ExpertiseCard.jsx";
 import imageAssets from "../../assets/index.js";
 
 const OurExpertise = () => {
