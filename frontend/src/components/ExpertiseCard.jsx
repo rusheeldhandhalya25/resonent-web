@@ -34,7 +34,7 @@ const ExpertiseCard = ({ icon, title, description, className = "" }) => {
         src={icon}
         alt={title}
         className="
-          w-9 h-9
+          w-7 h-7
           sm:w-10 sm:h-10
           lg:w-11 lg:h-11
           mb-4
