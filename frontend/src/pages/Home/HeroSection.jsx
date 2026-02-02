@@ -58,7 +58,7 @@ const HeroSection = () => {
         <img
           src={imageAssets.VerticleLine_Left}
           alt=""
-          className="absolute bottom-[10%] right-[90%] w-full object-contain z-1 opacity-100"
+          className="absolute bottom-[80%] right-[90%] w-full object-contain z-1 opacity-100"
         />
       </div>
     </div>

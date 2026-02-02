@@ -29,47 +29,51 @@ const OurExpertise = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-20 pt-16 pb-6">
-      {/* Heading */}
-      <div className="max-w-4xl mx-auto text-center space-y-4">
-        <h1 className="font-heading font-6 text-textDefaultClr text-3xl sm:text-4xl lg:text-[45px]">
-          Our Expertise
-        </h1>
+    <section className=" relative w-full px-4 sm:px-6 lg:px-20 pt-16 pb-6 overflow-hidden">
+      <img src={imageAssets.Home_Expertise} alt="" className="absolute top-0 left-0 w-full h-full z-0 hidden md:block"/>
+      <div className="relative z-10">
+        {/* Heading */}
+        <div className="max-w-4xl mx-auto text-center space-y-4">
+          <h1 className="font-heading font-6 text-textDefaultClr text-3xl sm:text-4xl lg:text-[45px]">
+            Our Expertise
+          </h1>
 
-        <p className="font-body font-1 text-textDisableClr text-sm sm:text-base leading-relaxed">
-          Building powerful embedded solutions with smart hardware, intelligent
-          software, and cloud integration.
-        </p>
-      </div>
+          <p className="font-body font-1 text-textDisableClr text-sm sm:text-base leading-relaxed">
+            Building powerful embedded solutions with smart hardware, intelligent
+            software, and cloud integration.
+          </p>
+        </div>
 
-      {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
-        {expertiseData.map((item, index) => {
-          const isActive = activeIndex === index;
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+          {expertiseData.map((item, index) => {
+            const isActive = activeIndex === index;
 
-          return (
-            <div
-              key={item.title}
-              onMouseEnter={() => setActiveIndex(index)}
-              className={`
+            return (
+              <div
+                key={item.title}
+                onMouseEnter={() => setActiveIndex(index)}
+                className={`
                 cursor-pointer transition-all duration-300
                 ${isActive ? "bg-primaryDefaultClr" : "bg-cardGradient"}
                 rounded-2xl
               `}
-            >
-              <ExpertiseCard
-                icon={item.icon}
-                title={item.title}
-                description={item.description}
-                className={isActive ? "text-textDefaultClr" : ""}
-              />
-            </div>
-          );
-        })}
+              >
+                <ExpertiseCard
+                  icon={item.icon}
+                  title={item.title}
+                  description={item.description}
+                  className={isActive ? "text-textDefaultClr" : ""}
+                />
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Pills section */}
+        <ExpertisePills activeIndex={activeIndex} />
       </div>
 
-      {/* Pills section */}
-      <ExpertisePills activeIndex={activeIndex} />
     </section>
   );
 };
@@ -136,7 +140,7 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
   };
 
   return (
-    <div className=" mt-28">
+    <div className=" mt-28 overflow-hidden">
       <div
         style={backgroundStyle}
         className="

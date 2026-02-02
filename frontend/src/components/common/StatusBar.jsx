@@ -31,14 +31,14 @@ const StatusBar = () => {
           py-3 md:py-5 
           h-auto
           px-4 sm:px-10
-          flex items-center justify-between
+          grid grid-cols-4 items-center
           rounded-full
           border border-lightOutlineClr
           shadow-lg
         "
       >
         {StateData.map((item, index) => (
-          <div key={index} className="flex items-center flex-1 justify-center gap-1 sm:gap-6">
+          <div key={index} className="flex items-center justify-center">
             {/* TEXT CONTAINER */}
             <div className="text-center leading-tight">
               <h3 className="text-[14px] sm:text-[20px] md:text-[22px] font-bold text-textDefaultClr whitespace-nowrap">
@@ -55,7 +55,7 @@ const StatusBar = () => {
                 src={imageAssets.Statebar_Divider}
                 alt="divider"
                 
-                className="h-[30px] w-12   sm:h-[45px] md:h-[55px] opacity-100 ml-1 sm:ml-2 filter brightness-100"
+                className="h-[30px] sm:h-[45px] md:h-[55px] opacity-100 filter brightness-150"
               />
             )}
           </div>

@@ -62,7 +62,11 @@ import VerticleLine_2 from "./svg/homepage_verticle_2.svg";
 import HorizontalLine_1 from "./svg/homepage_horizontal_1.svg";
 import VerticleLine_Left from "./svg/homepage_verticle_left.svg";
 import Footer from "./svg/footer.svg";
-
+import Home_About_1 from "./svg/home_whoweare_1.svg";
+import Home_About_2 from "./svg/home_whoweare_2.svg";
+import Home_Expertise from "./svg/homepage_expertise.svg";
+import Footer_line1 from "./svg/footer_line1.svg";
+import Footer_line2 from "./svg/footer_line2.svg";
 
 
 const imageAssets = {
@@ -130,6 +134,11 @@ const imageAssets = {
   HorizontalLine_1,
   VerticleLine_Left,
   Footer,
+  Home_About_1,
+  Home_About_2,
+  Home_Expertise,
+  Footer_line1,
+  Footer_line2
 };
 
 export default imageAssets;

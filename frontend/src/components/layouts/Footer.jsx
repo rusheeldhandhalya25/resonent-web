@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-backgroundClr font-body text-textDefaultClr py-12 pb-20 px-4 sm:px-6 lg:px-24">
+    <footer className="relative bg-backgroundClr font-body text-textDefaultClr py-12 pb-20 px-4 sm:px-6 lg:px-24">
+      <img src={imageAssets.Footer_line1} alt="" className="absolute top-[10%] left-[10%] opacity-100 z-0"  />
       <div
         className="
+          relative z-10
           flex
           flex-col
           lg:flex-row
@@ -71,6 +73,8 @@ const Footer = () => {
           alt=""
           className="w-full h-[2px] lg:w-[3px] lg:h-[110px] opacity-70"
         />
+
+       
 
         {/* CONTACT */}
         <div className="flex flex-col gap-3 items-center lg:items-start">

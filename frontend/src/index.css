@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  overflow-x: clip;
+}
+
 @font-face {
   font-family: "Montserrat Alternates";
   src: url("/src/assets/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf");
