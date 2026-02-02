@@ -20,6 +20,7 @@ import WaariWater from "./images/waariwater.png";
 import Nirvah from "./images/nirvah.png";
 import CEOImage from "./images/ceoimg.png";
 import PatternImage from "./images/pattern.png";
+import Basefirstlogo from "./images/basefirstlogo.png";
 
 
 import instagramicon from "./images/instagram_icon.svg";
@@ -56,7 +57,9 @@ import Mahindra from "./svg/partners/mahindra.svg";
 import Oppo from "./svg/partners/oppo.svg";
 import Fila from "./svg/partners/fila.svg";
 import hill from "./svg/hill.svg"
-
+import VerticleLine_1 from "./svg/homepage_verticle_1.svg";
+import VerticleLine_2 from "./svg/homepage_verticle_2.svg";
+import HorizontalLine_1 from "./svg/homepage_horizontal_1.svg";
 
 
 
@@ -66,6 +69,7 @@ const imageAssets = {
   ExpertisePillBackground,
 
   Homesecond,
+  Basefirstlogo,
   calendarIcon,
   factoryImg,
   compImg,
@@ -119,7 +123,10 @@ const imageAssets = {
   Mahindra,
   Oppo,
   Fila,
-  hill
+  hill,
+  VerticleLine_1,
+  VerticleLine_2,
+  HorizontalLine_1
 };
 
 export default imageAssets;

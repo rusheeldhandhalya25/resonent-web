@@ -15,7 +15,7 @@ import ContactUs from "./Home/ContactUs.jsx";
 
 const Home = () => {
   return (
-    <div className="bg-backgroundClr text-textDefaultClr min-h-full flex flex-col gap-10  ">
+    <div className="bg-backgroundClr text-textDefaultClr min-h-full flex flex-col gap-5  ">
       
       <HeroSection />
       <StatusBar />
