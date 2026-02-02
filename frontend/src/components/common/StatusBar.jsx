@@ -14,8 +14,8 @@ const StatusBar = () => {
       linear-gradient(
         240.05deg,
         rgba(4, 47, 105, 0.35) 0.05%,
-        rgba(53, 144, 242, 0.35) 21.74%,
-        rgba(53, 144, 242, 0.35) 73.07%,
+        rgba(53, 144, 242, 0.35) 11.74%,
+        rgba(53, 144, 242, 0.35) 3.07%,
         rgba(4, 47, 105, 0.35) 101.64%
       )
     `,
@@ -28,8 +28,7 @@ const StatusBar = () => {
         className="
           w-full max-w-[1200px]
           mx-2 sm:mx-6 md:mx-9
-          /* ઊંચાઈ વધારવા માટે py અને h-auto નો ઉપયોગ */
-          py-5 md:py-8 
+          py-3 md:py-5 
           h-auto
           px-4 sm:px-10
           flex items-center justify-between
@@ -42,7 +41,7 @@ const StatusBar = () => {
           <div key={index} className="flex items-center flex-1 justify-center gap-1 sm:gap-6">
             {/* TEXT CONTAINER */}
             <div className="text-center leading-tight">
-              <h3 className="text-[14px] sm:text-[20px] md:text-[24px] font-bold text-textDefaultClr whitespace-nowrap">
+              <h3 className="text-[14px] sm:text-[20px] md:text-[22px] font-bold text-textDefaultClr whitespace-nowrap">
                 {item.value}
               </h3>
               <p className="text-[8px] sm:text-[11px] md:text-[14px] text-textDisableClr whitespace-nowrap mt-1">
@@ -55,8 +54,8 @@ const StatusBar = () => {
               <img
                 src={imageAssets.Statebar_Divider}
                 alt="divider"
-                /* લાઈન મોટી કરવા માટે h-8 થી h-12 સુધી વધાર્યું */
-                className="h-[30px] sm:h-[45px] md:h-[55px] opacity-40 ml-1 sm:ml-2"
+                
+                className="h-[30px] w-12   sm:h-[45px] md:h-[55px] opacity-100 ml-1 sm:ml-2 filter brightness-100"
               />
             )}
           </div>

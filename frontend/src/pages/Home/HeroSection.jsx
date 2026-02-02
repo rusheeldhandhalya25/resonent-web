@@ -54,6 +54,12 @@ const HeroSection = () => {
         >
           See our work
         </AppButton>
+
+        <img
+          src={imageAssets.VerticleLine_Left}
+          alt=""
+          className="absolute bottom-[10%] right-[90%] w-full object-contain z-1 opacity-100"
+        />
       </div>
     </div>
 
@@ -87,6 +93,8 @@ const HeroSection = () => {
           alt=""
           className="absolute bottom-[10%] right-[-5%] w-full object-contain z-0 opacity-100"
         />
+
+        
 
         <div className="absolute bottom-28 right-10 w-[80%] z-10">
           <div className="relative">

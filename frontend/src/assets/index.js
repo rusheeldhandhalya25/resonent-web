@@ -60,7 +60,8 @@ import hill from "./svg/hill.svg"
 import VerticleLine_1 from "./svg/homepage_verticle_1.svg";
 import VerticleLine_2 from "./svg/homepage_verticle_2.svg";
 import HorizontalLine_1 from "./svg/homepage_horizontal_1.svg";
-
+import VerticleLine_Left from "./svg/homepage_verticle_left.svg";
+import Footer from "./svg/footer.svg";
 
 
 
@@ -126,7 +127,9 @@ const imageAssets = {
   hill,
   VerticleLine_1,
   VerticleLine_2,
-  HorizontalLine_1
+  HorizontalLine_1,
+  VerticleLine_Left,
+  Footer,
 };
 
 export default imageAssets;
