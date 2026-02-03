@@ -8,7 +8,7 @@ const BlogCard = ({ blog }) => {
       className="
         grid grid-cols-[20%_80%]
         gap-4
-        p-3
+        p-4
         rounded-xl
         bg-cardClr
         border border-lightOutlineClr
@@ -29,7 +29,7 @@ const BlogCard = ({ blog }) => {
       {/* Content */}
       <div className="flex flex-col justify-between">
         <div>
-          <h3 className="font-heading font-6 text-[0.8rem] text-textDefaultClr line-clamp-2">
+          <h3 className="font-body font-6 text-[0.8rem] text-textDefaultClr line-clamp-2">
             {blog.title}
           </h3>
 

@@ -26,6 +26,7 @@ const Aboutus = ({
           h-auto
           rounded-2xl
           object-cover
+          z-10
         "
       />
     </div>

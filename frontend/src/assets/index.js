@@ -67,6 +67,8 @@ import Home_About_2 from "./svg/home_whoweare_2.svg";
 import Home_Expertise from "./svg/homepage_expertise.svg";
 import Footer_line1 from "./svg/footer_line1.svg";
 import Footer_line2 from "./svg/footer_line2.svg";
+import Home_Contactus from "./svg/home_contactus.svg";
+import Home_Blog from "./svg/home_blog.svg";
 
 
 const imageAssets = {
@@ -138,7 +140,9 @@ const imageAssets = {
   Home_About_2,
   Home_Expertise,
   Footer_line1,
-  Footer_line2
+  Footer_line2,
+  Home_Contactus,
+  Home_Blog,
 };
 
 export default imageAssets;

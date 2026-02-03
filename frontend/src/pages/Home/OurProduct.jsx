@@ -4,7 +4,7 @@ import ProfileCard from "../../components/cards/ProductCard.jsx";
 
 const OurProduct = () => {
   return (
-    <div className="px-4 py-16">
+    <div className="px-4 py-16  mx-5 md:mx-10 lg:mx-20">
       <div className="font-heading font-6 text-3xl md:text-4xl flex items-center justify-center mb-10 text-center">
         Our Products
       </div>

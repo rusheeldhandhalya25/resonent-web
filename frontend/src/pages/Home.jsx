@@ -21,8 +21,6 @@ const Home = () => {
       <HeroSection />
       <StatusBar />
       <HomeAboutus />
-
-
       <OurExpertise />
       <OurProcess />
       <FeatureProject />

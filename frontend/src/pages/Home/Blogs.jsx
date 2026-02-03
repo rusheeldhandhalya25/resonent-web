@@ -78,18 +78,7 @@ const BlogSection = () => {
         </div>
       </section>
 
-      {/* ---------- FROM OUR BLOG ---------- */}
-      <section className="w-full bg-backgroundClr px-4 sm:px-6 lg:px-24 pb-20">
-        <h2 className="font-heading font-6 text-3xl text-textDefaultClr mb-10">
-          From our Blog
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogs.slice(0, 3).map((blog) => (
-            <BlogCard key={blog.id} blog={blog} />
-          ))}
-        </div>
-      </section>
+      
     </>
   );
 };

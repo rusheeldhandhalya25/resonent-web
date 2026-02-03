@@ -31,16 +31,15 @@ const StatusBar = () => {
           py-3 md:py-5 
           h-auto
           px-4 sm:px-10
-          grid grid-cols-4 items-center
+          grid grid-cols-4 sm:grid-cols-7 items-center justify-items-center
           rounded-full
           border border-lightOutlineClr
           shadow-lg
         "
       >
-        {StateData.map((item, index) => (
-          <div key={index} className="flex items-center justify-center">
-            {/* TEXT CONTAINER */}
-            <div className="text-center leading-tight">
+        {StateData.flatMap((item, index) => {
+          const content = (
+            <div key={index} className="text-center leading-tight col-span-1">
               <h3 className="text-[14px] sm:text-[20px] md:text-[22px] font-bold text-textDefaultClr whitespace-nowrap">
                 {item.value}
               </h3>
@@ -48,18 +47,24 @@ const StatusBar = () => {
                 {item.label}
               </p>
             </div>
+          );
 
-            {/* DIVIDER */}
-            {index !== StateData.length - 1 && (
+          if (index === StateData.length - 1) {
+            return [content];
+          }
+
+          const divider = (
+            <div key={`d-${index}`} className="hidden sm:flex items-center justify-center col-span-1">
               <img
                 src={imageAssets.Statebar_Divider}
                 alt="divider"
-                
                 className="h-[30px] sm:h-[45px] md:h-[55px] opacity-100 filter brightness-150"
               />
-            )}
-          </div>
-        ))}
+            </div>
+          );
+
+          return [content, divider];
+        })}
       </div>
     </section>
   );
