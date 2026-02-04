@@ -12,6 +12,7 @@ const AboutProductCard = ({ logo, title, description }) => {
         shadow-lg
         flex
         flex-col
+        z-10
         items-center
       "
     >

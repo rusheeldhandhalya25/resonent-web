@@ -24,6 +24,20 @@ import Basefirstlogo from "./images/basefirstlogo.png";
 import Manufacturing from "./images/manufacturing.png";
 import Healthcare from "./images/healthcare.png";
 import Retail from "./images/retail.png";
+import OilandGas from "./images/oilandgas.png";
+import WaterTreatment from "./images/watertreatment.png";
+import Agriculture from "./images/agriculture.png";
+import Entertainment from "./images/entertainment.png";
+import CivilConstruction from "./images/civilconstruction.png";
+import FoodProcessing from "./images/foodprocessing.png";
+import Home_Whoweare from "./images/home_whoweare.png";
+import PramitiRecycling from "./images/pramitirecycling.png";
+import About_Team1 from "./images/about_team1.png";
+import About_Team2 from "./images/about_team2.png";
+import About_Team3 from "./images/about_team3.png";
+import About_Team4 from "./images/about_team4.png";
+import About_Team_Profilelogo from "./images/about_team_profilelogo.png";
+
 
 
 import instagramicon from "./images/instagram_icon.svg";
@@ -75,6 +89,12 @@ import Home_Blog from "./svg/home_blog.svg";
 import Home_FeatureProject from "./svg/home_featureproject.svg";
 import Home_FeatureProject_2 from "./svg/home_featureproject_2.svg";
 import Home_Testimonials from "./svg/home_testimonials.svg";
+import About_First_1 from "./svg/aboutpage_first_1.svg";
+import About_First_2 from "./svg/aboutpage_first_2.svg";
+import About_Star from "./svg/aboutpage_star.svg";
+import About_Value from "./svg/about_value.svg";
+import About_Ecosystem from "./svg/about_ecosystem.svg";
+
 
 
 const imageAssets = {
@@ -105,6 +125,20 @@ const imageAssets = {
   Manufacturing,
   Healthcare,
   Retail,
+  OilandGas,
+  WaterTreatment,
+  Agriculture,
+  FoodProcessing,
+  CivilConstruction,
+  Entertainment,
+  Home_Whoweare,
+  PramitiRecycling,
+  About_Team1,
+  About_Team2,
+  About_Team3,
+  About_Team4,
+  About_Team_Profilelogo,
+  
 
   instagramicon,
   twittericon,
@@ -155,6 +189,11 @@ const imageAssets = {
   Home_FeatureProject,
   Home_FeatureProject_2,
   Home_Testimonials,
+  About_First_1,
+  About_First_2,
+  About_Star,
+  About_Value,
+  About_Ecosystem,
 };
 
 export default imageAssets;

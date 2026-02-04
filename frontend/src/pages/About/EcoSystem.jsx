@@ -3,8 +3,14 @@ import AboutProductCard from "../../components/cards/AboutProductCard";
 
 const Ecosystem = () => {
   return (
-    <section className="mt-12">
-      <h2 className="text-32 sm:text-36 lg:text-40 text-textDefaultClr font-heading font-6 text-center mb-8">
+    <section className="relative  mt-12">
+
+      <img src={imageAssets.About_Ecosystem} 
+           alt=""
+           className="absolute top-0 left-0 -z-10 block" />
+
+
+      <h2 className="text-40 text-textDefaultClr font-heading font-6 text-center mb-8">
         Ecosystem
       </h2>
 
@@ -12,7 +18,6 @@ const Ecosystem = () => {
         className="
           grid
           grid-cols-1
-          sm:grid-cols-2
           lg:grid-cols-3
           gap-6
           px-4
@@ -39,7 +44,7 @@ const Ecosystem = () => {
         />
 
         {/* LAST ROW (2 cards centered automatically) */}
-        <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-6">
           <AboutProductCard
             logo={imageAssets.PramitiRecycling}
             title="Pramiti Recycling"

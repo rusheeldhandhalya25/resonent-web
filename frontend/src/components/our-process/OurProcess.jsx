@@ -54,22 +54,63 @@ const OurProcess = () => {
         </div>
       </div>
 
+     
       {/* Timeline for Mobile */}
-      <div className="md:hidden px-4">
-        <div className="flex flex-col items-center space-y-4">
-          {steps.map((step, index) => (
-            <div key={index} className="bg-cardClr rounded-xl p-4 w-full max-w-sm">
-              <div className="flex items-center gap-4">
-                <img src={step.icon} alt={step.label} className="w-16 h-16" />
-                <div>
-                  <p className="text-textDisableClr text-xs">STEP {index + 1}</p>
-                  <p className="text-white text-sm font-body font-semibold">{step.label}</p>
+              <div className="md:hidden px-4">
+                <div className="relative max-w-md mx-10">
+
+                  {/* vertical line */}
+                  <div className="
+                    absolute
+                    left-[28px]
+                    top-0
+                    bottom-0
+                    w-[3px]
+                    bg-primaryDefaultClr
+                    opacity-80
+                  " />
+
+                  <div className="flex flex-col gap-14 ">
+                    {steps.map((step, index) => (
+                      <div key={index} className="relative flex items-start gap-6">
+
+                        {/* circle with number */}
+                        <div className="relative z-10">
+                          <div className="
+                            w-14 h-14
+                            rounded-full
+                            bg-gradient-to-br
+                            from-[#6EC1FF]
+                            to-[#2F80ED]
+                            flex
+                            items-center
+                            justify-center
+                            shadow-[0_0_0_10px_rgba(47,128,237,0.25)]
+                          ">
+                            <span className="
+                              text-[#0B2B4F]
+                              font-heading
+                              font-7
+                              text-lg
+                            ">
+                              {String(index + 1).padStart(2, "0")}
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* label */}
+                        <div className="pt-3">
+                          <p className="text-white font-heading font-6 text-base">
+                            {step.label}
+                          </p>
+                        </div>
+
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
+
     </section>
   );
 };

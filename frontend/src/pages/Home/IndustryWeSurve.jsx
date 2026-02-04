@@ -8,33 +8,33 @@ import "swiper/css";
 
 const industries = [
     {
-        title:"Manufacturing",
-        image:imageAssets.Manufacturing,
+        title:"Oil and Gas",
+        image:imageAssets.OilandGas,
     },
 
     {
-        title:"Retail",
-        image:imageAssets.Retail,
+        title:"Water Treatment",
+        image:imageAssets.WaterTreatment,
     },
 
     {
-        title:"Healthcare",
-        image:imageAssets.Healthcare,
+        title:"Agriculture",
+        image:imageAssets.Agriculture,
     },
 
      {
-        title:"Manufacturing",
-        image:imageAssets.Manufacturing,
+        title:"Entertainment",
+        image:imageAssets.Entertainment,
     },
 
     {
-        title:"Retail",
-        image:imageAssets.Retail,
+        title:"Civil Construction",
+        image:imageAssets.CivilConstruction,
     },
 
     {
-        title:"Healthcare",
-        image:imageAssets.Healthcare,
+        title:"Food Processing",
+        image:imageAssets.FoodProcessing,
     },
 ];
 
@@ -47,7 +47,7 @@ const IndustryWeSurve = () => {
             {/* left card */}
 
             <div className='rounded-2xl bg-cardClr p-6 flex flex-col justify-center'>
-                <h3 className='font-heading font-6 text-24 sm:text-32 lg:text-40 text-textDefaultClr mb-3'>
+                <h3 className='font-heading font-6 text-24 sm:text-32 lg:text-30 text-textDefaultClr mb-5'>
                     Industries We Serve
                 </h3>
 
@@ -61,13 +61,13 @@ const IndustryWeSurve = () => {
             {/* right side slider  */}
 
         <Swiper modules={[Autoplay]}
-                autoplay={{delay:2500 , disableOnInteraction: true , pauseOnMouseEnter: true}}
+                autoplay={{delay:1500 , disableOnInteraction: true , pauseOnMouseEnter: true}}
                 loop
                 spaceBetween={16}
                 breakpoints={{
                     0: { slidesPerView : 1.2},
-                    640: { slidesPerView : 2},
-                    1024: { slidesPerView : 3},
+                    640: { slidesPerView : 2.5},
+                    1024: { slidesPerView : 3.5},
                 }}
                 className="w-full">
 
