@@ -4,7 +4,16 @@ import ProjectCard from "../../components/cards/ProjectCard";
 
 const FeatureProject = () => {
   return (
-    <section id="our-project"  className="w-full px-4 sm:px-6 lg:px-20 py-12">
+    <section id="our-project"  className="relative w-full px-4 sm:px-6 lg:px-20 py-12">
+
+      <img src={imageAssets.Home_FeatureProject} 
+           alt=""
+           className="absolute top-[10%] left-0 w-[150%] -translate-x-1 z-0 block " />
+
+      <img src={imageAssets.Home_FeatureProject_2} 
+           alt=""
+           className="absolute bottom-[10%] left-0 w-[150%] -translate-x-1 z-0 block " />
+
       <div className="font-heading font-6 text-[45px] flex items-center justify-center mb-20">
         featured Projects
       </div>

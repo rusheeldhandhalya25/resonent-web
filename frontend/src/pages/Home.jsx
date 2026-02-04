@@ -5,6 +5,7 @@ import StatusBar from "../components/common/StatusBar.jsx";
 import HomeAboutus from "./Home/HomeAboutus.jsx";
 import OurExpertise from "./Home/OurExpertise.jsx";
 import FeatureProject from "./Home/FeatureProject.jsx";
+import IndustryWeSurve from "./Home/IndustryWeSurve.jsx";
 import OurProduct from "./Home/OurProduct.jsx";
 import Testimonials from "./Home/Testimonials.jsx";
 import BlogSection from "./Home/Blogs.jsx";
@@ -23,6 +24,7 @@ const Home = () => {
       <HomeAboutus />
       <OurExpertise />
       <OurProcess />
+      <IndustryWeSurve />
       <FeatureProject />
       <OurProduct />
       <Testimonials />

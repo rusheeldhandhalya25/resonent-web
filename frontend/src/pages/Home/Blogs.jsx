@@ -40,14 +40,24 @@ const BlogSection = () => {
   return (
     <>
       {/* ---------- TOP BLOG (BIG + LIST) ---------- */}
-      <section className="w-full bg-backgroundClr px-4 sm:px-6 lg:px-24 py-16">
+      <section  className="relative w-full bg-backgroundClr px-4 sm:px-6 lg:px-24 py-16">
+
+         <h2 className="text-40 text-textDefaultClr font-heading font-6 text-center items-center justify-center mb-5" >
+            Blogs
+         </h2>
+
+         <img src={imageAssets.Home_Blog} 
+              alt=""
+              className="absolute top-0 right-0 w-[150%] z-0 block" />
+
+
         <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-6">
           {/* LEFT BIG BLOG */}
           <div className="relative rounded-2xl overflow-hidden border border-lightOutlineClr">
             <img
               src={imageAssets.factoryImg}
               alt="blog"
-              className="w-full h-[480px] object-cover"
+              className="w-full h-full object-cover"
             />
 
             <div className="absolute inset-0 bg-gradient-to-t from-backgroundClr/70 via-backgroundClr/40 to-transparent" />

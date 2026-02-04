@@ -15,6 +15,7 @@ const BlogCard = ({ blog }) => {
         hover:bg-tagClr
         transition-all duration-300
         group
+        z-10
       "
     >
       {/* Image */}

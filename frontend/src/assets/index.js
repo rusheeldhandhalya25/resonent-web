@@ -21,6 +21,9 @@ import Nirvah from "./images/nirvah.png";
 import CEOImage from "./images/ceoimg.png";
 import PatternImage from "./images/pattern.png";
 import Basefirstlogo from "./images/basefirstlogo.png";
+import Manufacturing from "./images/manufacturing.png";
+import Healthcare from "./images/healthcare.png";
+import Retail from "./images/retail.png";
 
 
 import instagramicon from "./images/instagram_icon.svg";
@@ -69,6 +72,9 @@ import Footer_line1 from "./svg/footer_line1.svg";
 import Footer_line2 from "./svg/footer_line2.svg";
 import Home_Contactus from "./svg/home_contactus.svg";
 import Home_Blog from "./svg/home_blog.svg";
+import Home_FeatureProject from "./svg/home_featureproject.svg";
+import Home_FeatureProject_2 from "./svg/home_featureproject_2.svg";
+import Home_Testimonials from "./svg/home_testimonials.svg";
 
 
 const imageAssets = {
@@ -96,6 +102,9 @@ const imageAssets = {
   Nirvah,
   CEOImage,
   PatternImage,
+  Manufacturing,
+  Healthcare,
+  Retail,
 
   instagramicon,
   twittericon,
@@ -143,6 +152,9 @@ const imageAssets = {
   Footer_line2,
   Home_Contactus,
   Home_Blog,
+  Home_FeatureProject,
+  Home_FeatureProject_2,
+  Home_Testimonials,
 };
 
 export default imageAssets;
