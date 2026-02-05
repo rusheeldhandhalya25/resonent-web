@@ -1,6 +1,8 @@
+import { useState } from "react";
 import AppButton from "../buttons/AppButtons";
 
 const ProjectCard = ({ tag, year, title, description, image }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <div
       className="
@@ -45,7 +47,12 @@ const ProjectCard = ({ tag, year, title, description, image }) => {
         <h3 className="text-textDefaultClr font-6 text-24 mb-2">{title}</h3>
 
         {/* Description */}
-        <p className="text-textDisableClr text-sm mb-4 line-clamp-2">
+        <p
+          className={`text-textDisableClr text-sm mb-4 cursor-pointer ${
+            isExpanded ? "" : "line-clamp-2"
+          }`}
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
           {description}
         </p>
 

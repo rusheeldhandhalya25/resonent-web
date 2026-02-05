@@ -37,6 +37,7 @@ import About_Team2 from "./images/about_team2.png";
 import About_Team3 from "./images/about_team3.png";
 import About_Team4 from "./images/about_team4.png";
 import About_Team_Profilelogo from "./images/about_team_profilelogo.png";
+import OurCulture from "./images/OurCulture.png";
 
 
 
@@ -94,6 +95,7 @@ import About_First_2 from "./svg/aboutpage_first_2.svg";
 import About_Star from "./svg/aboutpage_star.svg";
 import About_Value from "./svg/about_value.svg";
 import About_Ecosystem from "./svg/about_ecosystem.svg";
+import ClientProject_Project from "./svg/clientproject_project.svg";
 
 
 
@@ -138,6 +140,7 @@ const imageAssets = {
   About_Team3,
   About_Team4,
   About_Team_Profilelogo,
+  OurCulture,
   
 
   instagramicon,
@@ -194,6 +197,7 @@ const imageAssets = {
   About_Star,
   About_Value,
   About_Ecosystem,
+  ClientProject_Project,
 };
 
 export default imageAssets;

@@ -4,7 +4,7 @@ import ProjectCard from "../../components/cards/ProjectCard";
 
 const FeatureProject = () => {
   return (
-    <section id="our-project"  className="relative w-full px-4 sm:px-6 lg:px-20 py-12">
+    <section id="our-project"  className="relative w-full px-4 sm:px-6 lg:px-20 py-12 overflow-hidden">
 
       <img src={imageAssets.Home_FeatureProject} 
            alt=""

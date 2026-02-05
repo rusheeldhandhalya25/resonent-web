@@ -5,14 +5,14 @@ const JoinUs = () => {
     return(
        <div className="bg-backgroundClr flex flex-col gap-5 items-center justify-center mt-20">
             <h2 className="font-heading font-6 text-40 text-textDefaultClr items-center justify-center">            
-                Why Jion Us
+                Why Join Us
             </h2>
 
-            <p className="font-body font-5 text-19 text-textDisableClr items-center text-center justify-center">
+            <p className="font-body font-5 text-16 text-textDisableClr items-center text-center justify-center">
                 Discover the opportunities,growth and impact that define our culture .
             </p>
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mx-20">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mx-20 mt-9">
                 <ExpertiseCard icon={imageAssets.HardwareDesign}
                                 title="End to End Exposure"
                                 description="Work across complete product development lifecycle"/>

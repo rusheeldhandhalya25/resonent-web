@@ -14,7 +14,7 @@ const ExpertiseCard = ({ icon, title, description, className = "" }) => {
         sm:px-6 sm:py-7
         lg:px-7 lg:py-8
         flex flex-col items-center text-center
-        min-h-[270px]
+        min-h-[230px]
         transition-all duration-300 ease-in-out
         hover:bg-primaryDefaultClr
         hover:shadow-lg

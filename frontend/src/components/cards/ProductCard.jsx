@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ProductCard = ({
   logo,
@@ -10,6 +10,7 @@ const ProductCard = ({
   className = "",
   bgStyle = "default",
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   const bgStyles = {
     default: {
       backgroundColor: "#002556",
@@ -55,7 +56,12 @@ const ProductCard = ({
       <h3 className="font-heading text-lg font-6 mb-2">{title}</h3>
 
       {/* Description */}
-      <p className="font-body text-sm text-textDisableClr mb-6 leading-relaxed line-clamp-5">
+      <p
+        className={`font-body text-sm text-textDisableClr mb-6 leading-relaxed cursor-pointer ${
+          isExpanded ? "" : "line-clamp-5"
+        }`}
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
         {description}
       </p>
 
