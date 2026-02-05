@@ -1,7 +1,5 @@
 import imageAssets from "../assets";
 
-
-
 const ServicesCard = ({
   step,
   variant = "odd", // "odd" | "even"

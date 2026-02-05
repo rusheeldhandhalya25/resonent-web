@@ -92,6 +92,8 @@ const Footer = () => {
               <a
                 key={i}
                 href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-[2.2rem] w-[2.2rem]
                            bg-cardClr border border-lightOutlineClr
                            rounded-lg flex items-center justify-center
