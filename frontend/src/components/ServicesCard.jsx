@@ -61,7 +61,7 @@ const ServicesCard = ({
               {Heading}
             </h2>
 
-            <p className="font-body font-5 text-sm text-textDisableClr leading-relaxed line-clamp-3">
+            <p className="font-body font-5 text-sm text-textDisableClr leading-relaxed line-clamp-2">
               {Description}
             </p>
           </div>

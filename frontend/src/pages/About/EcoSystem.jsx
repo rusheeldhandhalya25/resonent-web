@@ -7,7 +7,7 @@ const Ecosystem = () => {
 
       <img src={imageAssets.About_Ecosystem} 
            alt=""
-           className="absolute top-0 left-0 -z-10 block" />
+           className="absolute top-0 left-0 z-10 block" />
 
 
       <h2 className="text-40 text-textDefaultClr font-heading font-6 text-center mb-8">

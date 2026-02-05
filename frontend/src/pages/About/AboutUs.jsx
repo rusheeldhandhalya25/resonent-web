@@ -5,7 +5,7 @@ import React from 'react'
 
 function AboutUs() {
   return (
-    <div className="relative mx-20" >
+    <div className="relative mx-4 sm:mx-8 md:mx-12 lg:mx-20" >
 
         <img
           src={imageAssets.Home_About_1}

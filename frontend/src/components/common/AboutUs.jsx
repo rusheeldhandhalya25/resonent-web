@@ -46,7 +46,7 @@ const Aboutus = ({
             font-body
             text-textDisableClr
             leading-relaxed
-            text-left text-justify
+            text-left sm:text-justify
           "
         >
           {text}
