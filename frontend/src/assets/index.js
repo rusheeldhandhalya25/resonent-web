@@ -38,6 +38,7 @@ import About_Team3 from "./images/about_team3.png";
 import About_Team4 from "./images/about_team4.png";
 import About_Team_Profilelogo from "./images/about_team_profilelogo.png";
 import OurCulture from "./images/OurCulture.png";
+import Upload from "./images/Upload.png"
 
 
 
@@ -96,6 +97,12 @@ import About_Star from "./svg/aboutpage_star.svg";
 import About_Value from "./svg/about_value.svg";
 import About_Ecosystem from "./svg/about_ecosystem.svg";
 import ClientProject_Project from "./svg/clientproject_project.svg";
+import Career_Internship_Left_Down from "./svg/career_inturnship_l_d.svg";
+import Career_Internship_Left_Up from "./svg/career_inturnship_l_u.svg";
+import Career_Internship_Right_Down from "./svg/career_inturnship_r_d.svg";
+import Career_Internship_Right_Up from "./svg/career_inturnship_r_u.svg";
+import Upload_Icon from "./svg/upload.svg";
+
 
 
 
@@ -141,6 +148,7 @@ const imageAssets = {
   About_Team4,
   About_Team_Profilelogo,
   OurCulture,
+  Upload,
   
 
   instagramicon,
@@ -198,6 +206,11 @@ const imageAssets = {
   About_Value,
   About_Ecosystem,
   ClientProject_Project,
+  Career_Internship_Left_Down,
+  Career_Internship_Left_Up,
+  Career_Internship_Right_Down,
+  Career_Internship_Right_Up,
+  Upload_Icon,
 };
 
 export default imageAssets;
