@@ -4,31 +4,31 @@ const FirstParagraph = () => {
     return(
        <div className="relative">
 
-        <img src={imageAssets.About_First_1} 
+        <img src={imageAssets.aboutFirst1} 
            alt=""
            className="absolute top-[-15%] left-[25%] z-0 block" />
 
-      <img src={imageAssets.About_First_2} 
+      <img src={imageAssets.aboutFirst2} 
            alt=""
            className="absolute top-[75%] left-[-15%] z-0 block" />
       
            {/* top 2 star  */}
-      <img src={imageAssets.About_Star} 
+      <img src={imageAssets.aboutStar} 
            alt=""
            className="absolute top-[18%] left-[6%] w-8 h-8 sm:top-[20%] sm:left-[8%] sm:w-12 sm:h-12 lg:left-[10%] lg:w-auto lg:h-auto z-0 block" />
 
 
-      <img src={imageAssets.About_Star} 
+      <img src={imageAssets.aboutStar} 
            alt=""
            className="absolute top-[12%] right-[4%] w-8 h-8 sm:top-[20%] sm:right-[15%] sm:w-12 sm:h-12 lg:right-[18%] lg:w-auto lg:h-auto z-0 block" />
 
             {/* bottom 2 star  */}
-      <img src={imageAssets.About_Star} 
+      <img src={imageAssets.aboutStar} 
            alt=""
            className="absolute bottom-[-10%] left-[20%] w-[8%] h-[8%]  z-0 block" />
 
 
-      <img src={imageAssets.About_Star} 
+      <img src={imageAssets.aboutStar} 
            alt=""
            className="absolute bottom-[-10%] right-[10%] z-0 block" />
 

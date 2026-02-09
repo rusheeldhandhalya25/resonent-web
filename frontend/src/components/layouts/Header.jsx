@@ -94,7 +94,7 @@ const Header = () => {
           {/* Logo */}
           <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
             <img
-              src={imageAssets.logo_header}
+              src={imageAssets.headerLogo}
               alt="Resonent"
               className="h-[1.9rem]
                         sm:h-[2.1rem]

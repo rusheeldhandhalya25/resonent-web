@@ -8,7 +8,7 @@ const Footer = () => {
 
       {/* BACKGROUND SVGs */}
       <img
-        src={imageAssets.Footer_line1}
+        src={imageAssets.footerLine1}
         alt=""
         className="absolute bottom-[55%] sm:bottom-[50%] lg:bottom-[45%]
                    right-[-10%] w-[180%] sm:w-[160%] lg:w-[110%]
@@ -16,7 +16,7 @@ const Footer = () => {
       />
 
       <img
-        src={imageAssets.Footer_line2}
+        src={imageAssets.footerLine2}
         alt=""
         className="absolute bottom-[25%] sm:bottom-[5%] lg:bottom-0
                    right-[-5%] w-[180%] sm:w-[160%] lg:w-[110%]
@@ -31,10 +31,10 @@ const Footer = () => {
 
         {/* LOGO (desktop only) */}
         <div className="hidden lg:block shrink-0">
-          <img src={imageAssets.logo} alt="logo" className="w-[150px]" />
+          <img src={imageAssets.footerLogo} alt="logo" className="w-[150px]" />
         </div>
 
-        <img src={imageAssets.Footer}
+        <img src={imageAssets.footer}
             alt=""
             className="hidden lg:block w-[4px] h-[160px] opacity-70 mx-6"
           />
@@ -53,7 +53,7 @@ const Footer = () => {
 
           {/* DIVIDER */}
           <img
-            src={imageAssets.Footer}
+            src={imageAssets.footer}
             alt=""
             className="
               mx-4 sm:mx-6 lg:mx-20
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <img src={imageAssets.Footer}
+        <img src={imageAssets.footer}
           alt=""
           className="hidden lg:block w-[4px] h-[160px] opacity-70 mx-6"
         />
@@ -83,11 +83,11 @@ const Footer = () => {
 
           <div className="flex justify-center lg:justify-start gap-3">
             {[
-              { href: "https://instagram.com", icon: imageAssets.instagramicon },
-              { href: "https://twitter.com", icon: imageAssets.twittericon },
-              { href: "https://www.behance.net", icon: imageAssets.behanceicon },
-              { href: "https://dribbble.com", icon: imageAssets.dribbbleicon },
-              { href: "tel:+919876543210", icon: imageAssets.callicon },
+              { href: "https://instagram.com", icon: imageAssets.instagramIcon },
+              { href: "https://twitter.com", icon: imageAssets.twitterIcon },
+              { href: "https://www.behance.net", icon: imageAssets.behanceIcon },
+              { href: "https://dribbble.com", icon: imageAssets.dribbbleIcon },
+              { href: "tel:+919876543210", icon: imageAssets.callIcon },
             ].map((item, i) => (
               <a
                 key={i}

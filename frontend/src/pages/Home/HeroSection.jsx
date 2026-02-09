@@ -16,14 +16,14 @@ const HeroSection = () => {
           max-w-[1200px] xl:max-w-[1320px]
           mx-auto
           px-4
-          pt-6 lg:pt-10           /* ❌ unchanged */
+          pt-6 lg:pt-10        
           pb-10
           grid
           grid-cols-1
           lg:grid-cols-[62%_38%]
           gap-10
           items-center
-          lg:pr-8 xl:pr-16       /* ✅ RIGHT-SIDE SPACE FIX */
+          lg:pr-8 xl:pr-16      
         "
       >
         {/* TEXT */}
@@ -73,7 +73,7 @@ const HeroSection = () => {
 
             {/* Decorative left SVG — unchanged */}
             <img
-              src={imageAssets.VerticleLine_Left}
+              src={imageAssets.verticleLineLeft}
               alt=""
               className="
                 hidden lg:block
@@ -102,19 +102,19 @@ const HeroSection = () => {
           >
             {/* SVGs — UNCHANGED */}
             <img
-              src={imageAssets.VerticleLine_1}
+              src={imageAssets.verticalLine1}
               alt=""
               className="absolute top-20 left-[28%] h-full z-0"
             />
 
             <img
-              src={imageAssets.VerticleLine_2}
+              src={imageAssets.verticalLine2}
               alt=""
               className="absolute top-10 right-[14%] h-full z-0"
             />
 
             <img
-              src={imageAssets.HorizontalLine_1}
+              src={imageAssets.horizontalLine1}
               alt=""
               className="
                 absolute
@@ -134,13 +134,13 @@ const HeroSection = () => {
             <div className="absolute bottom-24 right-6 w-[82%] z-10">
               <div className="relative">
                 <img
-                  src={imageAssets.Basefirstlogo}
+                  src={imageAssets.baseFirstLogo}
                   alt="Base decorative background"
                   className="w-full h-auto"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
-                    src={imageAssets.Homefirst}
+                    src={imageAssets.homeFirst}
                     alt="Main illustration"
                     className="w-[95%] h-auto rounded-lg"
                   />

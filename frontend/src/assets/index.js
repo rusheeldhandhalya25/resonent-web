@@ -1,218 +1,223 @@
-import ExpertisePillBackground from "./images/expertisepillsbackground.jpg";
+import expertisePillBackground from "./images/expertisepillsbackground.jpg";
 
-import Homesecond from "./images/homesecond.png";
+import homeSecond from "./images/home-second.png";
+import homeFirst from "./images/home-first.png";
 import calendarIcon from "./icons/calender.svg";
-import factoryImg from "./images/project_img_1.png";
-import compImg from "./images/project_img_2.png";
-import graphImg from "./images/project_img_4.png";
-import labImg from "./images/project_img_3.png";
-import logo from "./images/footer_logo.png";
-import ContactImg from "./images/contactus_image.png";
-import Homefirst from "./images/homefirst.png";
-import Mediverse from "./images/mediverse_1.png";
-import MediVerse_1  from "./images/mediverse.png";
-import Syncworks from "./images/syncworks_1.png";
-import Storeedge from "./images/storeedge_1.png";
-import user1Img from "./images/user_1.png";
-import user2Img from "./images/user_2.png";
-import PeopleTech from "./images/peopletech_ecosystem.png";
-import SmartERP from "./images/smarterp.png";
-import WaariWater from "./images/waariwater.png";
-import Nirvah from "./images/nirvah.png";
-import CEOImage from "./images/ceoimg.png";
-import PatternImage from "./images/pattern.png";
-import Basefirstlogo from "./images/basefirstlogo.png";
-import Manufacturing from "./images/manufacturing.png";
-import Healthcare from "./images/healthcare.png";
-import Retail from "./images/retail.png";
-import OilandGas from "./images/oilandgas.png";
-import WaterTreatment from "./images/watertreatment.png";
-import Agriculture from "./images/agriculture.png";
-import Entertainment from "./images/entertainment.png";
-import CivilConstruction from "./images/civilconstruction.png";
-import FoodProcessing from "./images/foodprocessing.png";
-import Home_Whoweare from "./images/home_whoweare.png";
-import PramitiRecycling from "./images/pramitirecycling.png";
-import About_Team1 from "./images/about_team1.png";
-import About_Team2 from "./images/about_team2.png";
-import About_Team3 from "./images/about_team3.png";
-import About_Team4 from "./images/about_team4.png";
-import About_Team_Profilelogo from "./images/about_team_profilelogo.png";
-import OurCulture from "./images/OurCulture.png";
-import Upload from "./images/Upload.png"
+import factoryImg from "./images/project-factory.png";
+import gasSensorImg from "./images/project-gas-sensor.png";
+import smartEnergyImg from "./images/project-smart-energy.png";
+import edgeVendingImg from "./images/project-edge-vending.png";
+import footerLogo from "./images/footer-logo.png";
+import contactUsImage from "./images/contact-us-image.png";
+import mediverse from "./images/mediverse.png";
+import syncWorks from "./images/syncworks.png";
+import storeEdge from "./images/storeedge.png";
+import user1Img from "./images/user-1.png";
+import user2Img from "./images/user-2.png";
+import peopleTech from "./images/peopletech.png";
+import smartErp from "./images/smarterp.png";
+import waariWater from "./images/waariwater.png";
+import nirvah from "./images/nirvah.png";
+import ceoImage from "./images/ceo-img.png";
+import patternImage from "./images/pattern.png";
+import baseFirstLogo from "./images/basefirst-logo.png";
+import manufacturing from "./images/manufacturing.png";
+import healthcare from "./images/healthcare.png";
+import retail from "./images/retail.png";
+import oilAndGas from "./images/oil-and-gas.png";
+import waterTreatment from "./images/water-treatment.png";
+import agriculture from "./images/agriculture.png";
+import entertainment from "./images/entertainment.png";
+import civilConstruction from "./images/civil-construction.png";
+import foodProcessing from "./images/food-processing.png";
+import homeWhoWeAre from "./images/home-whoweare.png";
+import pramitiRecycling from "./images/pramiti-recycling.png";
+import mediverseLogo from "./images/mediverse-logo.png";
+import aboutTeamOne from "./images/about-team-1.png";
+import aboutTeamTwo from "./images/about-team-2.png";
+import aboutTeamThree from "./images/about-team-3.png";
+import aboutTeamFour from "./images/about-team-4.png";
+import aboutTeamProfileLogo from "./images/about-team-profilelogo.png";
+import ourCulture from "./images/our-culture.png";
+import uploadImage from "./images/upload.png";
 
 
 
-import instagramicon from "./images/instagram_icon.svg";
-import twittericon from "./images/twitter_icon.svg";
-import behanceicon from "./images/behance_icon.svg";
-import dribbbleicon from "./images/dribble_icon.svg";
-import callicon from "./images/call_icon.svg";
-import Statebar_Divider from "./svg/Statebar_Divider.svg";
-import logo_header from "./images/header_logo.svg";
-import LineSvg from "./icons/process/process_line.svg";
-import Step01 from "./icons/process/step_1.svg";
-import Step02 from "./icons/process/step_2.svg";
-import Step03 from "./icons/process/step_3.svg";
-import Step04 from "./icons/process/step_4.svg";
-import Step05 from "./icons/process/step_5.svg";
-import Step06 from "./icons/process/step_6.svg";
-import Step07 from "./icons/process/step_7.svg";
-import Power from "./icons/power_expertise_pills.svg";
-import Code from "./icons/code_expertise_pills.svg";
-import Graph from "./icons/graph_expertise_pills.svg";
-import HardwareDesign from "./icons/hardware_design_icon.svg";
-import FirmwareDevelopment from "./icons/firmware_development_icon.svg";
-import CloudWeb from "./icons/cloud_web_icon.svg";
-import MobileApp from "./icons/mobile_app_icon.svg";
-import SafetyIcon from "./icons/code_expertise_pills.svg";
-import PowerIcon from "./icons/power_expertise_pills.svg";
-import FpgaIcon from "./icons/graph_expertise_pills.svg";
-import Skoda from "./svg/partners/skoda.svg";
-import Kia from "./svg/partners/kia.svg";
-import Swiggy from "./svg/partners/swiggy.svg";
-import Nokia from "./svg/partners/nokia.svg";
-import Intel from "./svg/partners/intel.svg";
-import Mahindra from "./svg/partners/mahindra.svg";
-import Oppo from "./svg/partners/oppo.svg";
-import Fila from "./svg/partners/fila.svg";
+
+import instagramIcon from "./images/instagram-icon.svg";
+import twitterIcon from "./images/twitter-icon.svg";
+import behanceIcon from "./images/behance-icon.svg";
+import dribbbleIcon from "./images/dribble-icon.svg";
+import callIcon from "./images/call-icon.svg";
+import statebarDivider from "./svg/statebar-divider.svg";
+import headerLogo from "./images/header-logo.svg";
+import lineSvg from "./icons/process/process-line.svg";
+import step01 from "./icons/process/step-1.svg";
+import step02 from "./icons/process/step-2.svg";
+import step03 from "./icons/process/step-3.svg";
+import step04 from "./icons/process/step-4.svg";
+import step05 from "./icons/process/step-5.svg";
+import step06 from "./icons/process/step-6.svg";
+import step07 from "./icons/process/step-7.svg";
+import power from "./icons/power-expertise-pills.svg";
+import code from "./icons/code-expertise-pills.svg";
+import graph from "./icons/graph-expertise-pills.svg";
+import hardwareDesign from "./icons/hardware-design-icon.svg";
+import firmwareDevelopment from "./icons/firmware-development-icon.svg";
+import cloudWeb from "./icons/cloud-web-icon.svg";
+import mobileApp from "./icons/mobile-app-icon.svg";
+import safetyIcon from "./icons/code-expertise-pills.svg";
+import powerIcon from "./icons/power-expertise-pills.svg";
+import fpgaIcon from "./icons/graph-expertise-pills.svg";
+import skoda from "./svg/partners/skoda.svg";
+import kia from "./svg/partners/kia.svg";
+import swiggy from "./svg/partners/swiggy.svg";
+import nokia from "./svg/partners/nokia.svg";
+import intel from "./svg/partners/intel.svg";
+import mahindra from "./svg/partners/mahindra.svg";
+import oppo from "./svg/partners/oppo.svg";
+import fila from "./svg/partners/fila.svg";
 import hill from "./svg/hill.svg"
-import VerticleLine_1 from "./svg/homepage_verticle_1.svg";
-import VerticleLine_2 from "./svg/homepage_verticle_2.svg";
-import HorizontalLine_1 from "./svg/homepage_horizontal_1.svg";
-import VerticleLine_Left from "./svg/homepage_verticle_left.svg";
-import Footer from "./svg/footer.svg";
-import Home_About_1 from "./svg/home_whoweare_1.svg";
-import Home_About_2 from "./svg/home_whoweare_2.svg";
-import Home_Expertise from "./svg/homepage_expertise.svg";
-import Footer_line1 from "./svg/footer_line1.svg";
-import Footer_line2 from "./svg/footer_line2.svg";
-import Home_Contactus from "./svg/home_contactus.svg";
-import Home_Blog from "./svg/home_blog.svg";
-import Home_FeatureProject from "./svg/home_featureproject.svg";
-import Home_FeatureProject_2 from "./svg/home_featureproject_2.svg";
-import Home_Testimonials from "./svg/home_testimonials.svg";
-import About_First_1 from "./svg/aboutpage_first_1.svg";
-import About_First_2 from "./svg/aboutpage_first_2.svg";
-import About_Star from "./svg/aboutpage_star.svg";
-import About_Value from "./svg/about_value.svg";
-import About_Ecosystem from "./svg/about_ecosystem.svg";
-import ClientProject_Project from "./svg/clientproject_project.svg";
-import Career_Internship_Left_Down from "./svg/career_inturnship_l_d.svg";
-import Career_Internship_Left_Up from "./svg/career_inturnship_l_u.svg";
-import Career_Internship_Right_Down from "./svg/career_inturnship_r_d.svg";
-import Career_Internship_Right_Up from "./svg/career_inturnship_r_u.svg";
-import Upload_Icon from "./svg/upload.svg";
-
-
+import verticalLine1 from "./svg/homepage-verticle-1.svg";
+import verticalLine2 from "./svg/homepage-verticle-2.svg";
+import horizontalLine1 from "./svg/homepage-horizontal-1.svg";
+import verticleLineLeft from "./svg/homepage-verticle-left.svg";
+import footer from "./svg/footer.svg";
+import homeAbout1 from "./svg/home-whoweare-1.svg";
+import homeAbout2 from "./svg/home-whoweare-2.svg";
+import homeExpertise from "./svg/homepage-expertise.svg";
+import footerLine1 from "./svg/footer-line1.svg";
+import footerLine2 from "./svg/footer-line2.svg";
+import homeContactUs from "./svg/home-contactus.svg";
+import homeBlog from "./svg/home-blog.svg";
+import homeFeatureProject from "./svg/home-featureproject.svg";
+import homeFeatureProject2 from "./svg/home-featureproject-2.svg";
+import homeTestimonials from "./svg/home-testimonials.svg";
+import aboutFirst1 from "./svg/aboutpage-first-1.svg";
+import aboutFirst2 from "./svg/aboutpage-first-2.svg";
+import aboutStar from "./svg/aboutpage-star.svg";
+import aboutValue from "./svg/about-value.svg";
+import aboutEcosystem from "./svg/about-ecosystem.svg";
+import clientProject from "./svg/clientproject-project.svg";
+import careerInternshipLeftDown from "./svg/career-inturnship-l-d.svg";
+import careerInternshipLeftUp from "./svg/career-inturnship-l-u.svg";
+import careerInternshipRightDown from "./svg/career-inturnship-r-d.svg";
+import careerInternshipRightUp from "./svg/career-inturnship-r-u.svg";
+import uploadIcon from "./svg/upload.svg";
+import aiIcon from "./svg/ai-icon.svg";
+import wifiIcon from "./svg/wifi-icon.svg";
+import backIcon from "./svg/back-icon.svg";
 
 
 const imageAssets = {
 
-  ExpertisePillBackground,
+  expertisePillBackground,
 
-  Homesecond,
-  Basefirstlogo,
-  calendarIcon,
+  homeSecond,
+  baseFirstLogo,
   factoryImg,
-  compImg,
-  graphImg,
-  logo,
-  ContactImg,
-  labImg,
-  Homefirst,
-  Mediverse,
-  Syncworks,
-  Storeedge,
+  gasSensorImg,
+  smartEnergyImg,
+  edgeVendingImg,
+  footerLogo,
+  contactUsImage,
+  homeFirst,
+  mediverse,
+  syncWorks,
+  storeEdge,
   user1Img,
   user2Img,
-  PeopleTech,
-  SmartERP,
-  WaariWater,
-  Nirvah,
-  CEOImage,
-  PatternImage,
-  Manufacturing,
-  Healthcare,
-  Retail,
-  OilandGas,
-  WaterTreatment,
-  Agriculture,
-  FoodProcessing,
-  CivilConstruction,
-  Entertainment,
-  Home_Whoweare,
-  MediVerse_1,
-  PramitiRecycling,
-  About_Team1,
-  About_Team2,
-  About_Team3,
-  About_Team4,
-  About_Team_Profilelogo,
-  OurCulture,
-  Upload,
+  peopleTech,
+  smartErp,
+  waariWater,
+  nirvah,
+  ceoImage,
+  patternImage,
+  manufacturing,
+  healthcare,
+  retail,
+  oilAndGas,
+  waterTreatment,
+  agriculture,
+  entertainment,
+  civilConstruction,
+  foodProcessing,
+  mediverseLogo,
+  homeWhoWeAre,
+  pramitiRecycling,
+  aboutTeamOne,
+  aboutTeamTwo,
+  aboutTeamThree,
+  aboutTeamFour,
+  aboutTeamProfileLogo,
+  ourCulture,
+  uploadImage,
+  calendarIcon,
   
 
-  instagramicon,
-  twittericon,
-  behanceicon,
-  dribbbleicon,
-  callicon,
-  Statebar_Divider,
-  logo_header,
-  LineSvg,
-  Step01,
-  Step02,
-  Step03,
-  Step04,
-  Step05,
-  Step06,
-  Step07,
-  Power,
-  Code,
-  Graph,
-  HardwareDesign,
-  FirmwareDevelopment,
-  CloudWeb,
-  MobileApp,
-  SafetyIcon,
-  PowerIcon,
-  FpgaIcon,
-  Skoda,
-  Kia,
-  Swiggy,
-  Nokia,
-  Intel,
-  Mahindra,
-  Oppo,
-  Fila,
+  instagramIcon,
+  twitterIcon,
+  behanceIcon,
+  dribbbleIcon,
+  callIcon,
+  statebarDivider,
+  headerLogo,
+  lineSvg,
+  step01,
+  step02,
+  step03,
+  step04,
+  step05,
+  step06,
+  step07,
+  power,
+  code,
+  graph,
+  hardwareDesign,
+  firmwareDevelopment,
+  cloudWeb,
+  mobileApp,
+  safetyIcon,
+  powerIcon,
+  fpgaIcon,
+  skoda,
+  kia,
+  swiggy,
+  nokia,
+  intel,
+  mahindra,
+  oppo,
+  fila,
   hill,
-  VerticleLine_1,
-  VerticleLine_2,
-  HorizontalLine_1,
-  VerticleLine_Left,
-  Footer,
-  Home_About_1,
-  Home_About_2,
-  Home_Expertise,
-  Footer_line1,
-  Footer_line2,
-  Home_Contactus,
-  Home_Blog,
-  Home_FeatureProject,
-  Home_FeatureProject_2,
-  Home_Testimonials,
-  About_First_1,
-  About_First_2,
-  About_Star,
-  About_Value,
-  About_Ecosystem,
-  ClientProject_Project,
-  Career_Internship_Left_Down,
-  Career_Internship_Left_Up,
-  Career_Internship_Right_Down,
-  Career_Internship_Right_Up,
-  Upload_Icon,
+  verticalLine1,
+  verticalLine2,
+  horizontalLine1,
+  verticleLineLeft,
+  footer,
+  homeAbout1,
+  homeAbout2,
+  homeExpertise,
+  footerLine1,
+  footerLine2,
+  homeContactUs,
+  homeBlog,
+  homeFeatureProject,
+  homeFeatureProject2,
+  homeTestimonials,
+  aboutFirst1,
+  aboutFirst2,
+  aboutStar,
+  aboutValue,
+  aboutEcosystem,
+  clientProject,
+  careerInternshipLeftDown,
+  careerInternshipLeftUp,
+  careerInternshipRightDown,
+  careerInternshipRightUp,
+  uploadIcon,
+  aiIcon,
+  wifiIcon,
+  backIcon,
 };
 
 export default imageAssets;

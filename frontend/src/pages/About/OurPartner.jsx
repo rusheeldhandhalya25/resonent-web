@@ -2,14 +2,14 @@ import imageAssets from "../../assets";
 
 
 const logos = [
-  imageAssets.Skoda,
-  imageAssets.Swiggy,
-  imageAssets.Kia,
-  imageAssets.Nokia,
-  imageAssets.Intel,
-  imageAssets.Mahindra,
-  imageAssets.Oppo,
-  imageAssets.Fila
+  imageAssets.skoda,
+  imageAssets.swiggy,
+  imageAssets.kia,
+  imageAssets.nokia,
+  imageAssets.intel,
+  imageAssets.mahindra,
+  imageAssets.oppo,
+  imageAssets.fila
 ];
 
 const OurPartner = () => {

@@ -7,7 +7,7 @@ const OurCulture = () => {
             <div className="mx-auto max-w-6xl">
 
                 <div className="relative overflow-hidden rounded-2xl">
-                    <img src={imageAssets.OurCulture} 
+                    <img src={imageAssets.ourCulture} 
                          alt=""
                          className="h-[600px] w-full object-cover" />
 

@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <section className="relative w-full bg-backgroundClr py-16 sm:py-20">
 
-      <img src={imageAssets.Home_Testimonials} 
+      <img src={imageAssets.homeTestimonials} 
            alt=""
            className="absolute top-0 left-0 w-[150%] z-0 block" />
       {/* Heading */}

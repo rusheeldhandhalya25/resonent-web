@@ -56,7 +56,7 @@ const StatusBar = () => {
           const divider = (
             <div key={`d-${index}`} className="hidden sm:flex items-center justify-center col-span-1">
               <img
-                src={imageAssets.Statebar_Divider}
+                src={imageAssets.statebarDivider}
                 alt="divider"
                 className="h-[30px] sm:h-[45px] md:h-[55px] opacity-100 filter brightness-150"
               />

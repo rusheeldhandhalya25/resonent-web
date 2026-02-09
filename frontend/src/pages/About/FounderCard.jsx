@@ -25,7 +25,7 @@ const FounderCard = () => {
           {/* LEFT IMAGE */}
           <div className="flex justify-center md:justify-start">
             <img
-              src={imageAssets.CEOImage}
+              src={imageAssets.ceoImage}
               alt="Founder"
               className="
                 rounded-xl
@@ -68,7 +68,7 @@ const FounderCard = () => {
 
         {/* BACKGROUND PATTERN */}
         <img
-          src={imageAssets.PatternImage}
+          src={imageAssets.patternImage}
           alt=""
           className="
             absolute

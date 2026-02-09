@@ -9,32 +9,32 @@ import "swiper/css";
 const industries = [
     {
         title:"Oil and Gas",
-        image:imageAssets.OilandGas,
+        image:imageAssets.oilAndGas,
     },
 
     {
         title:"Water Treatment",
-        image:imageAssets.WaterTreatment,
+        image:imageAssets.waterTreatment,
     },
 
     {
         title:"Agriculture",
-        image:imageAssets.Agriculture,
+        image:imageAssets.agriculture,
     },
 
      {
         title:"Entertainment",
-        image:imageAssets.Entertainment,
+        image:imageAssets.entertainment,
     },
 
     {
         title:"Civil Construction",
-        image:imageAssets.CivilConstruction,
+        image:imageAssets.civilConstruction,
     },
 
     {
         title:"Food Processing",
-        image:imageAssets.FoodProcessing,
+        image:imageAssets.foodProcessing,
     },
 ];
 

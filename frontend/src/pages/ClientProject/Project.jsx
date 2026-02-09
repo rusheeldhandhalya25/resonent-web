@@ -9,7 +9,7 @@ const Project = () => {
   return (
     <section id="our-project"  className="relative  w-full px-4 sm:px-6 lg:px-20 py-16 lg:pt-28">
 
-      <img src={imageAssets.ClientProject_Project} 
+      <img src={imageAssets.clientProject} 
            alt=""
            className="absolute top-0 right-0 z-0 block" />
       
@@ -29,7 +29,7 @@ const Project = () => {
             year="2021"
             title="ATEX Gas Sensor Node"
             description="A safe and certified device that detects dangerous gases in industrial areas. It is designed for hazardous zones and sends real-time alerts to protect workers and equipment. It helps prevent accidents and keeps the environment safe."
-            image={imageAssets.compImg}
+            image={imageAssets.gasSensorImg}
           />
         </div>
         <div className="flex flex-col mt-1 md:mt-20 gap-5">
@@ -38,7 +38,7 @@ const Project = () => {
             year="2021"
             title="AI-Edge Vending Controller"
             description="A smart controller that uses AI to run vending machines smoothly. It works on the edge, so it makes decisions quickly without depending on the internet. It helps manage stock, payments, and machine health in real time for better customer service and lower maintenance costs."
-            image={imageAssets.labImg}
+            image={imageAssets.edgeVendingImg}
           />
 
           <ProjectCard
@@ -46,7 +46,7 @@ const Project = () => {
             year="2021"
             title="Smart Energy Meter"
             description="A device that measures electricity use in real time. It helps track power consumption, reduce waste, and save money. It can send data automatically for billing and monitoring, making energy management easier and smarter."
-            image={imageAssets.graphImg}
+            image={imageAssets.smartEnergyImg}
           />
         </div>
       </div>

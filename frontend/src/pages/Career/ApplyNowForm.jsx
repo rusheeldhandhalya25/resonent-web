@@ -125,7 +125,7 @@ const ApplyNowForm = () => {
                 }
               />
             
-              <img src={imageAssets.Upload_Icon} 
+              <img src={imageAssets.uploadIcon} 
                    alt=""
                    className="mb-2 w-[32px] h-[32px]" />
 

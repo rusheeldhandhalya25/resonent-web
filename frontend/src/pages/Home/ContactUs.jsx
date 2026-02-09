@@ -19,7 +19,7 @@ const ContactUs = () => {
     <div className="relative mt-20 mb-20">
       {/* SVG — ONLY OUTSIDE CARD */}
       <img
-        src={imageAssets.Home_Contactus}
+        src={imageAssets.homeContactUs}
         alt=""
         className="
           absolute
@@ -51,7 +51,7 @@ const ContactUs = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <img
-            src={imageAssets.ContactImg}
+            src={imageAssets.contactUsImage}
             alt="contact image"
             className="rounded-2xl h-full w-full"
           />

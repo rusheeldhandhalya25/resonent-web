@@ -1,13 +1,13 @@
 import imageAssets from "../../assets";
 
 const steps = [
-  { icon: imageAssets.Step01, label: "Concept", left: 10, top: 80 },
-  { icon: imageAssets.Step02, label: "Documentation", left: 25, top: 50 },
-  { icon: imageAssets.Step03, label: "Prototype", left: 38, top: 65 },
-  { icon: imageAssets.Step04, label: "Certification", left: 50, top: 100 },
-  { icon: imageAssets.Step05, label: "Production", left: 63, top: 35 },
-  { icon: imageAssets.Step06, label: "Quality Check", left: 76, top: 25 },
-  { icon: imageAssets.Step07, label: "Delivery", left: 90, top: 100 },
+  { icon: imageAssets.step01, label: "Concept", left: 10, top: 80 },
+  { icon: imageAssets.step02, label: "Documentation", left: 25, top: 50 },
+  { icon: imageAssets.step03, label: "Prototype", left: 38, top: 65 },
+  { icon: imageAssets.step04, label: "Certification", left: 50, top: 100 },
+  { icon: imageAssets.step05, label: "Production", left: 63, top: 35 },
+  { icon: imageAssets.step06, label: "Quality Check", left: 76, top: 25 },
+  { icon: imageAssets.step07, label: "Delivery", left: 90, top: 100 },
 ];
 
 const ProcessStep = ({ icon, label, left, top }) => {
@@ -44,7 +44,7 @@ const OurProcess = () => {
            {/* Aspect ratio container for the SVG line. Padding-top is based on SVG's aspect ratio (169 / 1920) */}
           <div style={{ paddingTop: '8.8%' }} />
           <img
-            src={imageAssets.LineSvg}
+            src={imageAssets.lineSvg}
             alt="process line"
             className="absolute top-0 left-0 w-full h-full"
           />

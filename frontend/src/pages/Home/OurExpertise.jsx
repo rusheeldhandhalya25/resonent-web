@@ -5,22 +5,22 @@ import imageAssets from "../../assets/index.js";
 const OurExpertise = () => {
   const expertiseData = [
     {
-      icon: imageAssets.HardwareDesign,
+      icon: imageAssets.hardwareDesign,
       title: "Hardware Design",
       description: "PCB, schematic, MCU/SoC/FPGA, ATEX-safe circuits",
     },
     {
-      icon: imageAssets.FirmwareDevelopment,
+      icon: imageAssets.firmwareDevelopment,
       title: "Firmware Development",
       description: "RTOS, OTA, low-power, communication stacks",
     },
     {
-      icon: imageAssets.CloudWeb,
+      icon: imageAssets.cloudWeb,
       title: "Cloud & Web",
       description: "MQTT, REST APIs, multi-tenant dashboards, analytics",
     },
     {
-      icon: imageAssets.MobileApp,
+      icon: imageAssets.mobileApp,
       title: "Mobile Apps",
       description: "Flutter & native apps with BLE/NFC integrations",
     },
@@ -30,7 +30,6 @@ const OurExpertise = () => {
 
   return (
     <section className=" relative w-full px-4 sm:px-6 lg:px-20 pt-16 pb-6 overflow-hidden">
-      <img src={imageAssets.Home_Expertise} alt="" className="absolute top-0 left-0 w-full h-full z-0 hidden md:block"/>
       <div className="relative z-10">
         {/* Heading */}
         <div className="max-w-4xl mx-auto text-center space-y-4">
@@ -86,36 +85,36 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
       title: "Hardware Design",
       subtitle: "We design smart and reliable hardware for real-world use.",
       pills: [
-        { icon: imageAssets.PowerIcon, text: "Power Electronics & Control Systems" },
-        { icon: imageAssets.SafetyIcon, text: "Intrinsic Safety (ATEX, IEC 60079)" },
-        { icon: imageAssets.FpgaIcon, text: "FPGA & AI Edge Devices" },
+        { icon: imageAssets.powerIcon, text: "Power Electronics & Control Systems" },
+        { icon: imageAssets.safetyIcon, text: "Intrinsic Safety (ATEX, IEC 60079)" },
+        { icon: imageAssets.fpgaIcon, text: "FPGA & AI Edge Devices" },
       ],
     },
     {
       title: "Firmware Development",
       subtitle: "Building reliable firmware for smarter connected devices.",
       pills: [
-        { icon: imageAssets.FirmwareDevelopment, text: "RTOS & embedded OS" },
-        { icon: imageAssets.SafetyIcon, text: "OTA updates & device lifecycle management" },
-        { icon: imageAssets.FpgaIcon, text: "Edge AI and sensor integration" },
+        { icon: imageAssets.firmwareDevelopment, text: "RTOS & embedded OS" },
+        { icon: imageAssets.safetyIcon, text: "OTA updates & device lifecycle management" },
+        { icon: imageAssets.fpgaIcon, text: "Edge AI and sensor integration" },
       ],
     },
     {
       title: "Cloud & Web",
       subtitle: "Delivering fast, secure, and reliable web experiences.",
       pills: [
-        { icon: imageAssets.CloudWeb, text: "MQTT and REST APIs" },
-        { icon: imageAssets.SafetyIcon, text: "Multi-tenant dashboards" },
-        { icon: imageAssets.FpgaIcon, text: "Predictive analytics & data visualization" },
+        { icon: imageAssets.cloudWeb, text: "MQTT and REST APIs" },
+        { icon: imageAssets.safetyIcon, text: "Multi-tenant dashboards" },
+        { icon: imageAssets.fpgaIcon, text: "Predictive analytics & data visualization" },
       ],
     },
     {
       title: "Mobile Apps",
       subtitle: "Crafting intuitive mobile experience for everyday users.",
       pills: [
-        { icon: imageAssets.MobileApp, text: "Flutter, Android & iOS apps" },
-        { icon: imageAssets.SafetyIcon, text: "BLE/NFC based device pairing" },
-        { icon: imageAssets.FpgaIcon, text: "Real-time control and data insights" },
+        { icon: imageAssets.mobileApp, text: "Flutter, Android & iOS apps" },
+        { icon: imageAssets.safetyIcon, text: "BLE/NFC based device pairing" },
+        { icon: imageAssets.fpgaIcon, text: "Real-time control and data insights" },
       ],
     },
   ];
@@ -132,7 +131,7 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
         #002556ED 106.73%
       ),
       linear-gradient(0deg, #00000033, #00000033),
-      url(${imageAssets.ExpertisePillBackground})
+      url(${imageAssets.expertisePillBackground})
     `,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -145,7 +144,7 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
         style={backgroundStyle}
         className="
           w-full max-w-[1200px] mx-auto
-          shadow-expertisePill
+          shadow-none border-none
           rounded-3xl sm:rounded-full
           px-4 sm:px-8 md:px-16 lg:px-20
           py-8 sm:py-12

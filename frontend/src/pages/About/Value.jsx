@@ -7,7 +7,7 @@ function Value() {
         <div className='relative isolate '>
 
 
-            <img src={imageAssets.About_Value}  
+            <img src={imageAssets.aboutValue}  
                  alt=""
                  className='absolute top-[-10%] right-0 z-0 block pointer-events-none' />
 
@@ -18,19 +18,19 @@ function Value() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-20 z-10 ">
 
-                <ExpertiseCard icon={imageAssets.HardwareDesign}
+                <ExpertiseCard icon={imageAssets.hardwareDesign}
                                 title="Integrity"
                                 description="We create fresh ideas that turn technology challenges into solutions"/>
                 
-                <ExpertiseCard icon={imageAssets.FirmwareDevelopment}
+                <ExpertiseCard icon={imageAssets.firmwareDevelopment}
                                 title="Innovation"
                                 description="We create fresh ideas that turn technology challenges into solutions"/>
                 
-                <ExpertiseCard icon={imageAssets.CloudWeb}
+                <ExpertiseCard icon={imageAssets.cloudWeb}
                                 title="Collaboration"
                                 description="Working together to achieve smarter solutions and shared success always"/>
                 
-                <ExpertiseCard icon={imageAssets.MobileApp}
+                <ExpertiseCard icon={imageAssets.mobileApp}
                                 title="Sustainability"
                                 description="Smart engineering for a cleaner planet with lasting positive impact"/>
 

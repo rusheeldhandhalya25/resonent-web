@@ -5,26 +5,26 @@ const team = [
   {
     name: "Jerome Bell",
     role: "UI/UX Designer",
-    image: imageAssets.About_Team1,
-    avatar: imageAssets.About_Team_Profilelogo,
+    image: imageAssets.aboutTeamOne,
+    avatar: imageAssets.aboutTeamProfileLogo,
   },
   {
     name: "Jerome Bell",
     role: "Backend Developer",
-    image: imageAssets.About_Team2,
-    avatar: imageAssets.About_Team_Profilelogo,
+    image: imageAssets.aboutTeamTwo,
+    avatar: imageAssets.aboutTeamProfileLogo,
   },
   {
     name: "Jerome Bell",
     role: "Frontend Developer",
-    image: imageAssets.About_Team3,
-    avatar: imageAssets.About_Team_Profilelogo,
+    image: imageAssets.aboutTeamThree,
+    avatar: imageAssets.aboutTeamProfileLogo,
   },
   {
     name: "Jerome Bell",
     role: "Frontend Developer",
-    image: imageAssets.About_Team4,
-    avatar: imageAssets.About_Team_Profilelogo,
+    image: imageAssets.aboutTeamFour,
+    avatar: imageAssets.aboutTeamProfileLogo,
   },
 ];
 

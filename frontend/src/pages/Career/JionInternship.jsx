@@ -11,26 +11,26 @@ function JoinIntership() {
 
           {/* LEFT IMAGES */}
           <img
-            src={imageAssets.Career_Internship_Left_Down}
+            src={imageAssets.careerInternshipLeftDown}
             alt=""
             className="pointer-events-none absolute bottom-0 left-0 z-0 w-32 sm:bottom-[-5%] sm:left-[1%] sm:w-36 md:bottom-[-2%] md:left-[-1%] md:w-48 lg:bottom-[-25%] lg:left-[-9%] lg:w-auto"
           />
 
           <img
-            src={imageAssets.Career_Internship_Left_Up}
+            src={imageAssets.careerInternshipLeftUp}
             alt=""
             className="pointer-events-none absolute bottom-[1%] left-[-2%] z-0 w-24 sm:bottom-[-10%] sm:left-0 sm:w-28 md:bottom-[-15%] md:left-[-4%] md:w-40 lg:bottom-[-39%] lg:left-[-4%]    lg:w-auto"
           />
 
           {/* RIGHT IMAGES */}
           <img
-            src={imageAssets.Career_Internship_Right_Down}
+            src={imageAssets.careerInternshipRightDown}
             alt=""
             className="pointer-events-none absolute bottom-0 right-0 z-0 w-32 sm:bottom-[-5%] sm:right-[1%] sm:w-36 md:bottom-[-2%] md:right-[-1%] md:w-48 lg:bottom-[-25%] lg:right-[-9%]    lg:w-auto"
           />
 
           <img
-            src={imageAssets.Career_Internship_Right_Up}
+            src={imageAssets.careerInternshipRightUp}
             alt=""
             className="pointer-events-none absolute bottom-[2%] right-[-2%] z-0 w-24 sm:bottom-[-10%] sm:right-[-1%] sm:w-28 md:bottom-[-15%] md:right-[-4%] md:w-40 lg:bottom-[-39%] lg:right-[-4%]  lg:w-auto"
           />

@@ -46,7 +46,7 @@ const BlogSection = () => {
             Blogs
          </h2>
 
-         <img src={imageAssets.Home_Blog} 
+         <img src={imageAssets.homeBlog} 
               alt=""
               className="absolute top-0 right-0 w-[150%] z-0 block" />
 

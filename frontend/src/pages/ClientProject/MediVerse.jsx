@@ -1,30 +1,39 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import imageAssets from "../../assets";
 import ExpertiseCard from "./../../components/ExpertiseCard";
 import { useState } from "react";
 
 
 function MediVerse() {
+  const navigate = useNavigate();
 
   const logos = [
-  imageAssets.Skoda,
-  imageAssets.Swiggy,
-  imageAssets.Kia,
-  imageAssets.Nokia,
-  imageAssets.Intel,
-  imageAssets.Mahindra,
-  imageAssets.Oppo,
-  imageAssets.Fila
+  imageAssets.skoda,
+  imageAssets.swiggy,
+  imageAssets.kia,
+  imageAssets.nokia,
+  imageAssets.intel,
+  imageAssets.mahindra,
+  imageAssets.oppo,
+  imageAssets.fila
 ];
 
   return (
     <div className="w-full bg-backgroundClr pb-20 pt-24 lg:pt-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+        <img src={imageAssets.backIcon} 
+              alt=""
+              className="w-[50px] h-[50px] cursor-pointer"
+              onClick={() => navigate("/projects")}
+               />
+
         {/* Header Section */}
         <div className="flex flex-col items-center text-center">
           <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full shadow-lg sm:h-20 sm:w-20">
             <img
-              src={imageAssets.MediVerse_1}
+              src={imageAssets.mediverseLogo}
               alt="MediVerse Logo"
               className="h-full w-full object-contain"
             />
@@ -152,13 +161,17 @@ function MediVerse() {
             </h2>
 
             <div className=" items-center justify-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 md:mt-20">
-                <ExpertiseCard title="Blueteeth"
+                <ExpertiseCard icon={imageAssets.hardwareDesign}
+                               title="Blueteeth"
                                description="Wireless data exchange with nearby devices."/>
-                <ExpertiseCard title="wifi"
+                <ExpertiseCard icon={imageAssets.wifiIcon}
+                               title="wifi"
                                description="High-speed wireless internet for connected devices."/>
-                <ExpertiseCard title="AI"
+                <ExpertiseCard icon={imageAssets.aiIcon}                            
+                              title="AI"
                                description="Smart machines simulating human learning and decisions."/>
-                <ExpertiseCard title="C+"
+                <ExpertiseCard icon={imageAssets.firmwareDevelopment}
+                               itle="C+"
                                description="Powerful programming language for fast system development."/>
             </div>
         </div>

@@ -13,19 +13,19 @@ const JoinUs = () => {
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mx-20 mt-9">
-                <ExpertiseCard icon={imageAssets.HardwareDesign}
+                <ExpertiseCard icon={imageAssets.hardwareDesign}
                                 title="End to End Exposure"
                                 description="Work across complete product development lifecycle"/>
 
-                <ExpertiseCard icon={imageAssets.FirmwareDevelopment}
+                <ExpertiseCard icon={imageAssets.firmwareDevelopment}
                                 title="R&D Innovation"
                                 description="Create new ideas through  hands on experimentation"/>
 
-                <ExpertiseCard icon={imageAssets.CloudWeb}
+                <ExpertiseCard icon={imageAssets.cloudWeb}
                                 title="Growth Opportunities "
                                 description="Advance your skills with continues career learning "/>
                 
-                <ExpertiseCard icon={imageAssets.MobileApp}
+                <ExpertiseCard icon={imageAssets.mobileApp}
                                 title="Social impact"
                                 description="Build technology that positively impacts communities"/>
             </div>
