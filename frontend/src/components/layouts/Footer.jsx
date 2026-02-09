@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="relative bg-backgroundClr font-body text-textDefaultClr overflow-hidden
-                       pt-10 pb-16 sm:pb-20 lg:pb-28 px-4 sm:px-8 lg:px-24">
+                       pt-10 pb-16 sm:pb-16 lg:pb-20 px-4 sm:px-8 lg:px-24">
 
       {/* BACKGROUND SVGs */}
       <img
@@ -36,14 +36,14 @@ const Footer = () => {
 
         <img src={imageAssets.Footer}
             alt=""
-            className="hidden lg:block w-[3px] h-[140px] opacity-60 mx-6"
+            className="hidden lg:block w-[4px] h-[160px] opacity-70 mx-6"
           />
 
         {/* LINKS */}
         <div className="flex items-start justify-center">
 
           {/* SECTION 1 */}
-          <div className="flex flex-col gap-2 text-16 items-start">
+          <div className="flex flex-col gap-2 text-16 items-start mx-auto">
             {["Home", "About Us", "Blog", "Courses", "Consulting"].map((t, i) => (
               <Link key={i} to="/" className="hover:text-primaryDefaultClr transition">
                 {t}
@@ -56,9 +56,9 @@ const Footer = () => {
             src={imageAssets.Footer}
             alt=""
             className="
-              mx-4 sm:mx-6 lg:mx-8
-              w-[3px] h-[140px]
-              opacity-60
+              mx-4 sm:mx-6 lg:mx-20
+              w-[4px] h-[160px]
+              opacity-70
             "
           />
 
@@ -74,11 +74,11 @@ const Footer = () => {
 
         <img src={imageAssets.Footer}
           alt=""
-          className="hidden lg:block w-[3px] h-[140px] opacity-60 mx-6"
+          className="hidden lg:block w-[4px] h-[160px] opacity-70 mx-6"
         />
 
         {/* CONTACT US (single, responsive) */}
-        <div className="flex flex-col gap-4 items-center lg:items-start">
+        <div className="flex flex-col gap-4 items-center jusify-center lg:items-start">
           <span className="text-18 font-6">Contact Us</span>
 
           <div className="flex justify-center lg:justify-start gap-3">

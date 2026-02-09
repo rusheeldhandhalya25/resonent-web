@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import imageAssets from "../../assets";
 import ProjectCard from "../../components/cards/ProjectCard";
 
 const Project = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="our-project"  className="relative  w-full px-4 sm:px-6 lg:px-20 py-16 lg:pt-28">
 
@@ -18,6 +21,7 @@ const Project = () => {
             title="Smart Factory Gateway"
             description="A smart device that connects factory machines to the internet and software systems. It collects machine data in real time, sends alerts, and helps improve productivity."
             image={imageAssets.factoryImg}
+            onTagClick={() => navigate("/mediverse")}
           />
 
           <ProjectCard

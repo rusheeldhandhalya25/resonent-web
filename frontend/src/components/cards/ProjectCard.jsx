@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AppButton from "../buttons/AppButtons";
 
-const ProjectCard = ({ tag, year, title, description, image }) => {
+const ProjectCard = ({ tag, year, title, description, image, onTagClick }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
     <div
@@ -34,6 +34,7 @@ const ProjectCard = ({ tag, year, title, description, image }) => {
             rounded="full"
             fontClass="font-body text-xs font-5"
             className="px-4 py-2"
+            onClick={onTagClick}
           >
             {tag}
           </AppButton>

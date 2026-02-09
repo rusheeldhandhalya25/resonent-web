@@ -10,6 +10,7 @@ import logo from "./images/footer_logo.png";
 import ContactImg from "./images/contactus_image.png";
 import Homefirst from "./images/homefirst.png";
 import Mediverse from "./images/mediverse_1.png";
+import MediVerse_1  from "./images/mediverse.png";
 import Syncworks from "./images/syncworks_1.png";
 import Storeedge from "./images/storeedge_1.png";
 import user1Img from "./images/user_1.png";
@@ -141,6 +142,7 @@ const imageAssets = {
   CivilConstruction,
   Entertainment,
   Home_Whoweare,
+  MediVerse_1,
   PramitiRecycling,
   About_Team1,
   About_Team2,

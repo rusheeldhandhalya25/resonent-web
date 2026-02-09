@@ -10,6 +10,7 @@ import {
   ClientProject,
   Blogs,
 } from "./pages/index.js";
+import MediVerse from "./pages/ClientProject/MediVerse";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/products" element={<OurProduct />} />
         <Route path="/career" element={<Career />} />
         <Route path="/projects" element={<ClientProject />} />
+        <Route path="/mediverse" element={<MediVerse />} />
         <Route path="/blogs" element={<Blogs />} />
       </Routes>
 
