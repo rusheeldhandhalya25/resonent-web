@@ -23,7 +23,7 @@ function HomeAboutus() {
         />
 
         
-        <div className=" px-4 py-16  mx-5 md:mx-10 lg:mx-20">
+        <div className=" px-4 py-8  mx-5 md:mx-10 lg:mx-20">
            <Aboutus
           image={imageAssets.homeWhoWeAre}
           title="Who we are"

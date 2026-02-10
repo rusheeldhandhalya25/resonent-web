@@ -29,7 +29,7 @@ const OurExpertise = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className=" relative w-full px-4 sm:px-6 lg:px-20 pt-16 pb-6 overflow-hidden">
+    <section className=" relative w-full px-4 sm:px-6 lg:px-20  pb-6 overflow-hidden">
       <div className="relative z-10">
         {/* Heading */}
         <div className="max-w-4xl mx-auto text-center space-y-4">
