@@ -40,6 +40,7 @@ import aboutTeamFour from "./images/about-team-4.png";
 import aboutTeamProfileLogo from "./images/about-team-profilelogo.png";
 import ourCulture from "./images/our-culture.png";
 import uploadImage from "./images/upload.png";
+import fatBurn from "./images/fat-burn-blog.png";
 
 
 
@@ -153,6 +154,7 @@ const imageAssets = {
   ourCulture,
   uploadImage,
   calendarIcon,
+  fatBurn,
   
 
   instagramIcon,

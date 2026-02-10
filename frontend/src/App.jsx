@@ -11,6 +11,7 @@ import {
   Blogs,
 } from "./pages/index.js";
 import MediVerse from "./pages/ClientProject/MediVerse";
+import HealthySnackBlog from "./pages/Blogs/HealthySnackBlog";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/projects" element={<ClientProject />} />
         <Route path="/mediverse" element={<MediVerse />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/healthy-snack" element={<HealthySnackBlog />} />
       </Routes>
 
       <Footer />
