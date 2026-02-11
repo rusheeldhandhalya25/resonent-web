@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/layouts/Header.jsx";
 import Footer from "./components/layouts/Footer.jsx";
+import MediVerse from "./pages/client-project/MediVerse";
+import HealthySnackBlog from "./pages/Blogs/HealthySnackBlog";
+
 import {
   Home,
   About,
@@ -10,8 +13,7 @@ import {
   ClientProject,
   Blogs,
 } from "./pages/index.js";
-import MediVerse from "./pages/ClientProject/MediVerse";
-import HealthySnackBlog from "./pages/Blogs/HealthySnackBlog";
+
 
 function App() {
   return (

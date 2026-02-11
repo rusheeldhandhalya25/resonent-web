@@ -1,4 +1,4 @@
-import TimelineItem from "../../components/TimelineItem";
+import TimelineItem from "../../components/TimelineItem.jsx";
 import imageAssets from "../../assets/index.js";
 
 const OurStory = () => {

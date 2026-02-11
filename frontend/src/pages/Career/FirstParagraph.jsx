@@ -49,8 +49,8 @@ const FirstParagraph = () => {
         </div>
 
         <p className="font-body text-sm sm:text-[14px] text-center text-textDisableClr max-w-[750px] font-5 mt-4 mb-10">
-          join our innovates team and grow your career while shaping samrter IOT
-          solution for industries,people and global impact sndfowndfwnf
+          Join our innovative team and grow your career while shaping smarter IoT
+          solutions for industries, people, and global impact.
         </p>
       </div>
     </div>

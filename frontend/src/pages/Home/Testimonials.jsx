@@ -3,15 +3,15 @@ import imageAssets from "../../assets";
 
 const Testimonials = () => {
   return (
-    <section className="relative w-full bg-backgroundClr py-16 sm:py-20">
+    <section className="relative w-full bg-backgroundClr py-16 sm:py-20 overflow-hidden">
       <img
         src={imageAssets.homeTestimonials}
         alt=""
-        className="absolute top-0 left-0 w-[150%] z-0 block"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 block opacity-60 sm:opacity-100"
       />
       {/* Heading */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-        <h2 className="font-heading font-6 text-3xl sm:text-4xl text-center mb-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+        <h2 className="font-heading font-6 text-3xl sm:text-4xl text-center mb-12 text-textDefaultClr">
           Testimonials
         </h2>
 
@@ -20,10 +20,10 @@ const Testimonials = () => {
           className="
             grid
             grid-cols-1
-            md:grid-cols-2
             lg:grid-cols-4
-            gap-6
-            place-items-center
+            gap-3
+            items-stretch
+            justify-items-center
           "
         >
           <TestimonialCard

@@ -22,7 +22,7 @@ const OurService = () => {
           HeadIcon={imageAssets.firmwareDevelopment}
           Heading="Firmware Development"
           Description="Our firmware development team builds secure, reliable, and optimized embedded software for modern IoT devices. We work with FreeRTOS and low-power architectures, enabling OTA updates, real-time processing, and seamless communication through BLE, GSM, LoRa, and secure protocols. With strong focus on stability, safety, and field performance, we ensure every device operates efficiently across its complete lifecycle."
-          Round1="reeRTOS & embedded OS"
+          Round1="FreeRTOS & embedded OS"
           Round2="OTA updates & device lifecycle "
           Round3="Edge AI and sensor integration"
         />

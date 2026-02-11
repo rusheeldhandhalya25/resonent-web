@@ -42,7 +42,7 @@ import ourCulture from "./images/our-culture.png";
 import uploadImage from "./images/upload.png";
 import fatBurn from "./images/fat-burn-blog.png";
 import emailIcon from "./images/email-icon.png";
-import callIconn from "./images/call-icon.png";
+import callIconPng from "./images/call-icon.png";
 import locationIcon from "./images/address-icon.png";
 
 
@@ -155,7 +155,7 @@ const imageAssets = {
   calendarIcon,
   fatBurn,
   emailIcon,
-  callIconn,
+  callIconPng,
   locationIcon,
 
   instagramIcon,

@@ -1,17 +1,13 @@
-import Aboutus from "../components/common/AboutUs.jsx";
-import TimelineItem from "../components/TimelineItem.jsx";
-import AboutProductCard from "../components/cards/AboutProductCard.jsx";
-
-import First from "./About/FirstParagraph.jsx";
+import First from "./about/FirstParagraph.jsx";
 import StatusBar from "../components/common/StatusBar.jsx";
-import MissionVision from "./About/MissionVision.jsx";
-import OurStory from "./About/OurStory.jsx";
-import Ecosystem from "./About/EcoSystem.jsx";
-import FounderCard from "./About/FounderCard.jsx";
-import OurPartner from "./About/OurPartner.jsx";
-import AboutUs from "./About/AboutUs.jsx";
-import Value from "./About/Value.jsx";
-import OurTeam from "./About/OurTeam.jsx";
+import MissionVision from "./about/MissionVision.jsx";
+import OurStory from "./about/OurStory.jsx";
+import Ecosystem from "./about/EcoSystem.jsx";
+import FounderCard from "./about/FounderCard.jsx";
+import OurPartner from "./about/OurPartner.jsx";
+import AboutUs from "./about/AboutUs.jsx";
+import Value from "./about/Value.jsx";
+import OurTeam from "./about/OurTeam.jsx";
 
 const About = () => {
   return (

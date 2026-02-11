@@ -35,7 +35,6 @@ const PartnerForm = ({ onClose }) => {
       return errors;
     },
     onSubmit: (values, { setSubmitting }) => {
-      console.log("Partner Inquiry Data:", values);
       setTimeout(() => {
         setSubmitting(false);
         if (onClose) onClose();

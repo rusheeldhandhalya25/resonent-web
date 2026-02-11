@@ -1,4 +1,4 @@
-import imageAssets from "../../assets";
+import imageAssets from "../../assets/index.js";
 import Aboutus from "../../components/common/AboutUs.jsx";
 
 import React from 'react'

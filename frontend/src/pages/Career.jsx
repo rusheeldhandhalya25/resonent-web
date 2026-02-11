@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import FirstParagraph from "./Career/FirstParagraph.jsx";
-import JoinUs from "./Career/JoinUs.jsx";
-import OurCulture from "./Career/OurCulture.jsx";
+import FirstParagraph from "./career/FirstParagraph.jsx";
+import JoinUs from "./career/JoinUs.jsx";
+import OurCulture from "./career/OurCulture.jsx";
 import OpenPositions from "./Career/OpenPosition.jsx";
-import JoinIntership from "./Career/JoinInternship.jsx";
-import JobModal from "./Career/JobModel.jsx";
-import ApplyNowForm from "./Career/ApplyNowForm.jsx";
+import JoinInternship from "./Career/JoinInternship.jsx";
+import JobModal from "./career/JobModel.jsx";
+import ApplyNowForm from "./career/ApplyNowForm.jsx";
 import JobDetail from "../components/career/JobDetail.jsx";
 import JobApplyForm from "../components/career/JobApplyForm.jsx";
 
@@ -40,7 +40,7 @@ function Career() {
 
       <OpenPositions onApply={handleApply} onView={handleView} />
 
-      <JoinIntership />
+      <JoinInternship />
 
       <JobModal
         isOpen={open}

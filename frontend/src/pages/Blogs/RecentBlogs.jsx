@@ -1,6 +1,6 @@
 import React from "react";
 import AppButton from "../../components/buttons/AppButtons.jsx";
-import imageAssets from "../../assets";
+import imageAssets from "../../assets/index.js";
 
 /* 1️⃣ DATA */
 const blogsData = [

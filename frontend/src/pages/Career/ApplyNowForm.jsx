@@ -1,6 +1,7 @@
+import React from "react";
 import { useFormik } from "formik";
-import AppButton from "../../components/buttons/AppButtons";
-import imageAssets from "../../assets";
+import AppButton from "../../components/buttons/AppButtons.jsx";
+import imageAssets from "../../assets/index.js";
 
 const ApplyNowForm = () => {
   const formik = useFormik({
@@ -24,8 +25,8 @@ const ApplyNowForm = () => {
       return errors;
     },
 
-    onSubmit: (values) => {
-      console.log("FORM DATA 👉", values);
+    onSubmit: () => {
+      // Handle form submission
     },
   });
 

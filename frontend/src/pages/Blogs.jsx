@@ -1,7 +1,7 @@
 import React from "react";
-import FirstParagraph from "./Blogs/FirstParagrph";
-import BlogSection from "./Blogs/BlogSection";
-import RecentBlogs from "./Blogs/RecentBlogs";
+import FirstParagraph from "./blogs/FirstParagrph";
+import BlogSection from "./blogs/BlogSection";
+import RecentBlogs from "./blogs/RecentBlogs";
 
 function Blogs() {
   return (

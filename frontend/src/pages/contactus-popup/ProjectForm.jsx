@@ -1,7 +1,7 @@
 import React from "react";
 import { useFormik } from "formik";
 import AppButton from "../../components/buttons/AppButtons.jsx";
-import imageAssets from "../../assets";
+import imageAssets from "../../assets/index.js";
 
 const ProjectForm = ({ onClose }) => {
   const formik = useFormik({
@@ -39,7 +39,6 @@ const ProjectForm = ({ onClose }) => {
       return errors;
     },
     onSubmit: (values, { setSubmitting }) => {
-      console.log("Project Inquiry Data:", values);
       setTimeout(() => {
         setSubmitting(false);
         if (onClose) onClose();
@@ -229,7 +228,7 @@ const ProjectForm = ({ onClose }) => {
             Upload File
           </p>
           <p className="text-xs text-textDisableClr mt-1">
-           Upload a file of the project requrements
+           Upload a file of the project requirements
           </p>
         </label>
         {formik.touched.document && formik.errors.document && (

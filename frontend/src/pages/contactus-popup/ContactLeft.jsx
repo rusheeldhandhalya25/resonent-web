@@ -32,7 +32,7 @@ const ContactLeft = () => {
           {/* Phone */}
           <div className="flex items-center gap-4 bg-tagClr rounded-full p-2 pr-6">
             <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-              <img src={imageAssets.callIconn} alt="Phone" className="w-9 h-9 object-contain" />
+              <img src={imageAssets.callIconPng} alt="Phone" className="w-9 h-9 object-contain" />
             </div>
             <div className="flex flex-col text-textDefaultClr">
               <p className="opacity-60 text-xs mb-0.5">Phone</p>

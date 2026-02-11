@@ -6,6 +6,22 @@ import { useState } from "react";
 
 function MediVerse() {
   const navigate = useNavigate();
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const features = [
+    {
+      title: "Real Time Data",
+      desc: "Real-time health data keeps doctors and patients updated instantly for faster, accurate medical decisions.",
+    },
+    {
+      title: "Remote Alerts",
+      desc: "Instant alerts notify caregivers and doctors during critical health conditions.",
+    },
+    {
+      title: "Device Integration",
+      desc: "Seamless integration with medical and wearable devices for continuous monitoring.",
+    },
+  ];
 
   const logos = [
     imageAssets.skoda,
@@ -98,68 +114,43 @@ function MediVerse() {
             Key Features of Our Program
           </h2>
 
-          {/*
-    activeIndex = kono card open chhe
-    default 0 => pehlo open
-  */}
-          {(() => {
-            const [activeIndex, setActiveIndex] = useState(0);
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6 items-stretch">
+            {/* LEFT SIDE */}
+            <div className="flex flex-col gap-4 h-full">
+              {features.map((item, index) => (
+                <div
+                  key={index}
+                  onMouseEnter={() => setActiveIndex(index)}
+                  className="bg-cardClr rounded-xl p-5 cursor-pointer transition-all duration-300"
+                >
+                  <h3 className="font-body font-5 text-textDefaultClr text-16">
+                    {item.title}
+                  </h3>
 
-            const features = [
-              {
-                title: "Real Time Data",
-                desc: "Real-time health data keeps doctors and patients updated instantly for faster, accurate medical decisions.",
-              },
-              {
-                title: "Remote Alerts",
-                desc: "Instant alerts notify caregivers and doctors during critical health conditions.",
-              },
-              {
-                title: "Device Integration",
-                desc: "Seamless integration with medical and wearable devices for continuous monitoring.",
-              },
-            ];
-
-            return (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6 items-stretch">
-                {/* LEFT SIDE */}
-                <div className="flex flex-col gap-4 h-full">
-                  {features.map((item, index) => (
-                    <div
-                      key={index}
-                      onMouseEnter={() => setActiveIndex(index)}
-                      className="bg-cardClr rounded-xl p-5 cursor-pointer transition-all duration-300"
-                    >
-                      <h3 className="font-body font-5 text-textDefaultClr text-16">
-                        {item.title}
-                      </h3>
-
-                      <div
-                        className={`overflow-hidden transition-all duration-300 ${
-                          activeIndex === index ? "max-h-40 mt-3" : "max-h-0"
-                        }`}
-                      >
-                        <p className="text-textDisableClr text-[14px] font-body">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* RIGHT SIDE VIDEO */}
-                <div className="h-full rounded-xl overflow-hidden">
-                  <video
-                    className="w-full h-full object-cover rounded-xl"
-                    controls
-                    poster={imageAssets.factoryImg}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      activeIndex === index ? "max-h-40 mt-3" : "max-h-0"
+                    }`}
                   >
-                    <source src="/demo-video.mp4" type="video/mp4" />
-                  </video>
+                    <p className="text-textDisableClr text-[14px] font-body">
+                      {item.desc}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            );
-          })()}
+              ))}
+            </div>
+
+            {/* RIGHT SIDE VIDEO */}
+            <div className="h-full rounded-xl overflow-hidden">
+              <video
+                className="w-full h-full object-cover rounded-xl"
+                controls
+                poster={imageAssets.factoryImg}
+              >
+                <source src="/demo-video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
         </div>
 
         {/* Technical Specifications Section */}
@@ -171,12 +162,12 @@ function MediVerse() {
           <div className=" items-center justify-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 md:mt-20">
             <ExpertiseCard
               icon={imageAssets.hardwareDesign}
-              title="Blueteeth"
+              title="Bluetooth"
               description="Wireless data exchange with nearby devices."
             />
             <ExpertiseCard
               icon={imageAssets.wifiIcon}
-              title="wifi"
+              title="Wi-Fi"
               description="High-speed wireless internet for connected devices."
             />
             <ExpertiseCard
@@ -186,7 +177,7 @@ function MediVerse() {
             />
             <ExpertiseCard
               icon={imageAssets.firmwareDevelopment}
-              itle="C+"
+              title="C++"
               description="Powerful programming language for fast system development."
             />
           </div>

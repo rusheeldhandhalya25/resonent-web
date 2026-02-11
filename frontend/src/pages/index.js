@@ -1,9 +1,8 @@
-import Home from "./Home.jsx";
-import About from "./About.jsx";
-import Services from "./Services.jsx";
-import OurProduct from "./OurProduct.jsx";
-import Career from "./Career.jsx";
-import ClientProject from "./ClientProject.jsx";
-import Blogs from "./Blogs.jsx";
-
-export { Home, About, Services, OurProduct, Career, ClientProject, Blogs };
+export { default as Home } from "./Home";
+export { default as About } from "./About";
+export { default as Services } from "./Services";
+export { default as Career } from "./Career";
+export { default as Blogs } from "./Blogs";
+export { default as ClientProject } from "./ClientProject";
+export { default as OurProduct } from "./OurProduct";
+export { default as MediVerse } from "./client-project/MediVerse";

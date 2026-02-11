@@ -1,6 +1,6 @@
 import React from "react";
-import FirstParagraph from "./ClientProject/FirstParagraph.jsx";
-import Project from "./ClientProject/Project.jsx";
+import FirstParagraph from "./client-project/FirstParagraph.jsx";
+import Project from "./client-project/Project.jsx";
 
 function ClientProject() {
   return (

@@ -37,7 +37,7 @@ const industries = [
   },
 ];
 
-const IndustryWeSurve = () => {
+const IndustryWeServe = () => {
   return (
     <section className="w-full bg-backgroundClr px-4 sm:px-6 lg:px-24 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6 items-stretch">
@@ -101,4 +101,4 @@ const IndustryWeSurve = () => {
   );
 };
 
-export default IndustryWeSurve;
+export default IndustryWeServe;

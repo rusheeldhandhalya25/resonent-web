@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ContactPopup from "../pages/Career/ContactPopup.jsx";
+import ContactPopup from "./contactus-popup/ContactPopup.jsx";
 
 function OurProduct() {
   const [isContactOpen, setIsContactOpen] = useState(false);

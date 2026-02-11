@@ -13,8 +13,6 @@ const OurCulture = () => {
 
           <div className="absolute inset-0 bg-gradient-to-t from-backgroundClr/90 via-backgroundClr/50 to-transparent" />
 
-          {/* text this is  */}
-
           <div className="absolute inset-0 flex flex-col items-center justify-end pb-10  text-center px-6">
             <h2 className="text-3xl md:text-4xl font-heading text-textDefaultClr mb-3">
               Our Culture

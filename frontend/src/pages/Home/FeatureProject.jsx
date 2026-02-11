@@ -56,4 +56,4 @@ const FeatureProject = () => {
     </section>
   );
 };
-export  default FeatureProject;
+export default FeatureProject;

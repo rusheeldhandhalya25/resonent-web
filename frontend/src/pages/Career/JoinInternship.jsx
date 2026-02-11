@@ -2,7 +2,7 @@ import AppButton from "../../components/buttons/AppButtons.jsx";
 import imageAssets from "../../assets/index.js";
 import React from "react";
 
-function JoinIntership() {
+function JoinInternship() {
   return (
     <section className="px-4 py-10 pt-24 sm:px-6 lg:px-8 lg:py-16">
       <div className="mx-auto max-w-6xl">
@@ -63,4 +63,4 @@ function JoinIntership() {
   );
 }
 
-export default JoinIntership;
+export default JoinInternship;

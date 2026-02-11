@@ -1,14 +1,14 @@
 import OurProcess from "../components/our-process/OurProcess";
-import HeroSection from "./Home/HeroSection.jsx";
+import HeroSection from "./home/HeroSection.jsx";
 import StatusBar from "../components/common/StatusBar.jsx";
-import HomeAboutUs from "./Home/HomeAboutUs.jsx";
-import OurExpertise from "./Home/OurExpertise.jsx";
-import FeatureProject from "./Home/FeatureProject.jsx";
-import IndustryWeServe from "./Home/IndustryWeServe.jsx";
-import OurProduct from "./Home/OurProduct.jsx";
-import Testimonials from "./Home/Testimonials.jsx";
-import BlogSection from "./Home/Blogs.jsx";
-import ContactUs from "./Home/ContactUs.jsx";
+import HomeAboutUs from "./home/HomeAboutUs.jsx";
+import OurExpertise from "./home/OurExpertise.jsx";
+import FeatureProject from "./home/FeatureProject.jsx";
+import IndustryWeServe from "./home/IndustryWeServe.jsx";
+import OurProduct from "./home/OurProduct.jsx";
+import Testimonials from "./home/Testimonials.jsx";
+import BlogSection from "./home/Blogs.jsx";
+import ContactUs from "./home/ContactUs.jsx";
 
 /* ---------------- HOME ---------------- */
 
