@@ -1,7 +1,6 @@
 import imageAssets from "../../assets/index.js";
 import ProfileCard from "../../components/cards/ProductCard.jsx";
 
-
 const OurProduct = () => {
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-20 py-16">

@@ -5,7 +5,6 @@ const OurService = () => {
   return (
     <section className="bg-backgroundClr px-4 sm:px-6 lg:px-20 py-8 pt-20 lg:pt-32   ">
       <div className="flex flex-col gap-8 lg:gap-20">
-
         <ServicesCard
           step="01"
           variant="odd"

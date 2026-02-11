@@ -11,7 +11,6 @@ const positions = [
     site: "On-site",
     packageAmount: "3LPA - 5LPA",
     experience: "2+ Years Experience",
-
     aboutRole:
       "As an Embedded Engineer, you will design, develop, and optimize embedded firmware and systems for real-world hardware applications.",
 
@@ -197,7 +196,6 @@ const positions = [
     ],
   },
 ];
-
 
 const OpenPositions = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

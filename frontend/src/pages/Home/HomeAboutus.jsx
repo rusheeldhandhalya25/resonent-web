@@ -3,7 +3,7 @@ import imageAssets from "../../assets";
 
 
 
-function HomeAboutus() {
+function HomeAboutUs() {
   return (
      <section className="relative overflow-hidden">
       
@@ -37,4 +37,4 @@ function HomeAboutus() {
   )
 }
 
-export default HomeAboutus
+export default HomeAboutUs;

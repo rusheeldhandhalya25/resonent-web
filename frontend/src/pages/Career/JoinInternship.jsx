@@ -1,5 +1,5 @@
 import AppButton from "../../components/buttons/AppButtons.jsx";
-import imageAssets from "../../assets";
+import imageAssets from "../../assets/index.js";
 import React from "react";
 
 function JoinIntership() {
@@ -8,7 +8,6 @@ function JoinIntership() {
       <div className="mx-auto max-w-6xl">
         {/* CARD */}
         <div className="relative overflow-hidden rounded-2xl bg-newExpertiseGradient px-6 py-12 sm:px-12 sm:py-16 lg:px-20 lg:py-20">
-
           {/* LEFT IMAGES */}
           <img
             src={imageAssets.careerInternshipLeftDown}
@@ -58,7 +57,6 @@ function JoinIntership() {
               </AppButton>
             </div>
           </div>
-
         </div>
       </div>
     </section>

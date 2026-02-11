@@ -13,32 +13,31 @@ import AboutUs from "./About/AboutUs.jsx";
 import Value from "./About/Value.jsx";
 import OurTeam from "./About/OurTeam.jsx";
 
-
 const About = () => {
   return (
     <div className="bg-backgroundClr flex flex-col gap-20">
       <First />
       <StatusBar />
       <AboutUs />
-                  
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 sm:px-6 lg:px-20 max-w-[1200px] mx-auto ">
-              <MissionVision
-                title="Mission"
-                descriptions="Simplify IoT product development and make innovation scalable."
-              />
+        <MissionVision
+          title="Mission"
+          descriptions="Simplify IoT product development and make innovation scalable."
+        />
 
-              <MissionVision
-                title="Vision"
-                descriptions="Leading global partner for intelligent and sustainable IoT."
-              />
-            </div>
+        <MissionVision
+          title="Vision"
+          descriptions="Leading global partner for intelligent and sustainable IoT."
+        />
+      </div>
 
-            <Value />
-            <OurStory />
-            <OurTeam />
-            <Ecosystem />
-            <FounderCard />
-            <OurPartner />
+      <Value />
+      <OurStory />
+      <OurTeam />
+      <Ecosystem />
+      <FounderCard />
+      <OurPartner />
     </div>
   );
 };

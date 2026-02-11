@@ -124,10 +124,12 @@ const ApplyNowForm = () => {
                   formik.setFieldValue("resume", e.target.files[0])
                 }
               />
-            
-              <img src={imageAssets.uploadIcon} 
-                   alt=""
-                   className="mb-2 w-[32px] h-[32px]" />
+
+              <img
+                src={imageAssets.uploadIcon}
+                alt=""
+                className="mb-2 w-[32px] h-[32px]"
+              />
 
               <p className="text-[16px] text-textDefaultClr underline underline-offset-3">
                 Upload Resume

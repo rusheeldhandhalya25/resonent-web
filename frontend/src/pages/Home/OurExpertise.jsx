@@ -38,8 +38,8 @@ const OurExpertise = () => {
           </h1>
 
           <p className="font-body font-1 text-textDisableClr text-sm sm:text-base leading-relaxed">
-            Building powerful embedded solutions with smart hardware, intelligent
-            software, and cloud integration.
+            Building powerful embedded solutions with smart hardware,
+            intelligent software, and cloud integration.
           </p>
         </div>
 
@@ -72,11 +72,9 @@ const OurExpertise = () => {
         {/* Pills section */}
         <ExpertisePills activeIndex={activeIndex} />
       </div>
-
     </section>
   );
 };
-
 
 /* expertise pills */
 const ExpertisePills = ({ activeIndex = 0 }) => {
@@ -85,8 +83,14 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
       title: "Hardware Design",
       subtitle: "We design smart and reliable hardware for real-world use.",
       pills: [
-        { icon: imageAssets.powerIcon, text: "Power Electronics & Control Systems" },
-        { icon: imageAssets.safetyIcon, text: "Intrinsic Safety (ATEX, IEC 60079)" },
+        {
+          icon: imageAssets.powerIcon,
+          text: "Power Electronics & Control Systems",
+        },
+        {
+          icon: imageAssets.safetyIcon,
+          text: "Intrinsic Safety (ATEX, IEC 60079)",
+        },
         { icon: imageAssets.fpgaIcon, text: "FPGA & AI Edge Devices" },
       ],
     },
@@ -95,7 +99,10 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
       subtitle: "Building reliable firmware for smarter connected devices.",
       pills: [
         { icon: imageAssets.firmwareDevelopment, text: "RTOS & embedded OS" },
-        { icon: imageAssets.safetyIcon, text: "OTA updates & device lifecycle management" },
+        {
+          icon: imageAssets.safetyIcon,
+          text: "OTA updates & device lifecycle management",
+        },
         { icon: imageAssets.fpgaIcon, text: "Edge AI and sensor integration" },
       ],
     },
@@ -105,7 +112,10 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
       pills: [
         { icon: imageAssets.cloudWeb, text: "MQTT and REST APIs" },
         { icon: imageAssets.safetyIcon, text: "Multi-tenant dashboards" },
-        { icon: imageAssets.fpgaIcon, text: "Predictive analytics & data visualization" },
+        {
+          icon: imageAssets.fpgaIcon,
+          text: "Predictive analytics & data visualization",
+        },
       ],
     },
     {
@@ -114,7 +124,10 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
       pills: [
         { icon: imageAssets.mobileApp, text: "Flutter, Android & iOS apps" },
         { icon: imageAssets.safetyIcon, text: "BLE/NFC based device pairing" },
-        { icon: imageAssets.fpgaIcon, text: "Real-time control and data insights" },
+        {
+          icon: imageAssets.fpgaIcon,
+          text: "Real-time control and data insights",
+        },
       ],
     },
   ];
@@ -181,4 +194,4 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
   );
 };
 
-export default  OurExpertise;
+export default OurExpertise;

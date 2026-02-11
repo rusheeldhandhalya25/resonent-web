@@ -42,9 +42,6 @@ import ourCulture from "./images/our-culture.png";
 import uploadImage from "./images/upload.png";
 import fatBurn from "./images/fat-burn-blog.png";
 
-
-
-
 import instagramIcon from "./images/instagram-icon.svg";
 import twitterIcon from "./images/twitter-icon.svg";
 import behanceIcon from "./images/behance-icon.svg";
@@ -78,7 +75,7 @@ import intel from "./svg/partners/intel.svg";
 import mahindra from "./svg/partners/mahindra.svg";
 import oppo from "./svg/partners/oppo.svg";
 import fila from "./svg/partners/fila.svg";
-import hill from "./svg/hill.svg"
+import hill from "./svg/hill.svg";
 import verticalLine1 from "./svg/homepage-verticle-1.svg";
 import verticalLine2 from "./svg/homepage-verticle-2.svg";
 import horizontalLine1 from "./svg/homepage-horizontal-1.svg";
@@ -109,9 +106,7 @@ import aiIcon from "./svg/ai-icon.svg";
 import wifiIcon from "./svg/wifi-icon.svg";
 import backIcon from "./svg/back-icon.svg";
 
-
 const imageAssets = {
-
   expertisePillBackground,
 
   homeSecond,
@@ -155,7 +150,6 @@ const imageAssets = {
   uploadImage,
   calendarIcon,
   fatBurn,
-  
 
   instagramIcon,
   twitterIcon,

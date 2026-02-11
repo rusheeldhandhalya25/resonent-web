@@ -7,12 +7,16 @@ const Project = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="our-project"  className="relative  w-full px-4 sm:px-6 lg:px-20 py-16 lg:pt-28">
+    <section
+      id="our-project"
+      className="relative  w-full px-4 sm:px-6 lg:px-20 py-16 lg:pt-28"
+    >
+      <img
+        src={imageAssets.clientProject}
+        alt=""
+        className="absolute top-0 right-0 z-0 block"
+      />
 
-      <img src={imageAssets.clientProject} 
-           alt=""
-           className="absolute top-0 right-0 z-0 block" />
-      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="flex flex-col gap-5">
           <ProjectCard
@@ -53,4 +57,4 @@ const Project = () => {
     </section>
   );
 };
-export  default Project;
+export default Project;
