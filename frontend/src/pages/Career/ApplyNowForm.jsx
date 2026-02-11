@@ -30,7 +30,7 @@ const ApplyNowForm = () => {
   });
 
   return (
-    <section className="flex justify-center px-4 py-20">
+    <section className="flex justify-center px-4 py-9">
       <div className="w-full max-w-3xl rounded-2xl bg-newExpertiseGradient p-10">
         <h2 className="mb-8 text-center font-heading text-40 font-6 text-textDefaultClr">
           Apply Now

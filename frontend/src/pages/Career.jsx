@@ -5,7 +5,7 @@ import OurCulture from "./Career/OurCulture.jsx";
 import OpenPositions from "./Career/OpenPosition.jsx";
 import JoinIntership from "./Career/JionInternship.jsx";
 import JobModal from "./Career/JobModel.jsx";
-
+import ApplyNowForm from "./Career/ApplyNowForm.jsx";
 import JobDetail from "../components/career/JobDetail.jsx";
 import JobApplyForm from "../components/career/JobApplyForm.jsx";
 
@@ -52,6 +52,8 @@ function Career() {
         left={<JobDetail job={selectedJob} />}
         right={<JobApplyForm job={selectedJob} />}
       />
+
+      <ApplyNowForm />
     </div>
   );
 }
