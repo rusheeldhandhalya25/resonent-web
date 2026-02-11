@@ -41,6 +41,10 @@ import aboutTeamProfileLogo from "./images/about-team-profilelogo.png";
 import ourCulture from "./images/our-culture.png";
 import uploadImage from "./images/upload.png";
 import fatBurn from "./images/fat-burn-blog.png";
+import emailIcon from "./images/email-icon.png";
+import callIconn from "./images/call-icon.png";
+import locationIcon from "./images/address-icon.png";
+
 
 import instagramIcon from "./images/instagram-icon.svg";
 import twitterIcon from "./images/twitter-icon.svg";
@@ -150,6 +154,9 @@ const imageAssets = {
   uploadImage,
   calendarIcon,
   fatBurn,
+  emailIcon,
+  callIconn,
+  locationIcon,
 
   instagramIcon,
   twitterIcon,
