@@ -17,13 +17,14 @@ const HeroSection = () => {
           mx-auto
           px-4
           pt-6 lg:pt-10        
-          pb-10
+          pb-5
           grid
           grid-cols-1
           lg:grid-cols-[62%_38%]
           gap-10
+          ml-20
           items-center
-          lg:pr-8 xl:pr-16      
+          lg:pr-8 xl:pr-16       
         "
       >
         {/* TEXT */}
@@ -31,10 +32,10 @@ const HeroSection = () => {
           className="
             text-center lg:text-left
             relative z-10
-            lg:-mt-6              /* ✅ TEXT UP ONLY */
+            lg:-mt-4            
           "
         >
-          <h1 className="font-heading font-6 text-4xl sm:text-5xl lg:text-6xl leading-tight">
+          <h1 className="font-heading font-6 text-40 sm:text-5xl lg:text-80 leading-tight">
             We Build the future of
             <br />
             Connected Products

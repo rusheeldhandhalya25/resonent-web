@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html,
 body {
   overflow-x: clip;
@@ -18,3 +19,4 @@ body {
   src: url("/src/assets/fonts/MontserratAlternates/MontserratAlternates-Bold.ttf");
   font-weight: 700;
 }
+

@@ -6,7 +6,7 @@ const Aboutus = ({
   title,
   descriptions = [],
   buttonText = "About us",
-  buttonLink = "/About",
+  buttonLink = "/about",
   showButton = true,
 }) => {
   const navigate = useNavigate();

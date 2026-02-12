@@ -1,62 +1,62 @@
 @font-face {
   font-family: "Instrument Sans";
-  src: url("/fonts/instrument_sans/static/InstrumentSans-Thin.ttf") format("truetype");
+  src: url("/src/assets/fonts/instrument_sans/static/InstrumentSans-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("/fonts/instrument_sans/static/InstrumentSans-ExtraLight.ttf") format("truetype");
+  src: url("/src/assets/fonts/instrument_sans/static/InstrumentSans-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("/fonts/instrument_sans/static/InstrumentSans-Light.ttf") format("truetype");
+  src: url("/src/assets/fonts/instrument_sans/static/InstrumentSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("/fonts/instrument_sans/static/InstrumentSans-Regular.ttf") format("truetype");
+  src: url("/src/assets/fonts/instrument_sans/static/InstrumentSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("/fonts/instrument_sans/static/InstrumentSans-Medium.ttf") format("truetype");
+  src: url("/src/assets/fonts/instrument_sans/static/InstrumentSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("/fonts/instrument_sans/static/InstrumentSans-SemiBold.ttf") format("truetype");
+  src: url("/src/assets/fonts/instrument_sans/static/InstrumentSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("/fonts/instrument_sans/static/InstrumentSans-Bold.ttf") format("truetype");
+  src: url("/src/assets/fonts/instrument_sans/static/InstrumentSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("/fonts/instrument_sans/static/InstrumentSans-ExtraBold.ttf") format("truetype");
+  src: url("/src/assets/fonts/instrument_sans/static/InstrumentSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("/fonts/instrument_sans/static/InstrumentSans-Black.ttf") format("truetype");
+  src: url("/src/assets/fonts/instrument_sans/static/InstrumentSans-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -65,64 +65,173 @@
 /* Montserrat Alternates */
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("/fonts/montserrat_alternates/MontserratAlternates-Thin.ttf") format("truetype");
+  font-family: "MontserratAlternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("/fonts/montserrat_alternates/MontserratAlternates-ExtraLight.ttf") format("truetype");
+  font-family: "MontserratAlternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("/fonts/montserrat_alternates/MontserratAlternates-Light.ttf") format("truetype");
+  font-family: "MontserratAlternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("/fonts/montserrat_alternates/MontserratAlternates-Regular.ttf") format("truetype");
+  font-family: "MontserratAlternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("/fonts/montserrat_alternates/MontserratAlternates-Medium.ttf") format("truetype");
+  font-family: "MontserratAlternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("/fonts/montserrat_alternates/MontserratAlternates-SemiBold.ttf") format("truetype");
+  font-family: "MontserratAlternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("/fonts/montserrat_alternates/MontserratAlternates-Bold.ttf") format("truetype");
+  font-family: "MontserratAlternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("/fonts/montserrat_alternates/MontserratAlternates-ExtraBold.ttf") format("truetype");
+  font-family: "MontserratAlternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("/fonts/montserrat_alternates/MontserratAlternates-Black.ttf") format("truetype");
+  font-family: "MontserratAlternates";
+  src: url("../assets/fonts/montserrat_alternates/MontserratAlternates-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+}
+
+body {
+  font-size: 16px;
+  /* 16px */
+}
+
+@media (max-width: 1980px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1680px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* @media (max-width: 768px) {
+  html {
+    font-size: 12px;   
+  }
+} */
+
+/* @media (max-width: 576px) {
+  html {
+    font-size: 11px;
+  }
+} */
+
+
+/* this media query is used for existing app in this media query set font size according to my screen */
+@media (max-width: 1450px) {
+  .text-50 {
+    font-size: 35px;
+  }
+
+  .text-35 {
+    font-size: 24px;
+  }
+
+  .text-33 {
+    font-size: 23px;
+  }
+
+  .text-30 {
+    font-size: 22px;
+  }
+
+  .text-28 {
+    font-size: 21px;
+  }
+
+  .text-25 {
+    font-size: 19px;
+  }
+
+  .text-24 {
+    font-size: 18px;
+  }
+
+  .text-22 {
+    font-size: 16px;
+  }
+
+  .text-21 {
+    font-size: 15px;
+  }
+
+  .text-20 {
+    font-size: 14px;
+  }
+
+  .text-19 {
+    font-size: 13px;
+  }
+
+  .text-18 {
+    font-size: 12px;
+  }
+
+  .text-17 {
+    font-size: 12px;
+  }
+
+  .text-16 {
+    font-size: 12px;
+  }
+
+  .text-15 {
+    font-size: 10px;
+  }
+
+  .text-14 {
+    font-size: 9.5px;
+  }
 }

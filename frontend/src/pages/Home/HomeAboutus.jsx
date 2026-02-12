@@ -12,23 +12,24 @@ function HomeAboutUs() {
         <img
           src={imageAssets.homeAbout1}
           alt=""
-          className="absolute top-[-20%] left-[15%] h-full object-contain z-0 block"
+          className="absolute top-[-20%] left-[15%] h-full object-contain z-20 block pointer-events-none"
         />
 
         {/* Vertical SVG right */}
         <img
           src={imageAssets.homeAbout2}
           alt=""
-          className="absolute top-[20%] right-[-10%] h-full object-contain z-0 block"
+          className="absolute top-[20%] right-[-10%] h-full object-contain z-20 block pointer-events-none"
         />
 
         
-        <div className=" px-4 py-8  mx-5 md:mx-10 lg:mx-20">
+        <div className="relative z-10 px-4 py-8  mx-5 md:mx-10 lg:mx-20">
            <Aboutus
           image={imageAssets.homeWhoWeAre}
           title="Who we are"
           descriptions={["Resonent Technolabs is a complete IoT innovation partner, seamlessly integrating electronic design, embedded firmware development, and cloud engineering within a single ecosystem. We specialize in turning conceptual ideas into robust, production-ready IoT solutions that meet industry standards and compliance requirements. From prototype to mass manufacturing, our multidisciplinary team ensures every product is intelligent, scalable, and reliable for real-world deployment."]}
           buttonText="About Us"
+          buttonLink="/about"
         />
         </div>
       </div>

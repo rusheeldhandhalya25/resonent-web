@@ -81,9 +81,9 @@ const ServicesCard = ({
               mt-6
             "
           >
-            <Pill icon={imageAssets.Power} text={Round1} />
-            <Pill icon={imageAssets.Code} text={Round2} />
-            <Pill icon={imageAssets.Graph} text={Round3} />
+            <Pill icon={imageAssets.power} text={Round1} />
+            <Pill icon={imageAssets.code} text={Round2} />
+            <Pill icon={imageAssets.graph} text={Round3} />
           </div>
         </div>
       </div>

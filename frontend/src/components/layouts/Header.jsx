@@ -7,16 +7,16 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navClass = ({ isActive }) =>
-    `font-body text-17 transition-colors duration-200 ${
+    `font-body text-24 transition-colors duration-200 ${
       isActive
         ? "text-primaryDefaultClr font-7"
         : "font-5 hover:text-primaryDefaultClr"
     }`;
 
   const mobileNavClass = ({ isActive }) =>
-    `block py-3 text-center font-body text-lg w-full ${
+    `block py-3 text-center font-body font-5 text-lg w-full ${
       isActive
-        ? "text-primaryDefaultClr font-7"
+        ? "text-primaryDefaultClr font-5"
         : "font-5 hover:text-primaryDefaultClr"
     }`;
 
@@ -79,7 +79,7 @@ const Header = () => {
   );
 
   return (
-    <header className="w-full h-[4rem] bg-textDefaultClr shadow-md sticky top-0 z-50">
+    <header className="w-full h-20 bg-textDefaultClr shadow-md sticky top-0 z-50">
       <div className="w-full max-w-[1200px] mx-auto h-full px-4 sm:px-6 flex items-center justify-between">
         {/* LEFT SIDE (Mobile + Desktop) */}
         <div className="flex items-center gap-3">
@@ -107,7 +107,7 @@ const Header = () => {
         {/* DESKTOP NAV */}
         <div className="hidden lg:flex">
           <NavLinks
-            className="flex items-center gap-4"
+            className="flex items-center gap-8"
             linkClassName={navClass}
           />
         </div>

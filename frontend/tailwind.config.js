@@ -2,7 +2,6 @@
 
 // import lineClamp from "@tailwindcss/line-clamp";
 
-
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
@@ -28,19 +27,15 @@ export default {
         darkOutlineClr: "#708FB5",
         tagClr: "#28558B",
       },
-     
-      backgroundImage: {
-      
-       
-        
 
+      backgroundImage: {
         expertiseGradient:
-        "linear-gradient(250.91deg, #002556ED -7.76%, #1B86F8ED 16.68%, #1B86F8ED 20.53%, #002556ED 106.73%), linear-gradient(0deg, #00000033, #00000033)",
-        "newExpertiseGradient": "linear-gradient(240.05deg, rgba(4, 47, 105, 0.3) 0.05%, rgba(53, 144, 242, 0.3) 21.74%, rgba(53, 144, 242, 0.3) 73.07%, rgba(4, 47, 105, 0.3) 101.64%)",
-        'wavy-background': "url('/src/assets/images/wavy-background.png')",
+          "linear-gradient(250.91deg, #002556ED -7.76%, #1B86F8ED 16.68%, #1B86F8ED 20.53%, #002556ED 106.73%), linear-gradient(0deg, #00000033, #00000033)",
+        newExpertiseGradient:
+          "linear-gradient(240.05deg, rgba(4, 47, 105, 0.3) 0.05%, rgba(53, 144, 242, 0.3) 21.74%, rgba(53, 144, 242, 0.3) 73.07%, rgba(4, 47, 105, 0.3) 101.64%)",
+        "wavy-background": "url('/src/assets/images/wavy-background.png')",
       },
 
-      
       boxShadow: {
         expertisePill: "0px 25px 46.6px 0px #0000000D",
       },
@@ -71,11 +66,10 @@ export default {
       },
 
       fontFamily: {
-          heading: ["Montserrat Alternates", "sans-serif"],
-          body: ["Instrument Sans", "sans-serif"],
-        },  
-
-      plugins: [],
+        heading: ["MontserratAlternates", "sans-serif"],
+        body: ['"Instrument Sans"', "sans-serif"],
+      },
     },
   },
+  plugins: [],
 };

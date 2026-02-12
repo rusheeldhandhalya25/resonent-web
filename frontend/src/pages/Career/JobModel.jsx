@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const JobModal = ({ isOpen, mode, onClose, left, right }) => {
+const JobModle = ({ isOpen, mode, onClose, left, right }) => {
   // Prevent body scroll when modal is open
   useEffect(() => {
     if (isOpen) {
@@ -80,4 +80,4 @@ const JobModal = ({ isOpen, mode, onClose, left, right }) => {
   );
 };
 
-export default JobModal;
+export default JobModle;
