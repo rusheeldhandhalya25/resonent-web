@@ -44,9 +44,10 @@ const OurStory = () => {
         className="
           relative z-10
           max-w-[1200px]
+          h-[40rem]
           mx-auto
           px-5 sm:px-8
-          py-12 sm:py-14 lg:py-16
+          py-1 sm:py-14 lg:py-16
           grid
           grid-cols-1
           lg:grid-cols-[35%_65%]
@@ -58,13 +59,12 @@ const OurStory = () => {
           <h2
             className="
               font-heading
-              font-6
+              font-5
               text-textDefaultClr
-              text-3xl
-              sm:text-4xl
-              lg:text-40
+              text-60
               text-center
               lg:text-left
+              mb-5
             "
           >
             Our Story

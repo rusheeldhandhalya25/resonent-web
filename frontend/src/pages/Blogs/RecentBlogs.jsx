@@ -83,12 +83,12 @@ const BlogCard = ({ image, title, description, date }) => {
       />
 
       <div className="mt-4 space-y-2">
-        <h3 className="text-textDefaultClr text-16 font-body font-5">
+        <h3 className="text-textDefaultClr text-19 font-body font-5">
           {title}
         </h3>
 
         <p
-          className={`text-textDisableClr text-[14px] font-body font-5 cursor-pointer ${
+          className={`text-textDisableClr text-17 font-body font-5 cursor-pointer ${
             isExpanded ? "" : "line-clamp-2"
           }`}
           onClick={() => setIsExpanded(!isExpanded)}
@@ -102,7 +102,7 @@ const BlogCard = ({ image, title, description, date }) => {
             alt="date"
             className="w-[15px] h-[15px]"
           />
-          <p className="text-textDisableClr text-[14px] font-body font-5">
+          <p className="text-textDisableClr text-18 font-body font-5">
             {date}
           </p>
         </div>
@@ -116,7 +116,7 @@ function RecentBlogs() {
     <div className="bg-backgroundClr px-4 sm:px-6 lg:px-24 py-12">
       {/* HEADER */}
       <div className="mb-8 flex flex-col items-center justify-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
-        <h2 className="font-heading font-6 text-24 text-textDefaultClr">
+        <h2 className="font-heading font-6 text-40 text-textDefaultClr">
           Recent Blogs
         </h2>
 

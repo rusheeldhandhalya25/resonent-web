@@ -29,16 +29,17 @@ const validate = (values) => {
 
 const inputClass = `
   w-full bg-tagClr
-  border border-lightOutlineClr
-  rounded-xl px-4 py-3
+  border-2 border-lightOutlineClr
+  rounded-2xl px-4 py-3
   text-textDefaultClr
+  text-19
   placeholder-textDefaultClr
   focus:outline-none
   focus:ring-2
   focus:ring-primaryDefaultClr
 `;
 
-const errorClass = "text-red-500 text-xs mt-1";
+const errorClass = "text-red-500 text-19 mt-1";
 
 const ContactForm = () => {
   return (

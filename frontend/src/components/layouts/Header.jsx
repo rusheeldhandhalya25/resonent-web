@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navClass = ({ isActive }) =>
-    `font-body text-24 transition-colors duration-200 ${
+    `font-body text-20 transition-colors duration-200 ${
       isActive
         ? "text-primaryDefaultClr font-7"
         : "font-5 hover:text-primaryDefaultClr"
@@ -82,7 +82,7 @@ const Header = () => {
     <header className="w-full h-20 bg-textDefaultClr shadow-md sticky top-0 z-50">
       <div className="w-full max-w-[1200px] mx-auto h-full px-4 sm:px-6 flex items-center justify-between">
         {/* LEFT SIDE (Mobile + Desktop) */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
           {/* Hamburger - mobile/tablet */}
           <button
             className="lg:hidden"
@@ -107,39 +107,27 @@ const Header = () => {
         {/* DESKTOP NAV */}
         <div className="hidden lg:flex">
           <NavLinks
-            className="flex items-center gap-8"
+            className="flex items-center gap-10"
             linkClassName={navClass}
           />
         </div>
 
         {/* RIGHT SIDE BUTTON */}
         <div className="flex items-center  sm:pr-2">
-          <AppButton
-            variant="primary"
-            size="xs"
-            rounded="full"
-            className="sm:hidden whitespace-nowrap px-2 py-1 text-[1rem] text-white"
-          >
-            Start your Project
-          </AppButton>
+         <AppButton
+                variant="primary"
+                rounded="full"
+                className="
+                  px-3 py-1 text-16
+                  sm:px-4 sm:py-2 sm:text-19
+                  lg:px-6 lg:py-3 lg:text-20
+                  whitespace-nowrap
+                  text-textDefaultClr
+                "
+              >
+                Start Your Project
+              </AppButton>
 
-          <AppButton
-            variant="primary"
-            size="sm"
-            rounded="full"
-            className="hidden sm:inline-flex lg:hidden whitespace-nowrap"
-          >
-            Start your Project
-          </AppButton>
-
-          <AppButton
-            variant="primary"
-            size="md"
-            rounded="full"
-            className="hidden lg:inline-flex"
-          >
-            Start Your Project
-          </AppButton>
         </div>
       </div>
 
@@ -147,7 +135,7 @@ const Header = () => {
       {isMenuOpen && (
         <div className="lg:hidden absolute top-[4rem] left-0 w-full bg-textDefaultClr shadow-lg">
           <NavLinks
-            className="flex flex-col items-center pt-2 pb-4"
+            className="flex flex-col items-center pt-3 pb-4"
             linkClassName={mobileNavClass}
             onLinkClick={() => setIsMenuOpen(false)}
           />

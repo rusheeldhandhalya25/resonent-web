@@ -45,18 +45,18 @@ const FounderCard = () => {
             <p className="
               font-body
               font-4
-              text-sm
+              text-32
+              max-w-[41rem]
               sm:text-base
               lg:text-lg
               leading-relaxed
               mb-6
-              text-justify
             ">
               Rushabh Shah guides Resonent with deep technical insight, ensuring innovation, reliability, and smooth execution across every IoT project while supporting clients worldwide with complete product design, engineering excellence, and long-term technology vision.
             </p>
 
             <div>
-              <h4 className="font-heading text-lg sm:text-xl font-6">
+              <h4 className="font-heading text-[25px] font-6 mt-20">
                 – Rushabh Shah
               </h4>
               <p className="text-sm sm:text-base text-textDisableClr mt-1">

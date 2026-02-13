@@ -53,11 +53,11 @@ const ProductCard = ({
       </div>
 
       {/* Title */}
-      <h3 className="font-heading text-lg font-6 mb-2">{title}</h3>
+      <h3 className="font-body text-28 font-6 mb-2">{title}</h3>
 
       {/* Description */}
       <p
-        className={`font-body text-sm text-textDisableClr mb-6 leading-relaxed cursor-pointer ${
+        className={`font-body text-18 text-textDisableClr mb-6 leading-relaxed cursor-pointer ${
           isExpanded ? "" : "line-clamp-5"
         }`}
         onClick={() => setIsExpanded(!isExpanded)}

@@ -42,13 +42,13 @@ const FirstParagraph = () => {
       />
 
       <div className="bg-backgroundClr flex flex-col items-center justify-center px-4 sm:px-6 mb-10">
-        <div className="text-3xl sm:text-4xl lg:text-60 font-heading font-6 text-center text-textDefaultClr mt-[8rem] lg:mt-[13rem] max-w-[900px] leading-tight">
+        <div className="text-40 md:text-60 font-heading font-6 text-center text-textDefaultClr mt-[8rem] lg:mt-[13rem] max-w-[900px] leading-tight">
           Build the Future of
           <br />
           Connected Technology
         </div>
 
-        <p className="font-body text-sm sm:text-[14px] text-center text-textDisableClr max-w-[750px] font-5 mt-4 mb-10">
+        <p className="font-body text-19] text-center text-textDisableClr max-w-[750px] font-5 mt-4 mb-10">
           Join our innovative team and grow your career while shaping smarter IoT
           solutions for industries, people, and global impact.
         </p>

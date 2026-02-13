@@ -39,7 +39,7 @@ const First = () => {
         className="absolute bottom-[1%] right-[10%] w-8 h-8 sm:bottom-[-8%] sm:right-[15%] sm:w-12 sm:h-12 lg:bottom-[-10%] lg:right-36 lg:w-[8%] lg:h-[8%] z-0 block"
       />
 
-      <div className="text-3xl sm:text-4xl lg:text-60 font-heading font-6 text-center text-textDefaultClr mt-[6rem] lg:mt-[13rem] max-w-[900px] leading-tight">
+      <div className="text-60 sm:text-80 font-heading font-6 text-center text-textDefaultClr mt-[6rem] lg:mt-[13rem] max-w-[900px] leading-tight">
         IoT Solutions That Power
         <br />
         the Connected
@@ -47,7 +47,7 @@ const First = () => {
         World
       </div>
 
-      <p className="font-body text-sm sm:text-[14px] text-center text-textDisableClr max-w-[750px] font-5 mt-4">
+      <p className="font-body text-19] text-center text-textDisableClr max-w-[750px] font-5 mt-4">
         From circuit to cloud, Resonent Technolabs delivers complete IoT product
         design Hardware, Firmware, Cloud & Mobile Apps all engineered for
         performance, scalability, and compliance.

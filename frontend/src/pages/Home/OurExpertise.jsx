@@ -30,21 +30,26 @@ const OurExpertise = () => {
 
   return (
     <section className=" relative w-full px-4 sm:px-6 lg:px-20  pb-6 overflow-hidden">
+
+
+      <img src={imageAssets.homeExpertise}  
+           alt=""
+           className="absolute top-0 right-0 z-10" />
       <div className="relative z-10">
         {/* Heading */}
         <div className="max-w-4xl mx-auto text-center space-y-4">
-          <h1 className="font-heading font-6 text-textDefaultClr text-3xl sm:text-4xl lg:text-[45px]">
+          <h1 className="font-heading font-6 text-textDefaultClr text-40 sm:text-40 lg:text-60">
             Our Expertise
           </h1>
 
-          <p className="font-body font-1 text-textDisableClr text-sm sm:text-base leading-relaxed">
+          <p className="font-body font-5 text-textDisableClr text-19 leading-relaxed">
             Building powerful embedded solutions with smart hardware,
             intelligent software, and cloud integration.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14 ">
           {expertiseData.map((item, index) => {
             const isActive = activeIndex === index;
 
@@ -62,7 +67,7 @@ const OurExpertise = () => {
                   icon={item.icon}
                   title={item.title}
                   description={item.description}
-                  className={isActive ? "text-textDefaultClr" : ""}
+                  className="!min-h-[200px] !h-[200px]"
                 />
               </div>
             );
@@ -152,7 +157,7 @@ const ExpertisePills = ({ activeIndex = 0 }) => {
   };
 
   return (
-    <div className=" mt-28 overflow-hidden">
+    <div className=" mt-10 lg:mt-28 overflow-hidden">
       <div
         style={backgroundStyle}
         className="

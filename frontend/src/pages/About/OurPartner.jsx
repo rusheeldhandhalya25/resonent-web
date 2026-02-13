@@ -17,7 +17,7 @@ const OurPartner = () => {
     <section className="w-full py-12 px-4 sm:px-6 lg:px-20">
       
       {/* Heading */}
-      <h2 className="text-28 sm:text-32 lg:text-40 font-heading font-6 text-textDefaultClr text-center mb-10">
+      <h2 className="text-60 font-heading font-5 text-textDefaultClr text-center mb-10">
         Our Partners
       </h2>
 
@@ -45,9 +45,9 @@ const OurPartner = () => {
               alt="partner logo"
               className="
                 h-10
-                sm:h-12
-                md:h-14
-                lg:h-16
+                sm:h-14
+                md:h-16
+                lg:h-20
                 opacity-60
                 transition
                 duration-300

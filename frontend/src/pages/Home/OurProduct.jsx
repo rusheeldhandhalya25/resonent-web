@@ -3,8 +3,8 @@ import ProductCard from "../../components/cards/ProductCard.jsx";
 
 const OurProduct = () => {
   return (
-    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-20 py-16">
-      <div className="font-heading font-6 text-3xl md:text-4xl flex items-center justify-center mb-10 text-center">
+    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-20 py-16 pt-10 lg:pt-20">
+      <div className="font-heading font-6 text-40 md:text-60 flex items-center justify-center mb-16 text-center">
         Our Products
       </div>
 

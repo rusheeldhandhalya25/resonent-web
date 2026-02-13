@@ -4,11 +4,11 @@ import ExpertiseCard from "../../components/ExpertiseCard";
 const JoinUs = () => {
   return (
     <div className="bg-backgroundClr flex flex-col gap-5 items-center justify-center mt-20">
-      <h2 className="font-heading font-6 text-40 text-textDefaultClr items-center justify-center">
+      <h2 className="font-heading font-6 text-60 text-textDefaultClr items-center justify-center">
         Why Join Us
       </h2>
 
-      <p className="font-body font-5 text-16 text-textDisableClr items-center text-center justify-center">
+      <p className="font-body font-5 text-19 text-textDisableClr items-center text-center justify-center">
         Discover the opportunities,growth and impact that define our culture .
       </p>
 
@@ -17,24 +17,28 @@ const JoinUs = () => {
           icon={imageAssets.hardwareDesign}
           title="End to End Exposure"
           description="Work across complete product development lifecycle"
+          className="!min-h-[200px] !h-[200px]"
         />
 
         <ExpertiseCard
           icon={imageAssets.firmwareDevelopment}
           title="R&D Innovation"
           description="Create new ideas through  hands on experimentation"
+          className="!min-h-[200px] !h-[200px]"
         />
 
         <ExpertiseCard
           icon={imageAssets.cloudWeb}
           title="Growth Opportunities "
           description="Advance your skills with continues career learning "
+          className="!min-h-[200px] !h-[200px]"
         />
 
         <ExpertiseCard
           icon={imageAssets.mobileApp}
           title="Social impact"
           description="Build technology that positively impacts communities"
+          className="!min-h-[200px] !h-[200px]"
         />
       </div>
     </div>

@@ -10,8 +10,8 @@ const Testimonials = () => {
         className="absolute top-0 left-0 w-full h-full object-cover z-0 block opacity-60 sm:opacity-100"
       />
       {/* Heading */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-        <h2 className="font-heading font-6 text-3xl sm:text-4xl text-center mb-12 text-textDefaultClr">
+      <div className="relative z-10 w-full  mx-auto px-4 sm:px-6 lg:px-20">
+        <h2 className="font-heading font-6 text-40 sm:text-60 text-center mb-12 text-textDefaultClr">
           Testimonials
         </h2>
 
@@ -20,10 +20,12 @@ const Testimonials = () => {
           className="
             grid
             grid-cols-1
+            sm:grid-cols-2
             lg:grid-cols-4
-            gap-3
+            gap-5
             items-stretch
-            justify-items-center
+            mx-5 lg:mx-20
+            
           "
         >
           <TestimonialCard

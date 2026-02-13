@@ -28,7 +28,7 @@ function HomeAboutUs() {
           image={imageAssets.homeWhoWeAre}
           title="Who we are"
           descriptions={["Resonent Technolabs is a complete IoT innovation partner, seamlessly integrating electronic design, embedded firmware development, and cloud engineering within a single ecosystem. We specialize in turning conceptual ideas into robust, production-ready IoT solutions that meet industry standards and compliance requirements. From prototype to mass manufacturing, our multidisciplinary team ensures every product is intelligent, scalable, and reliable for real-world deployment."]}
-          buttonText="About Us"
+          buttonText="About US"
           buttonLink="/about"
         />
         </div>

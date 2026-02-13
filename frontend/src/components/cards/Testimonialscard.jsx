@@ -8,11 +8,12 @@ const TestimonialCard = ({ rating, title, name, role, image }) => {
     bg-cardClr
     rounded-2xl
     border border-lightOutlineClr
-    p-5
+    p-10
     pb-20
+    
     w-full
-    max-w-[250px]
     h-full
+    
     flex
     flex-col
   "
@@ -25,10 +26,11 @@ const TestimonialCard = ({ rating, title, name, role, image }) => {
     className="
       mt-3
       text-textDefaultClr
-      text-sm
-      font-5
+      text-18
+      font-6
       leading-relaxed
       line-clamp-8
+      pb-10
     "
   >
     {title}

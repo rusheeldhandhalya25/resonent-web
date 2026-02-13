@@ -1,20 +1,28 @@
 const MissionVision = ({ title, descriptions }) => {
-  const style = {
-    backgroundColor: "#002556",
-    backgroundImage: `linear-gradient(
-      240.05deg,
-      rgba(4,47,105,0.35) 0.05%,
-      rgba(53,144,242,0.35) 21.74%,
-      rgba(53,144,242,0.35) 73.07%,
-      rgba(4,47,105,0.35) 101.64%
-    )`,
-  };
-
   return (
     <div
-      style={style} className="w-full max-w-full sm:max-w-[520px] lg:max-w-[700px] rounded-3xl md:rounded-full px-4 sm:px-6 lg:px-10 py-6 sm:py-8 flex flex-col items-center justify-center gap-4">
+      className="
+        w-full
+        lg:max-w-[900px]
+        mx-auto
+        rounded-3xl md:rounded-full
+        px-6 sm:px-10 lg:px-16
+        py-6 sm:py-16
+        flex flex-col items-center justify-center gap-4
+        bg-backgroundClr
+        bg-newExpertiseGradient
+      "
+    >
       {/* TITLE PILL */}
-      <div className="text-xs sm:text-smlg:text-base font-body font-6 text-textDefaultClr bg-tagClr rounded-full px-5 py-2 border border-textDefaultClr/20">
+      <div className="
+        text-20 sm:text-24
+        font-body font-6
+        text-textDefaultClr
+        bg-textDefaultClr/20
+        rounded-full
+        px-12 py-2
+        border border-textDefaultClr/20
+      ">
         {title}
       </div>
 
@@ -22,20 +30,20 @@ const MissionVision = ({ title, descriptions }) => {
       <div
         className="
           font-heading
+          text-30
+          md:text-40
+          lg:text-[45px]
+          leading-tight
           font-6
           text-center
-          text-textDisableClr
-          text-base
-          sm:text-xl
-          lg:text-2xl
-          leading-snug
+          text-textDefaultClr/80
+          max-w-[800px]
         "
       >
         {descriptions}
       </div>
-
-
     </div>
   );
 };
+
 export default MissionVision;

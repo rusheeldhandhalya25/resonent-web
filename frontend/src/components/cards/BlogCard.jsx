@@ -8,7 +8,7 @@ const BlogCard = ({ blog }) => {
       className="
         grid grid-cols-[20%_80%]
         gap-4
-        p-4
+        p-5
         rounded-xl
         bg-cardClr
         border border-lightOutlineClr
@@ -23,18 +23,18 @@ const BlogCard = ({ blog }) => {
         <img
           src={blog.image}
           alt={blog.title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-[6.5rem] h-[6.5rem] object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
 
       {/* Content */}
       <div className="flex flex-col justify-between">
         <div>
-          <h3 className="font-body font-6 text-[0.8rem] text-textDefaultClr line-clamp-2">
+          <h3 className="font-body font-6 text-18 text-textDefaultClr line-clamp-2">
             {blog.title}
           </h3>
 
-          <p className="mt-1 font-body text-[0.8rem] text-textDisableClr line-clamp-2">
+          <p className="mt-1 font-body text-18 text-textDisableClr line-clamp-2">
             {blog.excerpt}
           </p>
         </div>
@@ -42,7 +42,7 @@ const BlogCard = ({ blog }) => {
         {/* Date */}
         <div className="flex items-center gap-2 mt-2">
           <img src={imageAssets.calendarIcon} alt="date" className="w-4 h-4" />
-          <span className="font-body text-[0.7rem] text-textDisableClr">
+          <span className="font-body text-17 text-textDisableClr">
             {blog.date}
           </span>
         </div>

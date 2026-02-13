@@ -45,7 +45,7 @@ const ContactUs = () => {
           overflow-hidden
         "
       >
-        <div className="font-heading font-6 text-3xl md:text-4xl text-center mt-7 mb-10">
+        <div className="font-heading font-6 text-40 md:text-60 text-center mt-7 mb-10">
           Contact Us
         </div>
 

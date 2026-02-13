@@ -51,17 +51,17 @@ const ServicesCard = ({
           {/* TOP */}
           <div className="flex gap-4 items-start">
             <div className="bg-tagClr border border-lightOutlineClr rounded-xl p-4 shrink-0">
-              <img src={HeadIcon} alt="" className="w-6 h-6" />
+              <img src={HeadIcon} alt="" className="w-8 h-8" />
             </div>
 
             <div className="flex flex-col gap-1">
-              <h2 className="font-body font-5 text-lg text-textDefaultClr">
+              <h2 className="font-body font-5 text-28 text-textDefaultClr">
                 {Heading}
               </h2>
 
               {/* DESCRIPTION */}
               <p
-                className={`font-body font-5 text-sm text-textDisableClr leading-relaxed mt-1 cursor-pointer ${
+                className={`font-body font-5 text-18 text-textDisableClr leading-relaxed mt-1 cursor-pointer ${
                   isExpanded ? "" : "line-clamp-2"
                 }`}
                 onClick={() => setIsExpanded(!isExpanded)}

@@ -40,13 +40,13 @@ const First = () => {
 
       
 
-      <div className="text-3xl sm:text-4xl lg:text-60 font-heading font-6 text-center text-textDefaultClr mt-[6rem] lg:mt-[13rem] max-w-[900px] leading-tight">
+      <div className="text-60  md:text-80 font-heading font-6 text-center text-textDefaultClr mt-[6rem] lg:mt-[13rem] max-w-[900px] leading-tight">
         Engineering the
         <br />
         Connected Future
       </div>
 
-      <p className="font-body text-sm sm:text-[14px] text-center text-textDisableClr max-w-[750px] font-5 mt-4 mb-10">
+      <p className="font-body text-19 text-center text-textDisableClr max-w-[750px] font-5 mt-4 mb-10">
         From circuit to cloud, Resonent Technolabs delivers complete IoT product design Hardware, Firmware, Cloud & Mobile Apps all engineered for performance, scalability, and compliance.
       </p>
     </div>

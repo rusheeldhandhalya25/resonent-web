@@ -10,7 +10,7 @@ const Ecosystem = () => {
            className="absolute top-0 left-0 z-10 block" />
 
 
-      <h2 className="text-40 text-textDefaultClr font-heading font-6 text-center mb-8">
+      <h2 className="text-60 text-textDefaultClr font-heading font-6 text-center mb-12">
         Ecosystem
       </h2>
 

@@ -31,7 +31,7 @@ const team = [
 const OurTeam = () => {
   return (
     <section className="py-16 bg-backgroundClr">
-      <h2 className="text-center text-3xl font-heading font-6 text-white mb-10">
+      <h2 className="text-center text-60 font-heading font-6 text-white mb-10">
         Meet Our Team
       </h2>
 

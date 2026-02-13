@@ -67,11 +67,11 @@ function HealthySnackBlog() {
                         </p>
                 </div>
 
-                <h2 className='font-heading font-6 text-textDefaultClr text-20 sm:text-30 lg:text-40 leading-tight'>
+                <h2 className='font-heading font-6 text-textDefaultClr text-40 md:text-60 leading-tight'>
                     Healthy and Satisfying Snacks to Keep You on Track
                 </h2>
 
-                <p className='font-body font-5 text-textDisableClr text-[14px] leading-relaxed'>
+                <p className='font-body font-5 text-textDisableClr text-19 leading-relaxed'>
                     Are weight loss myths slowing you down? Let’s clear them up so you can focus on what actually works. Misinformation about weight loss is everywhere. You’ve probably heard advice like “just eat less” or “carbs are bad”, but how much of it is actually true?
                 </p>
         </div>
@@ -91,30 +91,30 @@ function HealthySnackBlog() {
                 
                 {/* firsr paragraph */}
                 <div className='flex flex-col gap-2'>
-                    <h3 className='text-textDefaultClr text-24 font-body font-5'>
+                    <h3 className='text-textDefaultClr text-30 font-body font-5'>
                     Lorem ipsum dolor sit 
                     </h3>
 
-                    <p className='text-textDisableClr text-[13px] font-body font-5 text-justify '>
+                    <p className='text-textDisableClr text-19 font-body font-5 text-justify '>
                         Resonent Technolabs is a complete IoT innovation partner, seamlessly integrating electronic design, embedded firmware development, and cloud engineering within a single ecosystem. We specialize in turning conceptual ideas into robust, production-ready IoT solutions that meet industry standards and compliance requirements. From prototype to mass manufacturing, our multidisciplinary team ensures every product is intelligent, scalable, and reliable for real-world deployment.
                     </p>
 
-                    <p className='text-textDisableClr text-[13px] font-body font-5 text-justify '>
+                    <p className='text-textDisableClr text-19 font-body font-5 text-justify '>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
 
                 {/* second paragraph  */}
                 <div className='flex flex-col gap-2'>
-                    <h3 className='text-textDefaultClr text-24 font-body font-5'>
+                    <h3 className='text-textDefaultClr text-30 font-body font-5'>
                     Lorem ipsum dolor sit amet
                     </h3>
 
-                    <p className='text-textDisableClr text-[13px] font-body font-5 text-justify '>
+                    <p className='text-textDisableClr text-19 font-body font-5 text-justify '>
                         Resonent Technolabs is a complete IoT innovation partner, seamlessly integrating electronic design, embedded firmware development, and cloud engineering within a single ecosystem. We specialize in turning conceptual ideas into robust, production-ready IoT solutions that meet industry standards and compliance requirements. From prototype to mass manufacturing, our multidisciplinary team ensures every product is intelligent, scalable, and reliable for real-world deployment.
                     </p>
 
-                     <ul className='list-disc pl-5 text-textDisableClr text-[13px] font-body font-5 space-y-2'>
+                     <ul className='list-disc pl-5 text-textDisableClr text-19 font-body font-5 space-y-2'>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
@@ -124,15 +124,15 @@ function HealthySnackBlog() {
 
                 {/* third paragraph */}
                  <div className='flex flex-col gap-2'>
-                    <h3 className='text-textDefaultClr text-24 font-body font-5'>
+                    <h3 className='text-textDefaultClr text-30 font-body font-5'>
                     Lorem ipsum dolor sit amet , ceonsectetur
                     </h3>
 
-                    <p className='text-textDisableClr text-[13px] font-body font-5 text-justify '>
+                    <p className='text-textDisableClr text-19 font-body font-5 text-justify '>
                         Resonent Technolabs is a complete IoT innovation partner, seamlessly integrating electronic design, embedded firmware development, and cloud engineering within a single ecosystem. We specialize in turning conceptual ideas into robust, production-ready IoT solutions that meet industry standards and compliance requirements. From prototype to mass manufacturing, our multidisciplinary team ensures every product is intelligent, scalable, and reliable for real-world deployment.
                     </p>
 
-                    <p className='text-textDisableClr text-[13px] font-body font-5 text-justify '>
+                    <p className='text-textDisableClr text-19 font-body font-5 text-justify '>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -140,15 +140,15 @@ function HealthySnackBlog() {
                 {/* fourth paragraph */}
 
                  <div className='flex flex-col gap-2'>
-                    <h3 className='text-textDefaultClr text-24 font-body font-5'>
+                    <h3 className='text-textDefaultClr text-30 font-body font-5'>
                     Lorem ipsum dolor 
                     </h3>
 
-                    <p className='text-textDisableClr text-[13px] font-body font-5 text-justify '>
+                    <p className='text-textDisableClr text-19 font-body font-5 text-justify '>
                         Resonent Technolabs is a complete IoT innovation partner, seamlessly integrating electronic design, embedded firmware development, and cloud engineering within a single ecosystem. We specialize in turning conceptual ideas into robust, production-ready IoT solutions that meet industry standards and compliance requirements. From prototype to mass manufacturing, our multidisciplinary team ensures every product is intelligent, scalable, and reliable for real-world deployment.
                     </p>
 
-                     <ul className='list-disc pl-5 text-textDisableClr text-[13px] font-body font-5 space-y-2'>
+                     <ul className='list-disc pl-5 text-textDisableClr text-19 font-body font-5 space-y-2'>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
@@ -162,7 +162,7 @@ function HealthySnackBlog() {
 
             {/* right side blogs */}
             <div className="flex flex-col gap-4">
-                    <p className="text-textDefaultClr font-6 text-24 font-heading">
+                    <p className="text-textDefaultClr font-6 text-30 font-heading">
                     Other Featured Post
                     </p>
                     {blogs.map((blog) => (

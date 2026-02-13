@@ -39,16 +39,16 @@ const industries = [
 
 const IndustryWeServe = () => {
   return (
-    <section className="w-full bg-backgroundClr px-4 sm:px-6 lg:px-24 py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6 items-stretch">
+    <section className="w-full bg-backgroundClr pl-4 sm:pl-6 lg:pl-24 pr-4 py-16">
+      <div className="grid grid-cols-1 lg:grid-cols-[25rem_1fr] gap-6 items-stretch">
         {/* left card */}
 
-        <div className="rounded-2xl bg-cardClr p-6 flex flex-col justify-center">
-          <h3 className="font-heading font-6 text-24 sm:text-32 lg:text-30 text-textDefaultClr mb-5">
+        <div className="rounded-2xl bg-cardClr h-[28.125rem] p-6 flex flex-col ">
+          <h3 className="font-heading font-6 text-40 lg:text-60 text-textDefaultClr mt-3 mb-5 leading-loose">
             Industries We Serve
           </h3>
 
-          <p className="text-sm text-textDisableClr leading-relaxed">
+          <p className="text-22 text-textDisableClr leading-relaxed">
             We provide smart technology solutions to many industries for better
             safety, efficiency, and reliability.
           </p>
@@ -68,7 +68,7 @@ const IndustryWeServe = () => {
           breakpoints={{
             0: { slidesPerView: 1.2 },
             640: { slidesPerView: 2.5 },
-            1024: { slidesPerView: 3.5 },
+            1024: { slidesPerView: 3 },
           }}
           className="w-full"
         >
@@ -76,7 +76,7 @@ const IndustryWeServe = () => {
 
           {industries.map((item, i) => (
             <SwiperSlide key={i}>
-              <div className="group relative h-[220px] sm:h-[260px] lg:[300px] rounded-2xl overflow-hidden">
+              <div className="group relative h-[28.125rem] rounded-2xl overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}

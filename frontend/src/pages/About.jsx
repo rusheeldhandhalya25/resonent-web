@@ -16,10 +16,10 @@ const About = () => {
       <StatusBar />
       <AboutUs />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 sm:px-6 lg:px-20 max-w-[1200px] mx-auto ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto ">
         <MissionVision
           title="Mission"
-          descriptions="Simplify IoT product development and make innovation scalable."
+          descriptions="Simplify IoT product development and Make Innovation scalable."
         />
 
         <MissionVision

@@ -12,7 +12,7 @@ import {
   Career,
   ClientProject,
   Blogs,
-} from "./pages/index.js";
+} from "./pages/navbarIndex.js";
 
 
 function App() {

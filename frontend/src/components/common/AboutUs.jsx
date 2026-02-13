@@ -12,8 +12,8 @@ const Aboutus = ({
   const navigate = useNavigate();
 
   return (
-    <section className="bg-backgroundClr py-10 sm:py-14 lg:py-20">
-  <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-[40%_60%] gap-8 lg:gap-12 items-center">
+    <section className="bg-backgroundClr py-10 sm:py-14 lg:py-10">
+  <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-[45%_55%] gap-8 lg:gap-12 items-center">
     
     {/* Image */}
     <div className="flex justify-center lg:justify-start">
@@ -22,31 +22,33 @@ const Aboutus = ({
         alt={title}
         className="
           w-full
-          max-w-[350px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[920px]
+          max-w-[350px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[990px]
           h-auto
           rounded-2xl
           object-cover
-          z-10
+          z-70
         "
       />
     </div>
 
     {/* Content */}
     <div className="text-center lg:text-left">
-      <h3 className="font-heading text-textDefaultClr text-24 sm:text-28 md:text-32 lg:text-40 font-6">
+      <h1 className="font-heading font-5 text-60 text-textDefaultClr  ">
         {title}
-      </h3>
+      </h1>
 
       {descriptions.map((text, index) => (
         <p
           key={index}
           className="
             mt-3 sm:mt-4
-            text-13 sm:text-14 md:text-16
             font-body
+            font-5
             text-textDisableClr
-            leading-relaxed
-            text-left sm:text-justify
+            text-16 sm:text-16 md:text-20
+            leading-3
+            text-left 
+            mr-0 md:mr-10
           "
         >
           {text}
@@ -54,11 +56,12 @@ const Aboutus = ({
       ))}
 
       {showButton && (
-        <div className="mt-6 sm:mt-8 flex justify-center lg:justify-start">
+        <div className="mt-6 sm:mt-10 flex justify-center lg:justify-start">
           <AppButton
             variant="primary"
             size="sm"
             rounded="full"
+            className="text-textDefaultClr text-19 py-3 px-5"
             onClick={() => navigate(buttonLink)}
           >
             {buttonText}

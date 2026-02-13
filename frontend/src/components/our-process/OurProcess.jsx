@@ -17,7 +17,7 @@ const ProcessStep = ({ icon, label, left, top }) => {
       style={{ left: `${left}%`, top: `${top}%` }}
     >
       <img src={icon} alt={label} className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 mx-auto" />
-      <p className="mt-3 text-white text-xs md:text-sm font-body">
+      <p className="mt-5 text-textDefaultClr  text-24 font-body">
         {label}
       </p>
     </div>
@@ -29,24 +29,24 @@ const OurProcess = () => {
     <section className="bg-backgroundClr py-20 lg:py-32">
       {/* Heading */}
       <div className="text-center mb-16 lg:mb-24 px-4">
-        <h2 className="font-heading text-4xl lg:text-5xl font-semibold text-white">
+        <h2 className="font-heading text-40 lg:text-60 font-6 text-textDefaultClr">
           Our Process
         </h2>
-        <p className="mt-4 text-textDisableClr max-w-2xl mx-auto text-base lg:text-lg">
+        <p className="mt-4 text-textDisableClr max-w-2xl mx-auto text-19 lg:text-19">
           We follow clear, simple, and organized steps that guide your project
           from idea to final product with smooth, reliable progress.
         </p>
       </div>
 
       {/* Timeline for Desktop */}
-      <div className="hidden md:block relative max-w-7xl mx-auto px-4">
+      <div className="hidden md:block relative max-w-[95rem] mx-auto px-4">
         <div className="relative">
            {/* Aspect ratio container for the SVG line. Padding-top is based on SVG's aspect ratio (169 / 1920) */}
           <div style={{ paddingTop: '8.8%' }} />
           <img
             src={imageAssets.lineSvg}
             alt="process line"
-            className="absolute top-0 left-0 w-full h-full"
+            className="absolute top-0 left-0 w-[140%] h-[110%]"
           />
           {steps.map((step, index) => (
             <ProcessStep key={index} {...step} />
@@ -62,17 +62,18 @@ const OurProcess = () => {
                   {/* vertical line */}
                   <div className="
                     absolute
-                    left-[28px]
+                    left-[2rem]
                     top-0
                     bottom-0
-                    w-[3px]
+                    w-[5px]
                     bg-primaryDefaultClr
-                    opacity-80
+                    opacity-60
+                    flex items-center justify-center
                   " />
 
-                  <div className="flex flex-col gap-14 ">
+                  <div className="flex flex-col gap-[3.5rem] ">
                     {steps.map((step, index) => (
-                      <div key={index} className="relative flex items-start gap-6">
+                      <div key={index} className="relative flex items-start gap-7">
 
                         {/* circle with number */}
                         <div className="relative z-10">
@@ -100,7 +101,7 @@ const OurProcess = () => {
 
                         {/* label */}
                         <div className="pt-3">
-                          <p className="text-white font-heading font-6 text-base">
+                          <p className="text-white font-heading font-6 text-30">
                             {step.label}
                           </p>
                         </div>

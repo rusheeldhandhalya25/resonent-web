@@ -34,11 +34,11 @@ const FirstParagraph = () =>{
       
 
         <div className="bg-backgroundClr flex flex-col items-center justify-center px-4 sm:px-6 pb-20 py-10">
-      <div className="text-3xl sm:text-4xl lg:text-60 font-heading font-6 text-center text-textDefaultClr mt-[6rem] lg:mt-[10rem] max-w-[900px] leading-tight">
+      <div className="text-40 md:text-60 font-heading font-6 text-center text-textDefaultClr mt-[6rem] lg:mt-[10rem] max-w-[900px] leading-tight">
        Designing reliable IoT hardware for real products
       </div>
 
-      <p className="font-body text-sm sm:text-[14px] text-center text-textDisableClr max-w-[750px] font-5 mt-4 mb-10">
+      <p className="font-body text-19 text-center text-textDisableClr max-w-[750px] font-5 mt-4 mb-10">
         A practical guide explaining key hardware principles, safety considerations, testing methods, and best practices needed to build stable, long-lasting IoT devices.
       </p>
     </div>

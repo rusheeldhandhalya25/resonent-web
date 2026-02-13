@@ -15,14 +15,7 @@ const ProjectCard = ({ tag, year, title, description, image, onTagClick }) => {
         border-xl
       "
     >
-      {/* GRADIENT OVERLAY */}
-      {/* <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(240deg, rgba(53,144,242,0.25), rgba(4,47,105,0.25))",
-        }}
-      /> */}
+   
 
       {/* CONTENT */}
       <div className="relative z-10">
@@ -32,20 +25,20 @@ const ProjectCard = ({ tag, year, title, description, image, onTagClick }) => {
             size="sm"
             variant="primary"
             rounded="full"
-            fontClass="font-body text-xs font-5"
-            className="px-4 py-2"
+            fontClass="font-body text-18 font-5"
+            className="px-5 py-1 text-18 text-textDefaultClr"
             onClick={onTagClick}
           >
             {tag}
           </AppButton>
 
-          <span className="bg-tagClr text-textDefaultClr text-xs px-4 py-2 rounded-full">
+          <span className="bg-tagClr text-textDefaultClr text-18 px-4 py-2 rounded-full">
             {year}
           </span>
         </div>
 
         {/* Title */}
-        <h3 className="text-textDefaultClr font-6 text-24 mb-2">{title}</h3>
+        <h3 className="text-textDefaultClr font-6 text-28 mb-2">{title}</h3>
 
         {/* Description */}
         <p
@@ -62,7 +55,7 @@ const ProjectCard = ({ tag, year, title, description, image, onTagClick }) => {
           <img
             src={image}
             alt={title}
-            className="w-full h-60 sm:h-64 object-cover"
+            className="w-full h-60 sm:h-[380px] object-cover"
           />
         </div>
       </div>

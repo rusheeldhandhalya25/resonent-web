@@ -27,46 +27,55 @@ const Footer = () => {
       <div className="relative z-10
                       flex flex-col lg:flex-row
                       items-center justify-center lg:justify-between
-                      gap-8">
+                      gap-10 lg:gap-0 w-full">
 
         {/* LOGO (desktop only) */}
-        <div className="hidden lg:block shrink-0">
-          <img src={imageAssets.footerLogo} alt="logo" className="w-[150px]" />
+        <div className="hidden lg:flex shrink-0 items-center justify-center">
+          <img src={imageAssets.footerLogo} alt="logo" className="w-40" />
         </div>
 
         <img src={imageAssets.footer}
             alt=""
-            className="hidden lg:block w-[4px] h-[160px] opacity-70 mx-6"
+            className="hidden lg:block w-1 h-40 opacity-70 mx-10"
           />
 
-        {/* LINKS */}
-        <div className="flex items-start justify-center">
+        {/* LINKS GROUP (Mobile: Row, Desktop: Contents/Flat) */}
+        <div className="flex flex-row items-center justify-center lg:contents">
 
           {/* SECTION 1 */}
-          <div className="flex flex-col gap-2 text-16 items-start mx-auto">
-            {["Home", "About Us", "Blog", "Courses", "Consulting"].map((t, i) => (
-              <Link key={i} to="/" className="hover:text-primaryDefaultClr transition">
-                {t}
+          <div className="flex flex-col gap-4 text-base items-center justify-center">
+            {[
+              { name: "Home", path: "/" },
+              { name: "About Us", path: "/about" },
+              { name: "Services", path: "/services" },
+              { name: "Our Products", path: "/products" },
+            ].map((item, i) => (
+              <Link key={i} to={item.path} className="hover:text-primaryDefaultClr transition text-center">
+                {item.name}
               </Link>
             ))}
           </div>
 
-          {/* DIVIDER */}
+          {/* DIVIDER (Visible on both) */}
           <img
             src={imageAssets.footer}
             alt=""
             className="
-              mx-4 sm:mx-6 lg:mx-20
-              w-[4px] h-[160px]
+              mx-6 sm:mx-10 lg:mx-10
+              w-1 h-40
               opacity-70
             "
           />
 
           {/* SECTION 2 */}
-          <div className="flex flex-col gap-2 text-16 items-start">
-            {["Home", "About Us", "Blog", "Courses", "Consulting"].map((t, i) => (
-              <Link key={i} to="/" className="hover:text-primaryDefaultClr transition">
-                {t}
+          <div className="flex flex-col gap-4 text-base items-center justify-center">
+            {[
+              { name: "Client’s Projects", path: "/projects" },
+              { name: "Careers", path: "/career" },
+              { name: "Blogs", path: "/blogs" },
+            ].map((item, i) => (
+              <Link key={i} to={item.path} className="hover:text-primaryDefaultClr transition text-center">
+                {item.name}
               </Link>
             ))}
           </div>
@@ -74,14 +83,14 @@ const Footer = () => {
 
         <img src={imageAssets.footer}
           alt=""
-          className="hidden lg:block w-[4px] h-[160px] opacity-70 mx-6"
+          className="hidden lg:block w-1 h-40 opacity-70 mx-10"
         />
 
-        {/* CONTACT US (single, responsive) */}
-        <div className="flex flex-col gap-4 items-center jusify-center lg:items-start">
-          <span className="text-18 font-6">Contact Us</span>
+        {/* CONTACT US */}
+        <div className="flex flex-col gap-6 items-center justify-center">
+          <span className="text-xl font-semibold text-center">Contact Us</span>
 
-          <div className="flex justify-center lg:justify-start gap-3">
+          <div className="flex flex-row flex-nowrap justify-center gap-3">
             {[
               { href: "https://instagram.com", icon: imageAssets.instagramIcon },
               { href: "https://twitter.com", icon: imageAssets.twitterIcon },
@@ -94,12 +103,12 @@ const Footer = () => {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-[2.2rem] w-[2.2rem]
+                className="h-10 w-10
                            bg-cardClr border border-lightOutlineClr
-                           rounded-lg flex items-center justify-center
-                           hover:bg-primaryDefaultClr/10 transition"
+                           rounded-2xl flex items-center justify-center
+                           hover:bg-primaryDefaultClr/10 transition shrink-0"
               >
-                <img src={item.icon} className="w-[1.1rem] h-[1.1rem]" />
+                <img src={item.icon} className="w-5 h-5" />
               </a>
             ))}
           </div>
