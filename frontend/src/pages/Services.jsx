@@ -1,4 +1,4 @@
-import First from "./services/Firstparagraph.jsx";
+import First from "./services/FirstParagraph.jsx";
 import OurService from "./services/OurServices.jsx";
 
 const Services = () => {

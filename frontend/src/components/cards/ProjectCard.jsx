@@ -15,8 +15,6 @@ const ProjectCard = ({ tag, year, title, description, image, onTagClick }) => {
         border-xl
       "
     >
-   
-
       {/* CONTENT */}
       <div className="relative z-10">
         {/* Top row */}

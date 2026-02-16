@@ -39,7 +39,10 @@ const StatusBar = () => {
       >
         {StateData.flatMap((item, index) => {
           const content = (
-            <div key={index} className="text-center leading-tight col-span-1 my-2 px-40">
+            <div
+              key={index}
+              className="text-center leading-tight col-span-1 my-2 px-40"
+            >
               <h3 className="text-[12px] sm:text-[20px] md:text-28 font-7 text-textDefaultClr whitespace-nowrap">
                 {item.value}
               </h3>
@@ -54,7 +57,10 @@ const StatusBar = () => {
           }
 
           const divider = (
-            <div key={`d-${index}`} className="hidden sm:flex items-center justify-center col-span-1">
+            <div
+              key={`d-${index}`}
+              className="hidden sm:flex items-center justify-center col-span-1"
+            >
               <img
                 src={imageAssets.statebarDivider}
                 alt="divider"

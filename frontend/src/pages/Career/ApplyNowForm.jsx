@@ -1,167 +1,189 @@
-import React from "react";
-import { useFormik } from "formik";
+import { Formik , Field , Form ,ErrorMessage } from "formik";
 import AppButton from "../../components/buttons/AppButtons.jsx";
 import imageAssets from "../../assets/index.js";
 
 const ApplyNowForm = () => {
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      role: "",
-      experience: "",
-      resume: null,
-    },
+      const validate = (values) => {
+          const errors = {};
 
-    validate: (values) => {
-      const errors = {};
+          if(!values.name) errors.name = "Required";
 
-      if (!values.name) errors.name = "Name is required";
-      if (!values.email) errors.email = "Email is required";
-      if (!values.role) errors.role = "Role is required";
-      if (!values.experience) errors.experience = "Experience is required";
-      if (!values.resume) errors.resume = "Resume is required";
+          if(!values.email){
+            errors.email = "Required";
+          } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email))
+          {
+            errors.email = "Invalid email address"
+          }
 
-      return errors;
-    },
+          if(!values.role) errors.role = "Required";
 
-    onSubmit: () => {
-      // Handle form submission
-    },
-  });
+          if(!values.experience){
+            errors.experience = "Required";
+          } else if (!/^[0-9]/.test(values.experience)){
+            errors.experience = "Must be a number ";
+          }
 
-  return (
-    <section className="flex justify-center px-4 py-9">
-      <div className="w-full max-w-3xl rounded-2xl bg-newExpertiseGradient p-10">
-        <h2 className="mb-8 text-center font-heading text-40 font-6 text-textDefaultClr">
-          Apply Now
-        </h2>
+          if(!values.resume) errors.resume = "Required";
 
-        <form onSubmit={formik.handleSubmit} className="space-y-6">
-          {/* GRID INPUTS */}
-          <div className="grid gap-6 md:grid-cols-2">
-            {/* Name */}
-            <div>
-              <label className="text-sm text-textDefaultClr">Name</label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter Your Name"
-                onChange={formik.handleChange}
-                value={formik.values.name}
-                className="mt-2 w-full rounded-lg bg-tagClr px-4 py-3 text-sm text-textDefaultClr outline-none"
-              />
-              {formik.errors.name && (
-                <p className="mt-1 text-xs text-red-400">
-                  {formik.errors.name}
-                </p>
-              )}
-            </div>
+          return errors;
+            
+      }
 
-            {/* Email */}
-            <div>
-              <label className="text-sm text-textDefaultClr">Email</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter Your Email"
-                onChange={formik.handleChange}
-                value={formik.values.email}
-                className="mt-2 w-full rounded-lg bg-tagClr px-4 py-3 text-sm text-textDefaultClr outline-none"
-              />
-              {formik.errors.email && (
-                <p className="mt-1 text-xs text-red-400">
-                  {formik.errors.email}
-                </p>
-              )}
-            </div>
+    const inputClass = `mt-2 w-full rounded-lg bg-tagClr/70 px-4 py-4 text-20 font-6 text-textDefaultClr outline-none border border-white/10 focus:primaryDefaultClr transition-colors placeholder:text-textDisableClr/90`;
 
-            {/* Role */}
-            <div>
-              <label className="text-sm text-textDefaultClr">Role</label>
-              <input
-                type="text"
-                name="role"
-                placeholder="Enter Role"
-                onChange={formik.handleChange}
-                value={formik.values.role}
-                className="mt-2 w-full rounded-lg bg-tagClr px-4 py-3 text-sm text-textDefaultClr outline-none"
-              />
-              {formik.errors.role && (
-                <p className="mt-1 text-xs text-red-400">
-                  {formik.errors.role}
-                </p>
-              )}
-            </div>
+    const labelClass = `text-20 text-textDefaultClr font-body font-5`;
 
-            {/* Experience */}
-            <div>
-              <label className="text-sm text-textDefaultClr">Experience</label>
-              <input
-                type="text"
-                name="experience"
-                placeholder="Enter Your Experience"
-                onChange={formik.handleChange}
-                value={formik.values.experience}
-                className="mt-2 w-full rounded-lg bg-tagClr px-4 py-3 text-sm text-textDefaultClr outline-none"
-              />
-              {formik.errors.experience && (
-                <p className="mt-1 text-xs text-red-400">
-                  {formik.errors.experience}
-                </p>
-              )}
-            </div>
-          </div>
+    const errorClass = `mt-1 text-19 text-red-400`;
 
-          {/* RESUME UPLOAD */}
-          <div>
-            <label className="text-sm text-textDefaultClr ">Resume</label>
+    return(
+      <section className="flex justify-center px-10 py-10">
+        <div className="w-full max-w-6xl rounded-2xl bg-newExpertiseGradient p-10">
+            <h2 className="mb-10 mt-6 text-center font-heading text-60 font-6 text-textDefaultClr">
+              Apply Now
+            </h2>
 
-            <label className="mt-2 flex cursor-pointer flex-col items-center justify-center rounded-lg border border-dashed border-lightOutlineClr bg-tagClr px-6 py-8 text-center">
-              <input
-                type="file"
-                className="hidden"
-                onChange={(e) =>
-                  formik.setFieldValue("resume", e.target.files[0])
-                }
-              />
+            <Formik 
+                    initialValues={{
+                      name:"",
+                      email:"",
+                      role:"",
+                      experience:"",
+                      resume:null,
+                    }}
+                    validate={validate}
+                    onSubmit={ (values) => {
+                      console.log(values);
+                    }}>
 
-              <img
-                src={imageAssets.uploadIcon}
-                alt=""
-                className="mb-2 w-[32px] h-[32px]"
-              />
+                    {({setFieldValue,values}) => (
+                       <Form className="space-y-6">
 
-              <p className="text-[16px] text-textDefaultClr underline underline-offset-3">
-                Upload Resume
-              </p>
-              <p className="text-xs text-textDisableClr">
-                Upload a file up to 5MB
-              </p>
-            </label>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-            {formik.errors.resume && (
-              <p className="mt-1 text-xs text-red-400">
-                {formik.errors.resume}
-              </p>
-            )}
-          </div>
+                          {/* names */}
+                          <div>
+                            <label className={labelClass}>
+                              Name
+                            </label>
+                            <Field type="text"
+                                   name="name"
+                                   placeholder="Enter Your Name"
+                                   className={inputClass} />
+                            <ErrorMessage name="name"
+                                          component="p"
+                                          className={errorClass} />
+                          </div>
 
-          {/* SUBMIT */}
-          <div className="flex justify-center pt-4">
-            <AppButton
-              type="submit"
-              variant="primary"
-              size="sm"
-              className="rounded-full px-8 py-3 text-xs"
-            >
-              Submit
-            </AppButton>
-          </div>
-        </form>
-      </div>
-    </section>
-  );
-};
+
+                          {/* email */}
+                           <div>
+                            <label className={labelClass}>
+                              Email
+                            </label>
+                            <Field type="email"
+                                   name="email"
+                                   placeholder="Enter Your Email"
+                                   className={inputClass} />
+                            <ErrorMessage name="email"
+                                          component="p"
+                                          className={errorClass} />
+                          </div>
+
+                          {/* role */}
+                           <div>
+                            <label className={labelClass}>
+                              Role
+                            </label>
+                            <Field type="text"
+                                   name="role"
+                                   placeholder="Enter Your Role"
+                                   className={inputClass} />
+                            <ErrorMessage name="role"
+                                          component="p"
+                                          className={errorClass} />
+                          </div>
+
+                          {/* experience */}
+                           <div>
+                            <label className={labelClass}>
+                              Experience
+                            </label>
+                            <Field type="text"
+                                   name="experience"
+                                   placeholder="Enter Your Experience"
+                                   className={inputClass} />
+                            <ErrorMessage name="experience"
+                                          component="p"
+                                          className={errorClass} />
+                          </div>
+
+                        </div>
+
+
+                        {/* resume */}
+
+                        <div>
+                            <label className={labelClass}>
+                              Resume
+                            </label>
+
+                            <label className="mt-2 flex cursor-pointer flex-col items-center justify-center rounded-lg border border-dashed border-white/30 bg-tagClr px-6 py-8 text-center">
+                              <input
+                                type="file"
+                                className="hidden"
+                                onChange={(e) =>
+                                  setFieldValue("resume", e.currentTarget.files[0])
+                                }
+                              />
+
+                              <img
+                                src={imageAssets.uploadIcon}
+                                alt="Upload"
+                                className="mb-2 w-[2rem] h-[2rem]"
+                              />
+
+                              <p className="text-[16px] text-textDefaultClr underline underline-offset-3">
+                                Upload Resume
+                              </p>
+
+                              <p className="text-18 text-textDisableClr">
+                                Upload a file up to 5MB
+                              </p>
+
+                              {values.resume && (
+                                <div className="mt-2 text-xs text-primaryDefaultClr">
+                                  {values.resume.name}
+                                </div>
+                              )}
+                            </label>
+
+                            <ErrorMessage
+                              name="resume"
+                              component="p"
+                              className={errorClass}
+                            />
+                          </div>
+
+                          {/* submit button */}
+
+                          <div className="flex justify-center pt-8">
+                            <AppButton
+                              type="submit"
+                              variant="primary"
+                              size="sm"
+                              className="rounded-full px-9 py-2 text-19 text-textDefaultClr"
+                            >
+                              Submit
+                            </AppButton>
+                          </div>
+                       </Form>
+                    )}
+            </Formik>
+
+        </div>
+
+      </section>
+    )
+}
 
 export default ApplyNowForm;

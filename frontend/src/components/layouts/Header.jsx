@@ -114,20 +114,19 @@ const Header = () => {
 
         {/* RIGHT SIDE BUTTON */}
         <div className="flex items-center  sm:pr-2">
-         <AppButton
-                variant="primary"
-                rounded="full"
-                className="
+          <AppButton
+            variant="primary"
+            rounded="full"
+            className="
                   px-3 py-1 text-16
                   sm:px-4 sm:py-2 sm:text-19
                   lg:px-6 lg:py-3 lg:text-20
                   whitespace-nowrap
                   text-textDefaultClr
                 "
-              >
-                Start Your Project
-              </AppButton>
-
+          >
+            Start Your Project
+          </AppButton>
         </div>
       </div>
 

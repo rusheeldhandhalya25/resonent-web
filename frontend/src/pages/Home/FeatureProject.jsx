@@ -4,15 +4,21 @@ import ProjectCard from "../../components/cards/ProjectCard";
 
 const FeatureProject = () => {
   return (
-    <section id="our-project"  className="relative w-full px-4 sm:px-6 lg:px-20 py-12 overflow-hidden">
+    <section
+      id="our-project"
+      className="relative w-full px-4 sm:px-6 lg:px-20 py-12 overflow-hidden"
+    >
+      <img
+        src={imageAssets.homeFeatureProject}
+        alt=""
+        className="absolute top-[10%] left-0 w-[150%] -translate-x-1 z-0 block "
+      />
 
-      <img src={imageAssets.homeFeatureProject} 
-           alt=""
-           className="absolute top-[10%] left-0 w-[150%] -translate-x-1 z-0 block " />
-
-      <img src={imageAssets.homeFeatureProject2} 
-           alt=""
-           className="absolute bottom-[10%] left-0 w-[150%] -translate-x-1 z-0 block " />
+      <img
+        src={imageAssets.homeFeatureProject2}
+        alt=""
+        className="absolute bottom-[10%] left-0 w-[150%] -translate-x-1 z-0 block "
+      />
 
       <div className="font-heading font-6 text-60 flex items-center justify-center mb-20">
         Featured Projects

@@ -3,59 +3,70 @@ import imageAssets from "../../assets";
 
 const ContactLeft = () => {
   return (
-    <div 
-      className="w-full lg:w-[40%] p-8 flex flex-col relative overflow-hidden text-white bg-newExpertiseGradient"
-    >
+    <div className="w-full lg:w-[45%] p-8 flex flex-col relative overflow-hidden text-white bg-newExpertiseGradient">
       <div className="relative z-10 flex flex-col h-full">
         {/* Heading */}
-        <h3 className="font-heading font-6 text-3xl mb-6 leading-tight">
+        <h3 className="font-heading font-6 text-40 mb-6 leading-tight">
           Let's Build Something smart together
         </h3>
-        
-        <h4 className="font-heading font-6 text-lg mb-4 text-white/90">
+
+        <h4 className="font-heading font-6 text-24 mb-4 text-white/90">
           Contact Information
         </h4>
 
         {/* Contact Info */}
-        <div className="space-y-4 font-body text-sm flex-grow">
+        <div className="space-y-4 font-body text-19 flex-grow">
           {/* Email */}
           <div className="flex items-center gap-4 bg-tagClr rounded-full p-2 pr-6">
             <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-              <img src={imageAssets.emailIcon} alt="Email" className="w-9 h-9 object-contain" />
+              <img
+                src={imageAssets.emailIcon}
+                alt="Email"
+                className="w-9 h-9 object-contain"
+              />
             </div>
             <div className="flex flex-col text-textDefaultClr">
-              <p className="opacity-60 text-xs mb-0.5">Email</p>
-              <p className="font-5 text-base">contact@resonent.com</p>
+              <p className="opacity-60 text-20 mb-0.5">Email</p>
+              <p className="font-5 text-19">contact@resonent.com</p>
             </div>
           </div>
 
           {/* Phone */}
           <div className="flex items-center gap-4 bg-tagClr rounded-full p-2 pr-6">
             <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-              <img src={imageAssets.callIconPng} alt="Phone" className="w-9 h-9 object-contain" />
+              <img
+                src={imageAssets.callIconPng}
+                alt="Phone"
+                className="w-9 h-9 object-contain"
+              />
             </div>
             <div className="flex flex-col text-textDefaultClr">
-              <p className="opacity-60 text-xs mb-0.5">Phone</p>
-              <p className="font-5 text-base">+91 98765 43210</p>
+              <p className="opacity-60 text-20 mb-0.5">Phone</p>
+              <p className="font-5 text-19">+91 98765 43210</p>
             </div>
           </div>
 
           {/* Address */}
           <div className="flex items-center gap-4 bg-tagClr rounded-3xl p-2 pr-6">
             <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-              <img src={imageAssets.locationIcon} alt="Address" className="w-9 h-9 object-contain" />
+              <img
+                src={imageAssets.locationIcon}
+                alt="Address"
+                className="w-9 h-9 object-contain"
+              />
             </div>
             <div className="flex flex-col text-textDefaultClr">
-              <p className="opacity-60 text-xs mb-0.5">Address</p>
-              <p className="font-5 text-base leading-snug">
-                123, Tech Park, Innovation Street,<br />
-                Ahmedabad, Gujarat, India
+              <p className="opacity-60 text-20 mb-0.5">Address</p>
+              <p className="font-5 text-19 leading-snug">
+                1,Navrang Ind Soc., Nr Sosyo Circle, Udhana Magdalla Road
+                <br />
+                Surat, Gujarat, India
               </p>
             </div>
           </div>
         </div>
 
-        <h4 className="font-heading font-6 text-lg mb-4 mt-2 text-white/90">
+        <h4 className="font-heading font-6 text-24 mb-4 mt-5 text-white/90">
           Map View
         </h4>
 

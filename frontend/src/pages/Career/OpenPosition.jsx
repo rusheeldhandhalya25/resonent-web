@@ -220,9 +220,9 @@ const OpenPositions = () => {
   };
 
   return (
-    <section className="bg-backgroundClr px-4 py-5">
-      <div className="mx-auto max-w-6xl">
-        <h2 className="mb-10 text-textDefaultClr text-center text-40 font-semibold">
+    <section className="bg-backgroundClr py-20">
+      <div className="mx-4 md:mx-20">
+        <h2 className="mb-10 text-textDefaultClr text-center text-60 font-semibold">
           Open Positions
         </h2>
 

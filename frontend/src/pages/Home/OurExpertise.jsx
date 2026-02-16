@@ -30,11 +30,11 @@ const OurExpertise = () => {
 
   return (
     <section className=" relative w-full px-4 sm:px-6 lg:px-20  pb-6 overflow-hidden">
-
-
-      <img src={imageAssets.homeExpertise}  
-           alt=""
-           className="absolute top-0 right-0 z-10" />
+      <img
+        src={imageAssets.homeExpertise}
+        alt=""
+        className="absolute top-0 right-0 z-10"
+      />
       <div className="relative z-10">
         {/* Heading */}
         <div className="max-w-4xl mx-auto text-center space-y-4">

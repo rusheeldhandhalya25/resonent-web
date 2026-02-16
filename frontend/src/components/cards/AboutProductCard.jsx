@@ -26,9 +26,7 @@ const AboutProductCard = ({ logo, title, description }) => {
       </div>
 
       {/* Title */}
-      <h3 className="font-heading text-24 sm:text-lg font-6 mb-2">
-        {title}
-      </h3>
+      <h3 className="font-heading text-24 sm:text-lg font-6 mb-2">{title}</h3>
 
       {/* Description */}
       <p className="font-body text-19 text-textDisableClr leading-relaxed">

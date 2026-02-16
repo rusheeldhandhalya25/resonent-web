@@ -14,7 +14,6 @@ import {
   Blogs,
 } from "./pages/navbarIndex.js";
 
-
 function App() {
   return (
     <BrowserRouter>

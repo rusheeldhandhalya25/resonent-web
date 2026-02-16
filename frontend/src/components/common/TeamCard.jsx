@@ -34,12 +34,8 @@ const TeamCard = ({ image, name, role, avatar }) => {
 
         {/* text */}
         <div className="leading-tight">
-          <p className="text-24 font-semibold text-[#002556]">
-            {name}
-          </p>
-          <p className="text-19 text-primaryDefaultClr">
-            {role}
-          </p>
+          <p className="text-24 font-semibold text-[#002556]">{name}</p>
+          <p className="text-19 text-primaryDefaultClr">{role}</p>
         </div>
       </div>
     </div>

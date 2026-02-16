@@ -31,7 +31,6 @@ const ContactPopup = ({ isOpen, onClose }) => {
 
       {/* Modal Content */}
       <div className="relative bg-backgroundClr rounded-3xl w-full max-w-5xl overflow-hidden flex flex-col lg:flex-row max-h-[90vh] shadow-2xl animate-fadeIn z-10">
-        
         {/* Close Button - Positioned absolutely on the right side */}
         <button
           onClick={onClose}
@@ -91,7 +90,7 @@ const ContactPopup = ({ isOpen, onClose }) => {
         </div>
       </div>
     </div>,
-    document.body
+    document.body,
   );
 };
 

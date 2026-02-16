@@ -4,8 +4,8 @@ import React from "react";
 
 function JoinInternship() {
   return (
-    <section className="px-4 py-10 pt-24 sm:px-6 lg:px-8 lg:py-16">
-      <div className="mx-auto max-w-6xl">
+    <section className="py-10 pt-24 lg:py-16">
+      <div className="mx-4 md:mx-20">
         {/* CARD */}
         <div className="relative overflow-hidden rounded-2xl bg-newExpertiseGradient px-6 py-12 sm:px-12 sm:py-16 lg:px-20 lg:py-20">
           {/* LEFT IMAGES */}
@@ -35,13 +35,13 @@ function JoinInternship() {
           />
 
           {/* CONTENT */}
-          <div className="relative z-30 mx-auto max-w-3xl text-center">
-            <h3 className="font-heading text-2xl font-5 leading-tight text-textDefaultClr sm:text-30">
+          <div className="relative z-30 mx-auto w-full text-center">
+            <h3 className="mx-auto font-heading max-w-4xl text-40 flex items-center justify-center font-5 leading-tight text-textDefaultClr sm:text-30">
               Gain real world experience with final year engineering internship
               offering hands on IoT exposure.
             </h3>
 
-            <p className="mx-auto mt-4 max-w-2xl font-body text-sm font-5 leading-relaxed text-textDisableClr sm:text-[14px]">
+            <p className="mx-auto mt-4 max-w-2xl font-body text-19 font-5 leading-relaxed text-textDisableClr sm:text-[14px]">
               Our program is designed to mentor the next generation of tech
               leaders. Work on live projects and learn from the best in the
               industry.
@@ -51,7 +51,7 @@ function JoinInternship() {
               <AppButton
                 variant="primary"
                 size="sm"
-                className="rounded-full px-6 py-3 text-xs sm:px-4 sm:py-2"
+                className="rounded-full px-6 py-3 text-20 text-textDefaultClr sm:px-4 sm:py-2"
               >
                 Join Internship Program
               </AppButton>

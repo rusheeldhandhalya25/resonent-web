@@ -6,15 +6,17 @@ function OurProduct() {
 
   return (
     <div className="bg-backgroundClr min-h-screen flex flex-col items-center justify-center gap-4">
-     
-      <button 
+      <button
         onClick={() => setIsContactOpen(true)}
         className="px-6 py-3 bg-primaryDefaultClr text-white rounded-full font-semibold hover:opacity-90 transition-opacity"
       >
         Open Contact Popup
       </button>
 
-      <ContactPopup isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+      <ContactPopup
+        isOpen={isContactOpen}
+        onClose={() => setIsContactOpen(false)}
+      />
     </div>
   );
 }

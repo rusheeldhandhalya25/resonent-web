@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-backgroundClr font-body text-textDefaultClr overflow-hidden
-                       pt-10 pb-16 sm:pb-16 lg:pb-20 px-4 sm:px-8 lg:px-24">
-
+    <footer
+      className="relative bg-backgroundClr font-body text-textDefaultClr overflow-hidden
+                       pt-10 pb-16 sm:pb-16 lg:pb-20 px-4 sm:px-8 lg:px-24"
+    >
       {/* BACKGROUND SVGs */}
       <img
         src={imageAssets.footerLine1}
@@ -24,24 +25,25 @@ const Footer = () => {
       />
 
       {/* MAIN WRAPPER */}
-      <div className="relative z-10
+      <div
+        className="relative z-10
                       flex flex-col lg:flex-row
                       items-center justify-center lg:justify-between
-                      gap-10 lg:gap-0 w-full">
-
+                      gap-10 lg:gap-0 w-full"
+      >
         {/* LOGO (desktop only) */}
         <div className="hidden lg:flex shrink-0 items-center justify-center">
           <img src={imageAssets.footerLogo} alt="logo" className="w-40" />
         </div>
 
-        <img src={imageAssets.footer}
-            alt=""
-            className="hidden lg:block w-1 h-40 opacity-70 mx-10"
-          />
+        <img
+          src={imageAssets.footer}
+          alt=""
+          className="hidden lg:block w-1 h-40 opacity-70 mx-10"
+        />
 
         {/* LINKS GROUP (Mobile: Row, Desktop: Contents/Flat) */}
         <div className="flex flex-row items-center justify-center lg:contents">
-
           {/* SECTION 1 */}
           <div className="flex flex-col gap-4 text-base items-center justify-center">
             {[
@@ -50,7 +52,11 @@ const Footer = () => {
               { name: "Services", path: "/services" },
               { name: "Our Products", path: "/products" },
             ].map((item, i) => (
-              <Link key={i} to={item.path} className="hover:text-primaryDefaultClr transition text-center">
+              <Link
+                key={i}
+                to={item.path}
+                className="hover:text-primaryDefaultClr transition text-center"
+              >
                 {item.name}
               </Link>
             ))}
@@ -74,14 +80,19 @@ const Footer = () => {
               { name: "Careers", path: "/career" },
               { name: "Blogs", path: "/blogs" },
             ].map((item, i) => (
-              <Link key={i} to={item.path} className="hover:text-primaryDefaultClr transition text-center">
+              <Link
+                key={i}
+                to={item.path}
+                className="hover:text-primaryDefaultClr transition text-center"
+              >
                 {item.name}
               </Link>
             ))}
           </div>
         </div>
 
-        <img src={imageAssets.footer}
+        <img
+          src={imageAssets.footer}
           alt=""
           className="hidden lg:block w-1 h-40 opacity-70 mx-10"
         />
@@ -92,9 +103,15 @@ const Footer = () => {
 
           <div className="flex flex-row flex-nowrap justify-center gap-3">
             {[
-              { href: "https://instagram.com", icon: imageAssets.instagramIcon },
+              {
+                href: "https://instagram.com",
+                icon: imageAssets.instagramIcon,
+              },
               { href: "https://twitter.com", icon: imageAssets.twitterIcon },
-              { href: "https://www.behance.net", icon: imageAssets.behanceIcon },
+              {
+                href: "https://www.behance.net",
+                icon: imageAssets.behanceIcon,
+              },
               { href: "https://dribbble.com", icon: imageAssets.dribbbleIcon },
               { href: "tel:+919876543210", icon: imageAssets.callIcon },
             ].map((item, i) => (
@@ -113,7 +130,6 @@ const Footer = () => {
             ))}
           </div>
         </div>
-
       </div>
     </footer>
   );

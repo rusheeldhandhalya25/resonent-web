@@ -40,16 +40,16 @@ const BlogSection = () => {
   return (
     <>
       {/* ---------- TOP BLOG (BIG + LIST) ---------- */}
-      <section  className="relative w-full bg-backgroundClr px-4 sm:px-6 lg:px-24 py-16">
+      <section className="relative w-full bg-backgroundClr px-4 sm:px-6 lg:px-24 py-16">
+        <h2 className="text-60 text-textDefaultClr font-heading font-6 text-center items-center justify-center mb-10 lg:">
+          Blogs
+        </h2>
 
-         <h2 className="text-60 text-textDefaultClr font-heading font-6 text-center items-center justify-center mb-10 lg:" >
-            Blogs
-         </h2>
-
-         <img src={imageAssets.homeBlog} 
-              alt=""
-              className="absolute top-10 right-10 w-[280%] z-0 block" />
-
+        <img
+          src={imageAssets.homeBlog}
+          alt=""
+          className="absolute top-10 right-10 w-[280%] z-0 block"
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-6">
           {/* LEFT BIG BLOG */}
@@ -73,7 +73,11 @@ const BlogSection = () => {
               </h3>
 
               <p className="font-body text-17 text-textDisableClr">
-                Are weight loss myths slowing you down? Let’s clear them up so you can focus on what actually works. Misinformation about weight loss is everywhere. You’ve probably heard advice like “just eat less” or “carbs are bad”, but how much of it is actually true?
+                Are weight loss myths slowing you down? Let’s clear them up so
+                you can focus on what actually works. Misinformation about
+                weight loss is everywhere. You’ve probably heard advice like
+                “just eat less” or “carbs are bad”, but how much of it is
+                actually true?
               </p>
             </div>
           </div>
@@ -86,8 +90,6 @@ const BlogSection = () => {
           </div>
         </div>
       </section>
-
-      
     </>
   );
 };
