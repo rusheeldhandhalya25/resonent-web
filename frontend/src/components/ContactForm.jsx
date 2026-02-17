@@ -5,7 +5,6 @@ const validate = (values) => {
   const errors = {};
 
   if (!values.firstName) errors.firstName = "Required";
-  if (!values.lastName) errors.lastName = "Required";
 
   if (!values.email) {
     errors.email = "Required";
@@ -53,11 +52,35 @@ const ContactForm = () => {
         message: "",
       }}
       validate={validate}
-      onSubmit={(values, { resetForm }) => {
-        console.log(values);
-        resetForm();
+      onSubmit={async (values, { resetForm }) => {
+        try {
+          const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+              subject: `Contact Form - ${values.firstName} ${values.lastName}`,
+              from_name: `${values.firstName} ${values.lastName}`,
+              ...values,
+            }),
+          });
+
+          const result = await response.json();
+
+          if (result.success) {
+            alert("Message sent successfully!");
+            resetForm();
+          } else {
+            alert("Something went wrong!");
+          }
+        } catch (error) {
+          alert("Server error!");
+        }
       }}
-    >
+      >
       {() => (
         <Form className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>

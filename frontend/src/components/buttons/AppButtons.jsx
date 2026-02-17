@@ -19,6 +19,8 @@ const variantStyles = {
   light: "bg-textDefaultClr text-primaryDefaultClr",
   secondary:
     "bg-textDisableClr/40 text-textDefaultClr hover:bg-primaryDisableClr/20",
+  primaryDefault:
+    "bg-primaryDefaultClr text-textDefaultClr hover:bg-primaryDefaultClr/50",
 };
 
 const radiusVariants = {
@@ -32,22 +34,22 @@ const AppButton = ({
   type = "button",
   onClick,
   size = "md",
-  variant = "primary", // ✅ DEFAULT FIX
+  variant = "primary", //  DEFAULT FIX
   rounded = "full",
   className = "",
-  fontClass = "font-body text-19 font-5", // ✅ DEFAULT FIX
+  fontClass = "font-body text-19 font-5", //  DEFAULT FIX
   disabled = false,
   fullWidth = false,
 }) => {
   const finalClasses = twMerge(
     baseStyles,
-    fontClass, // 👈 font pehle
     sizeVariants[size],
-    variantStyles[variant], // 👈 color baad ma (important)
+    variantStyles[variant], 
     radiusVariants[rounded],
     fullWidth && "w-full",
     disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer",
-    className, // 👈 last so user override kare to kare
+    className,
+     
   );
 
   return (
@@ -57,7 +59,7 @@ const AppButton = ({
       disabled={disabled}
       className={finalClasses}
     >
-      {children}
+      <span className={fontClass}>{children}</span>
     </button>
   );
 };

@@ -67,7 +67,7 @@ export default {
 
       fontFamily: {
         heading: ["MontserratAlternates", "sans-serif"],
-        body: ['"Instrument Sans"', "sans-serif"],
+        body: ["Instrument Sans", "sans-serif"],
       },
     },
   },
